@@ -1,1 +1,0 @@
-/**/__twttr.setFollowersCountAndFollowing([{"following":false,"id":"15761916","screen_name":"9lessons","name":"Srinivas Tamada","protected":false,"followers_count":7654,"formatted_followers_count":"7,654 followers","age_gated":false}]);
