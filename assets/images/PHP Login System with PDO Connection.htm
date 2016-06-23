@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="http://www.9lessons.info/" hreflang="en" rel="alternate">
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/async-ads.js" async=""></script><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/async-ads.js" async=""></script><script async="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/cbgapi.loaded_1"></script><script async="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/cbgapi.loaded_0"></script><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/ca-pub-6904774409601870.js"></script><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/analytics.js" async=""></script><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/bsa.js" async="" type="text/javascript"></script><script async="async" src="PHP%20Login%20System%20with%20PDO%20Connection_files/s_ce1cf9e0a1e44bafe65c4664385c08d7.js" id="_bsap_js_ce1cf9e0a1e44bafe65c4664385c08d7" type="text/javascript"></script><script id="_bsap_premium_pro" src="PHP%20Login%20System%20with%20PDO%20Connection_files/pro.js" type="text/javascript"></script><script async="async" src="PHP%20Login%20System%20with%20PDO%20Connection_files/a.js" id="_bsaPRO_js" type="text/javascript"></script><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/secureAnonymousFramework"></script><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/button.js" async="" charset="utf-8" type="text/javascript"></script><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 7px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><style type="text/css">* html #li_ui_li_gen_1466563051568_0 a#li_ui_li_gen_1466563051568_0-link{height:1% !important;}#li_ui_li_gen_1466563051568_0{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1466563051568_0 span{-webkit-box-sizing:content-box !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;}#li_ui_li_gen_1466563051568_0 a#li_ui_li_gen_1466563051568_0-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1466563051568_0 a#li_ui_li_gen_1466563051568_0-link:link, #li_ui_li_gen_1466563051568_0 a#li_ui_li_gen_1466563051568_0-link:visited, #li_ui_li_gen_1466563051568_0 a#li_ui_li_gen_1466563051568_0-link:hover, #li_ui_li_gen_1466563051568_0 a#li_ui_li_gen_1466563051568_0-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1466563051568_0 a#li_ui_li_gen_1466563051568_0-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-logo{background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-position:0px -593px !important;background-repeat:no-repeat !important;background-color:#0077b5 !important;background-size:initial !important;cursor:pointer !important;border:0 !important;border-right:1px solid #066094 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;border-radius:2px !important;-moz-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-moz-border-radius-topright:2px !important;-moz-border-radius-bottomright:2px !important;}#li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title{color:#fff !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;text-shadow:0 -1px #005887 !important;line-height:20px !important;border-radius:2px !important;-moz-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-moz-border-radius-topright:2px !important;-moz-border-radius-bottomright:2px !important;background-color:#0077b5 !important;background-image:-moz-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}#li_ui_li_gen_1466563051568_0.hovered #li_ui_li_gen_1466563051568_0-title{border:1px solid #000 !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-moz-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}#li_ui_li_gen_1466563051568_0.clicked #li_ui_li_gen_1466563051568_0-title, #li_ui_li_gen_1466563051568_0.down #li_ui_li_gen_1466563051568_0-title{color:#fff !important;border:1px solid #000 !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-moz-linear-gradient(top, #066094 0%, #066094 100%) !important;}.IN-shadowed #li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title{}.IN-shadowed #li_ui_li_gen_1466563051568_0.hovered #li_ui_li_gen_1466563051568_0-title{}.IN-shadowed #li_ui_li_gen_1466563051568_0.clicked #li_ui_li_gen_1466563051568_0-title, .IN-shadowed #li_ui_li_gen_1466563051568_0.down #li_ui_li_gen_1466563051568_0-title{}#li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title-text, #li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title-text *{color:#fff !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;-webkit-font-smoothing:antialiased !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title-text em{font-style:italic !important;}#li_ui_li_gen_1466563051568_0.hovered #li_ui_li_gen_1466563051568_0-title-text, #li_ui_li_gen_1466563051568_0.hovered #li_ui_li_gen_1466563051568_0-title-text *{color:#fff !important;}#li_ui_li_gen_1466563051568_0.clicked #li_ui_li_gen_1466563051568_0-title-text, #li_ui_li_gen_1466563051568_0.down #li_ui_li_gen_1466563051568_0-title-text, #li_ui_li_gen_1466563051568_0.clicked #li_ui_li_gen_1466563051568_0-title-text *, #li_ui_li_gen_1466563051568_0.down #li_ui_li_gen_1466563051568_0-title-text *{color:#fff !important;}#li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title #li_ui_li_gen_1466563051568_0-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title{color:#fff !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;background-color:#0077b5 !important;background-image:-moz-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}.success #li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title-text, .success #li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1466563051568_0 #li_ui_li_gen_1466563051568_0-title{}.success #li_ui_li_gen_1466563051568_0.hovered #li_ui_li_gen_1466563051568_0-title{color:#fff !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-moz-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}.success #li_ui_li_gen_1466563051568_0.hovered #li_ui_li_gen_1466563051568_0-title-text, .success #li_ui_li_gen_1466563051568_0.hovered #li_ui_li_gen_1466563051568_0-title-text *{color:#fff !important;}.success #li_ui_li_gen_1466563051568_0.clicked #li_ui_li_gen_1466563051568_0-title, .success #li_ui_li_gen_1466563051568_0.down #li_ui_li_gen_1466563051568_0-title{color:#fff !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-moz-linear-gradient(top, #066094 0%, #066094 100%) !important;}.success #li_ui_li_gen_1466563051568_0.clicked #li_ui_li_gen_1466563051568_0-title-text, .success #li_ui_li_gen_1466563051568_0.down #li_ui_li_gen_1466563051568_0-title-text, .success #li_ui_li_gen_1466563051568_0.clicked #li_ui_li_gen_1466563051568_0-title-text *, .success #li_ui_li_gen_1466563051568_0.down #li_ui_li_gen_1466563051568_0-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1466563051568_0.clicked #li_ui_li_gen_1466563051568_0-title, .IN-shadowed .success #li_ui_li_gen_1466563051568_0.down #li_ui_li_gen_1466563051568_0-title{}#li_ui_li_gen_1466563051588_1-container.IN-right {display:inline-block !important;float:left !important;overflow:visible !important;position:relative !important;height:20px !important;padding-left:2px !important;line-height:1px !important;cursor:pointer !important;}#li_ui_li_gen_1466563051588_1.IN-right {display:block !important;float:left !important;height:20px !important;margin-right:4px !important;padding-right:4px !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:right -447px !important;}#li_ui_li_gen_1466563051588_1-inner.IN-right {display:block !important;float:left !important;padding-left:8px !important;text-align:center !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:0px -426px !important;}#li_ui_li_gen_1466563051588_1-content.IN-right {display:inline !important;font-size:11px !important;color:#4e4e4e !important;font-weight:bold !important;font-family:Arial, sans-serif !important;line-height:20px !important;padding:0 5px 0 5px !important;}#li_ui_li_gen_1466563051588_1-container.IN-empty {display:none !important;}#li_ui_li_gen_1466563051588_1-container.IN-hidden #li_ui_li_gen_1466563051588_1 {display:none !important;}</style></head><body><include expiration="7d" path="/assets/**.css"></include>
+<include expiration="2d" path="/assets/**.js"></include>
+<include expiration="3d" path="/assets/**.gif"></include>
+<include expiration="3d" path="/assets/**.jpeg"></include>
+<include expiration="3d" path="/assets/**.jpg"></include>
+<include expiration="3d" path="/assets/**.png"></include>
+<title>PHP Login System with PDO Connection. </title>
+<meta content=" How to PHP Login System with PDO Connection. . Tutorial focused on Programming, Jquery, Ajax, PHP, Demos, Web Design, Javascript, Software and MySQL" name="description">
+<meta content="java script, web development, web design, web programming, jquery ajax, ajax php, jquery ajax demos, jquery demos, regular expression, ajax demos, ajax programming, tutorials, php script, ajax tutorial, ajax examples, jquery tutorial, database, mysql, web database development, blogger, google ajax api, google visualization, google app, rss, technology, coding, code, examples, php programming, facebook scripts, twitter API, facebook like, twitter scripts, form validation, hosting, form submit, validation, application development, software, free scripts, free hosting, sql script, programming, jsp, tomcat, SMTP Mail, java Restful, Oauth, 9lessons.info , 9lessons, 9lessons Programming Blog" name="keywords">
+<meta content="True" name="HandheldFriendly">
+<meta content="index, follow" name="robots">
+<meta content="global" name="distribution">
+<meta content="1 days" name="revisit">
+<meta content="1 days" name="revisit-after">
+<meta content="document" name="resource-type">
+<meta content="all" name="audience">
+<meta content="general" name="rating">
+<meta content="all" name="robots">
+<meta content="en-us" name="language">
+<meta content="USA" name="country">
+<meta content="320" name="MobileOptimized">
+<meta content="" property="og:url">
+<meta content="website" property="og:type">
+<meta content="PHP Login System with PDO Connection. " property="og:title">
+<meta content="Tutorial focused on Programming, Jquery, Ajax, PHP, Demos, Web Design, Javascript, Software and MySQL" property="og:description">
+<meta content="https://lh3.googleusercontent.com/-q7nP4lSJ4tg/Vim1CZJDWvI/AAAAAAAANIU/vE0RZ8-9rCE/s599-Ic42/9lessonsLogo.png" property="og:image">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="6AjQa-NbwaKsfO-CAR2zEP4InUc" name="alexaVerifyID">
+<meta content="Srinivas Tamada" name="author">
+<meta content="1025751018" property="fb:admins">
+<meta content="Copyright (c) 2008-2016 Srinivas Tamada" name="dcterms.dateCopyrighted">
+<meta content="j_NzAv9w2MauepXWZ9ggPupfW5Mr5gkudpn-Wu0AZF0" name="google-site-verification">
+<meta content="p7yyWkGI8UUrpr3YilZbOff9lHb5U16IbbjPop8Yd60" name="google-site-verification">
+<meta content="F2FEEF3D9FA54697BBAF9E08A80D3483" name="msvalidate.01">
+<meta content="mn2bdKJzo8xQpOyAjIpIng4KGjMVZKuJr8kXnCdMpPQ=" name="verify-v1">
+<meta content="4df3c85ea53c8f10" name="yandex-verification">
+<meta content="D0FD91CF47B81A0444FA5AB6BFF9CBD4" name="msvalidate.01">
+<meta content="642636B8B26344A69F5FA5C22A629A16" name="msvalidate.01">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/ca-pub-6904774409601870.js"></script><script type="text/javascript">(function() { (function(){function c(a){this.t={};this.tick=function(a,c,b){var d=void 0!=b?b:(new Date).getTime();this.t[a]=[d,c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(e){}};this.tick("start",null,a)}var a;window.performance&&(a=window.performance.timing);var h=a?new c(a.responseStart):new c;window.jstiming={Timer:c,load:h};if(a){var b=a.navigationStart,e=a.responseStart;0<b&&e>=b&&(window.jstiming.srt=e-b)}if(a){var d=window.jstiming.load;0<b&&e>=b&&(d.tick("_wtsrt",void 0,b),d.tick("wtsrt_",
+"_wtsrt",e),d.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),d&&0<b&&(d.tick("_tbnd",void 0,window.chrome.csi().startE),d.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,d&&0<b&&(d.tick("_tbnd",void 0,window.external.startE),d.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(k){}})();window.tickAboveFold=function(c){var a=0;if(c.offsetParent){do a+=c.offsetTop;while(c=c.offsetParent)}c=a;750>=c&&window.jstiming.load.tick("aft")};var f=!1;function g(){f||(f=!0,window.jstiming.load.tick("firstScrollTime"))}window.addEventListener?window.addEventListener("scroll",g,!1):window.attachEvent("onscroll",g);
+ })();</script>
+<meta content="blogger" name="generator">
+<link href="http://www.9lessons.info/favicon.ico" rel="icon" type="image/x-icon">
+<link href="PHP%20Login%20System%20with%20PDO%20Connection_files/php-login-system-with-pdo-connection_006.htm" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="9lessons Programming Blog - Atom" href="http://www.9lessons.info/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="9lessons Programming Blog - RSS" href="http://www.9lessons.info/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="9lessons Programming Blog - Atom" href="https://www.blogger.com/feeds/992226187759619576/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="9lessons Programming Blog - Atom" href="http://www.9lessons.info/feeds/8450056181584758171/comments/default">
+<link href="PHP%20Login%20System%20with%20PDO%20Connection_files/phplogin.png" rel="image_src">
+<meta content="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html" property="og:url">
+<meta content="https://lh3.googleusercontent.com/-F_VjfINklfA/VwkxITBctRI/AAAAAAAANxQ/el4a-HHKaHYMj_CY2JF9c7aUafa7WtDkwCCo/w1200-h630-p-nu-Ic42/phplogin.png" property="og:image">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<link href="http://feeds2.feedburner.com/9lesson" rel="alternate" title="9lessons is a programming blog" type="application/rss+xml">
+<link href="https://plus.google.com/+SrinivasTamada" rel="author">
+<link href="http://www.9lessons.info/" rel="shortlink">
+<link href="https://plus.google.com/+SrinivasTamada" rel="publisher">
+<link href="https://plus.google.com/104100007347037324968" rel="publisher">
+<link href="PHP%20Login%20System%20with%20PDO%20Connection_files/css.css" rel="stylesheet" type="text/css">
+<link href="https://lh3.googleusercontent.com/-aCFiK4baXX4/VjmGJojsQ_I/AAAAAAAANJg/h-sLVX1M5zA/s128-Ic42/eggsmall.png" rel="icon" type="image/x-icon">
+<link href="https://lh3.googleusercontent.com/-aCFiK4baXX4/VjmGJojsQ_I/AAAAAAAANJg/h-sLVX1M5zA/s128-Ic42/eggsmall.png" rel="shortcut icon" type="image/x-icon">
+<link type="text/css" rel="stylesheet" href="PHP%20Login%20System%20with%20PDO%20Connection_files/3414295837-widget_css_bundle.css">
+<link type="text/css" rel="stylesheet" href="PHP%20Login%20System%20with%20PDO%20Connection_files/authorization.css">
+<style id="page-skin-1" type="text/css"><!--
+
+--></style>
+<style>
+html { -webkit-font-smoothing: antialiased;}* {font-weight: inherit;font-family: inherit;font-style: inherit;font-size: 100%;border: 0 none;outline: 0;padding: 0;margin: 0;}b{ font-weight:bold} body{ color:#333333;border:0;margin:0;padding:0;font-smooth:always; font:.75em/1.73em 'Open Sans',sans-serif,Arial,Helvetica;font-weight:500;background:url(https://lh3.googleusercontent.com/-Ytc1nm0H-xk/VlarLMg6ssI/AAAAAAAANLw/bRp6GBN5ILk/s167-Ic42/bg.png)}#navbar-iframe{display:none;height:0px;}.comment-form{margin-left:45px}a:link,a:visited{color:#0c97d2;text-decoration:none}a:hover{text-decoration:underline}form{border:0;margin:0}.post{clear:both}form{font-size:12px}form,input{padding:0}h1,h2,h3,h4,h5{margin:0;border:0;padding:0;color:#313029;font-weight:normal}h1,h2{color:#333;font-family:Helvetica,Arial;font-weight:bold;line-height:1.1em;padding-bottom:5px;text-shadow:0 1px 0 #FFF;font-size:36px}h1 a:link,h1 a:visited{color:#333;text-decoration:none}h1 a:hover{text-decoration:none}h2 a:link,h2 a:visited{color:#333;text-decoration:none}h2 a:hover{background-color:#B2E0F5;text-decoration:none}h3{font-size:13px;line-height:32px;color:#333333;font-weight:bold;font-family:Helvetica,Arial,sans-serif}h4{font-size:12px;font-weight:bold;color:#40403b;margin-bottom:14px}h5{font-size:20px;line-height:22px;font-family:Helvetica,Arial,sans-serif;display:block;padding-bottom:10px;color:#333333}i{color:#333333;background-color:#C7F464;padding-left:2px;padding-right:2px}.face{float:left;border-right:solid 1px #dedede;border-bottom:solid 1px #dedede;padding:4px;background-color:#fff;margin-right:5px;width:90px}.sri,.sri650{border:1px solid #CCC;padding:9px;background:#fff}ul,li{margin:0;border:0;padding:0}ul{margin-bottom:20px} #sideside li{list-style:none;display:block}div.code{font-family:Courier,monospace,Courier New;font-size:13px;color:#333333;border:dashed 2px #dedede;padding:10px;line-height:16px;width:97%;word-wrap:break-word;}input.gsc-input{padding:5px;color:#333;font-weight:bold;border:solid 2px #333}.gsc-branding-user-defined,.gsc-branding-text,.gsc-branding-img{height:0px;display:none}#container{width:1000px;margin:0 auto;margin-bottom:20px}#top-header{font-size:13px;}#egglabs-header{margin:0 auto;padding:0px;width:1000px;height:110px}.centerclass{text-align:center}#main_left{line-height:18px;margin-right:15px}.section-links{font-size:11px;line-height:16px;padding:4px 10px;color:#333333;border-bottom:#fff solid 1px}.section-links li{padding-bottom:6px;border-bottom:solid 1px #d8d8d8;margin-bottom:6px}.section-links a:link,.section-links a:visited{text-decoration:none;color:#333333}.section-links li a:hover{text-decoration:underline;color:#333333}.site-reviews li{border:none}#container-footer{height:80px}#footer{font-size:11px;color:#333333;padding:20px 0px;border-top:3px #333 solid;width:1000px;margin:0 auto}#footer a:link,#footer a:visited{color:#0c97d2;text-decoration:underline}#navbar{display:none;height:0;visibility:hidden}#logo{background: url("https://lh3.googleusercontent.com/-q7nP4lSJ4tg/Vim1CZJDWvI/AAAAAAAANIU/vE0RZ8-9rCE/s599-Ic42/9lessonsLogo.png") no-repeat;background-size: 264px;width:266px;height:80px;margin-top:25px}.updated{color:#999;font-family:Helvetica,Arial,sans-serif;text-transform:uppercase;font-size:11px;margin-bottom:10px;margin-top:10px;padding:0px}.bigInt{text-shadow: 0 1px 0 white;font-size:17px;color:#1e1e1e;line-height:26px;font-family:'Open Sans',sans-serif,Helvetica,Arial;text-align:justify}div.big{font-weight:bold;font-size:24px;color:#333333;}.blog-pager{font-size:12px}.blog-pager a{color:#80c8e5}.blog-pager-newer-link,.blog-pager-older-link{display:block;float:left;padding:6px 10px;text-align:center;font-size:2.4em;font-weight:bold;margin-right:8px}.home-link{display:block;float:left;padding:6px 10px;text-align:center;color:#333;font-size:2.4em;font-weight:bold;margin-right:8px}.post-body-n{font-family:'Open Sans',sans-serif,Arial;font-size:17px;line-height:26px;word-wrap: break-word;color:#3A4145;}.post-body-n a:link,.post-body-n a:visited{text-decoration:none;color:#0c97d2}.post-body-n a:hover{text-decoration:underline}.comment-author{color:#333333;font-size:14px;padding:4px;font-weight:bold;text-decoration:none}.comment-author a:link,.comment-author a:visited,.comment-author a:hover{font-weight:bold;color:#333333;padding-bottom:2px;text-decoration:none}.comment-footer a:link,.comment-footer a:visited{font-size:12px;font-weight:bold;color:#FFF;text-align:center;display:block;clear:both;width:137px;height:36px;line-height:36px;background:url(http://lh4.ggpht.com/_N9kpbq3FL74/SZF4bQLpLHI/AAAAAAAABDU/l6FPOJh1Dgc/letter2.png) no-repeat}.comment-timestamp{font-size:11px;color:#666666}.comment-timestamp a:link,.comment-timestamp a:visited{font-size:11px;color:#999;background:none;width:auto;height:auto;text-align:left;font-weight:normal}a.comment-link{font-weight:bold}dd{margin:0;border:0;padding:0;padding:0 10px;width:96%}dd.comment-body{font-size:15px;color:#3A4145;border:dashed 2px #48B1D9;border-bottom:none;word-wrap: break-word}dd.comment-body a{color:#DF3D82;text-decoration:none}dd.comment-body a:hover{color:#DF3D82;text-decoration:none}dd.comment-body p{border:0;padding:0;margin:0;padding:10px 0}dd.comment-footer{margin-bottom:10px;border:dashed 2px #48B1D9;border-top:none}dd.au-body{color:#333333;border:dashed 2px #DF3D82;border-bottom:none;font-size:15px}dd.au-body a{color:#0081b3;text-decoration:none}dd.au-body a:hover{color:#0081b3;text-decoration:none}dd.au-body p{border:0;padding:0;margin:0;padding:10px 0}.comment b{font-family:Georgia,Times New Roman,Times,serif;font-size:14px}.spacer{clear:both;height:10px;display:block}.post-tag{font-family:Helvetica,Arial,sans-serif;margin-bottom:10px}.feedinput{padding:4px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#333;font-weight:bold;border:solid 1px #dedede}*html .feedinput{padding:0;height:23px}.commentOld{background:url(http://lh3.ggpht.com/_N9kpbq3FL74/SiUh-MmdPGI/AAAAAAAABvs/9MN3GO2uCqc/comment.png) no-repeat left top;padding-left:28px;font-size:11px;line-height:18px;float:left}.comment a:link,.comment a:visited{color:#333333}#footer{margin:0 auto}.ads{padding-top:5px;float:right;margin-left:5px}.tweet{float:left;height:62px;padding-top:5px}.cen{text-align:center}.gap{margin-right:0px}.showpageNum a:hover{border:1px solid #333;background-color:#fff;float:left}.showpagePoint{color:#333333;text-decoration:none;margin:0 4px;float:left;font-weight:bold;padding:3px}.showpageOf{text-decoration:none;padding:3px;margin:0 4px 0 0;display:none;float:left}.showpage a{text-decoration:none;border:1px solid #333;padding:3px;margin:0 4px;font-weight:bold;float:left;color:#333333}.showpage a:hover{text-decoration:none;background-color:#f2f2f2}.showpageNum a:link,.showpage a:link{text-decoration:none;color:#333333;float:left}#sideside{vertical-align:text-top;width:300px}#ravi_profile{width:100%;height:100px;border:1px solid #dcdcdc;background-color:#f9f9f9;font:bold 12px "Trebuchet MS",Verdana,Arial}.ravi_pic{float:left;margin:6px}.ravi_pic img{border:4px solid #fff}.ravi_details{float:left;border-right:1px solid #dcdcdc;padding:0 15px 10px 10px;margin-top:10px}.ravi_contact{float:left;margin-top:10px;padding:0 0 0 15px}.ravi_mailto,.ravi_mailto:hover{color:#333333}.adhere{background-color:#ffffff;width:124px !important;height:124px !important}@-webkit-keyframes rotate-star{0%{-webkit-transform:rotate(0) scale(1)}50%{-webkit-transform:rotate(360deg) scale(2)}100%{-webkit-transform:rotate(720deg) scale(1)}}#buyselladss_div a:hover img{-webkit-animation-name:rotate-star;-webkit-animation-duration:500ms;-webkit-animation-iteration-count:1;-webkit-animation-timing-function:ease-out}#top-header div.menu{min-width:1000px;display: block;height:2.5em;margin:0;padding:0;background-color:#162336}.clear-both{clear:both}#top-header div.menu-subvert{min-width:1000px;display: block;height:2.5em;background-color:#7ac9ed;border-bottom:solid 1px #666666}#top-header ul.menu{width:1000px;margin:0 auto;display:block}#top-header ul.menu li{font-weight: 500;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 11px;text-transform: uppercase;white-space: nowrap;float:left;margin:0;padding:.65em 0;list-style-image:none;list-style:none}#top-header ul.menu li a:hover{text-decoration:none;color:#80c8e5}#top-header ul.menu a{padding:0 .94em;color:white;font-size:12px;font-family:'Open Sans',sans-serif,Helvetica,Arial;border-right:1px solid #2A3659}#top-header div.menu-ads{width:1000px;margin:0 auto}.post-tag a:hover{text-decoration:none;background-color:#dedede}.tagstyle{line-height:24px;margin-bottom:5px;display:inline;padding:2px 6px;font-weight:normal;font-size:12px;background-color:#80C8E5;-moz-border-radius:5px;-webkit-border-radius:5px;white-space:nowrap;color:#333333 !important;text-decoration:none;text-transform:uppercase;margin-right:10px}#related-posts{width:100%;margin-top:20px;font-size:14px}#related-posts a{text-decoration:none}#related-posts a:hover{text-decoration:underline}#related-posts ul{border:medium none;margin-top:10px;padding:0}#related-posts ul li{display:block;margin:0;padding-top:0;padding-right:0;padding-bottom:1px;margin-bottom:5px;line-height:2em;border-bottom:1px dotted #ccc}.topbannerad{background:url(https://lh4.googleusercontent.com/-JFPstwNikuY/U7wBVAaP1EI/AAAAAAAAK-0/kUAEsg9xyRw/s16/shade.png);padding:10px; text-align:center;background-color:#f5f5f5;border-bottom:2px solid #ccc;}.countsocial{width:330px;padding-top:47px}.gs-title{color:#006699}.socialicons{border-bottom:1px solid #dedede;border-top:1px solid #dedede;padding-top:5px;height:25px}.count_buttons{margin-right:18px;float:left;width:45px}input.gsc-input {padding: 4px !important;border: 1px solid #333 !important;}#comments{font-family:'Open Sans',sans-serif,Helvetica,Arial}.logoimg{border:none;margin-top:24px;margin-bottom:10px}.logosocial{margin-bottom:20px;margin-left:27px}.logofacebook{border:none;overflow:hidden;width:95px;height:21px}.searchgoogletop{height:56px;float:right;margin-top:0px;text-align:right;widht:400px}.search_google{float:right;margin-top:25px;text-align:right}#cse-search-form{width:350px}
+.home{border-left:1px solid#2A3659}.menu-ads{padding:7px 0px 0px 0px}.fixed_table{table-layout:fixed}.googleadsbig{width:100%}#cse{width:100%}.m15top{margin-top:15px}.displaynone{display:none}.font12{font:12px}.comment_box{font-size:16px;font-weight:bold;float:left;margin-right:10px}.cpright{font-size:12px;float:left;color:#333333;margin-left:10px;padding-top:17px}.counterstat{width:1000px;margin:0 auto;font-weight:bold;text-align:right}.comment_footer{border:dashed 2px#DF3D82;border-top:none}.side_box{background:url(https://lh4.googleusercontent.com/-JFPstwNikuY/U7wBVAaP1EI/AAAAAAAAK-0/kUAEsg9xyRw/s16/shade.png);padding:10px;background-color:#f2f2f2}.nametitle{font-size:13px;font-weight:bold}.socialspace{float:left;margin-left:10px;} .fbtopbutton{ position: absolute;margin-top: -23px;margin-left: 132px;}blockquote {margin: 20px;padding: 0 0 0 14px;color: #666;border-left: 2px solid #999;}blockquote {display: block;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 40px;-webkit-margin-end: 40px;}.wallbanner{margin-top:3px}.profile_social{display: block;width: 32px;height: 32px;float:left;margin-bottom:5px;clear:both}.profile_facebook {background: url('https://lh4.googleusercontent.com/-cSvc_7zcj58/UwXw2y-b5FI/AAAAAAAAJCM/CefHPGtpOb4/s260/social_icons.png') no-repeat 0 0;}.profile_twitter {background: url('https://lh4.googleusercontent.com/-cSvc_7zcj58/UwXw2y-b5FI/AAAAAAAAJCM/CefHPGtpOb4/s260/social_icons.png') no-repeat -38px 0;}.profile_gplus {background: url('https://lh4.googleusercontent.com/-cSvc_7zcj58/UwXw2y-b5FI/AAAAAAAAJCM/CefHPGtpOb4/s260/social_s.png') no-repeat -76px 0;}.profile_tumblr {background: url('https://lh4.googleusercontent.com/-cSvc_7zcj58/UwXw2y-b5FI/AAAAAAAAJCM/CefHPGtpOb4/s260/social_icons.png') no-repeat -114px 0;}.profile_rss {background: url('https://lh4.googleusercontent.com/-cSvc_7zcj58/UwXw2y-b5FI/AAAAAAAAJCM/CefHPGtpOb4/s260/social_icons.png') no-repeat -152px 0;}.profile_vimeo {background: url('https://lh4.googleusercontent.com/-cSvc_7zcj58/UwXw2y-b5FI/AAAAAAAAJCM/CefHPGtpOb4/s260/social_icons.png') no-repeat -190px 0;}.profile_youtube {background: url('https://lh4.googleusercontent.com/-cSvc_7zcj58/UwXw2y-b5FI/AAAAAAAAJCM/CefHPGtpOb4/s260/social_icons.png') no-repeat -228px 0;}.profile_left{margin-right:6px}#facebook_follow{float:left;width:118px;height:26px;margin-top:2px}#twitter_follow{float:left;width:256px;height:26px;margin-top:6px}#follow_text{font-weight:bold;font-size:13px;float:left;margin-right:10px;margin-top:8px}.fn{text-transform:uppercase;color:#333333;font-size:13px; }.marginfive{margin:0px 0px 5px 0px}.floatx{float:left;width:90px}.widthfull{width:100%}.width{width:220px}.valignbottom{vertical-align:text-bottom;}.buy{display:block;overflow:auto}#cat{padding-right:7px;margin-bottom:10px}.borderzero{border:0px}#fcount{border:0;margin-right:10px;margin-top:6px}.menuin{margin:0 auto; width:1000px;height: 2.5em;}.margin10{margin-top:10px}.facebookfollow{border:none; overflow:hidden; width:150px;height:25px;margin-top:5px}.bordertopzero{border-top:none;}#femail{padding:7px;border:solid 1px #333333;width:170px;margin-right:4px}.font12{font-size:12px;}.m5{margin-top:5px;}.mb6{margin-bottom:6px}.font13{font-size:13px; color:#333333;}.facebooklike{border:none; overflow:hidden; width:60px; height:70px}.sidex{vertical-align:text-top;width:310px}.vtop{vertical-align:text-top;}.flikebox{border:none; overflow:hidden; width:100%; height:215px;}.cf{color:#fff; display:none}#sbar{margin-top:-111px;height:32px;position: absolute;margin-left: 284px;}.dnone{display:none}.dblue{color:#006699 !important;}#email{text-decoration:none; color:#006699;font-size:12px}.p5{padding-top:5px}.tc{text-align:center}.f45{float:left;width:45%;}.fr45{float:right;width:45%}.he1{height:1px}.fl{float:left}.fr{float:right;}.tr{text-align:right}.bannerBig{width:100%}.shade{background: url(https://lh4.googleusercontent.com/-JFPstwNikuY/U7wBVAaP1EI/AAAAAAAAK-0/kUAEsg9xyRw/s16/shade.png);}.comment-form{overflow:hidden}.comments h3{line-height:normal;text-transform:uppercase;color:#333;font-weight:700;margin:0 0 20px;font-size:14px;padding:0}h4#comment-post-message{display:none;margin:0}.comments{clear:both;margin-top:10px;margin-bottom:0}.comments .comments-content{font-size:13px;margin-bottom:8px}.comments .comments-content .comment-thread ol{text-align:left;margin:13px 0;padding:0}.comments .avatar-image-container{overflow:hidden;padding:6px}.comments .comment-block{position:relative;padding:15px;margin-left:60px;border-left:3px solid #ddd;border-top:3px solid #48B1D9;border-right:1px solid #DDD;border-bottom:1px solid #DDD}.comments .comment-block:before{content:"";width:0;height:0;position:absolute;right:100%;top:14px;border-width:10px;border-style:solid;border-color:transparent #DDD transparent transparent;display:block}.comments .comments-content .comment-replies{margin:8px 0 8px 60px}.comments .comments-content .comment-thread:empty{display:none}.comments .comment-replybox-single{background:#f0f0f0;padding:0;margin:8px 0 8px 60px}.comments .comment-replybox-thread{background:#f0f0f0;margin:8px 0 0;padding:0}.comments .comments-content .comment{margin-bottom:6px;padding:0}.comments .comments-content .comment:first-child,.comments .comments-content .comment:last-child{padding:0;margin:0}.comments .comment-thread.inline-thread .comment,.comments .comment-thread.inline-thread .comment:last-child{margin:0 0 5px 30%}.comment .comment-thread.inline-thread .comment:nth-child(6){margin:0 0 5px 25%}.comment .comment-thread.inline-thread .comment:nth-child(5){margin:0 0 5px 20%}.comment .comment-thread.inline-thread .comment:nth-child(4){margin:0 0 5px 15%}.comment .comment-thread.inline-thread .comment:nth-child(3){margin:0 0 5px 10%}.comment .comment-thread.inline-thread .comment:nth-child(2){margin:0 0 5px 5%}.comment .comment-thread.inline-thread .comment:nth-child(1){margin:0 0 5px}.comments .comments-content .comment-thread{margin:0;padding:0}.comments .comments-content .inline-thread{padding:15px;margin:0}.comments .comments-content .icon.blog-author{display:inline}.comments .comments-content .icon.blog-author:after{background:#0088C2;color:#fff;font-size:11px;padding:2px 5px}.comment-header{text-transform:uppercase;font-size:12px}.comments .comments-content .datetime{margin-left:6px}.comments .comments-content .datetime a{color:#888}.comments .comment .comment-actions a,.comments .comment .comment-actions a{font-weight:700;line-height:15px;margin:4px 8px 0 0}.comments .comment .comment-actions a:hover,.comments .continue a:hover{text-decoration:underline}.authorBlock{border-top:3px solid #DF3D82 !important}.comment-content{word-wrap: break-word !important;}.comments .continue a, input.gsc-search-button, .wallButton{font-weight: bold;padding: 7px 9px;background-color: #5fcf80;color: #fff !important;font-size: 12px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;cursor: pointer;text-decoration: none !important;text-shadow: 0 1px 0px rgba(0,0,0,0.15);border-width: 1px 1px 3px !important;border-style: solid;border-color: #3ac162;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: -moz-inline-stack;display: inline-block;vertical-align: middle;zoom: 1;border-radius: 3px;box-sizing: border-box;box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;}.comments .continue a{margin-left:60px}.followmebuttons{margin-right:15px;}.comment-content a{color:#cc0000 !important}#ab-message{text-align:center;background-color:#E23C3C;color:#ffffff;font-weight:bold;border-bottom:solid 1px #333333}
+    #mobileLogo{display:none}#searchBlock{float:right;margin-top: 21px;}.articleAuthor{color:#333333;font-weight: normal;text-transform: uppercase}
+#survey{text-align: center;padding:20px 0px ; clear:both}#thanks{clear: both; display: none; }.show{display: inline !important;}
+#survey b, #thanks b{font-size: 20px; display: block;margin-bottom: 20px}.post-body ul{margin-left:20px}
+.surveyGrid{width: 48%;margin-top: 10px}
+.surveryA{float: left; text-align: right;}.surveryB{float: right; text-align: left}
+.surveryButton{padding:10px;border: solid 2px #1bbc9b; color: #1bbc9b !important;  text-decoration: none !important; border-radius: 4px }
+@media only screen and (min-width: 300px)
+{
+	#contentPart{width:100%}
+	#sideside,.countsocial,.fbtopbutton,.followmebuttons{display:none}
+    #container,#egglabs-header,#footer,.counterstat{width:100%}
+    #top-header div.menu,#addsectionsTopperHead{display:none}
+    #top-header div.menu-subvert{display:none}
+    
+    h1, h2{font-size:22px}
+    
+	
+}
+
+@media only screen and (min-width: 768px){
+
+    #contentPart{width:694px}
+	#sideside{width:300px;display:block}
+    .countsocial{display:none}
+    .fbtopbutton{display:block}
+    #container,#egglabs-header,#footer,.counterstat{width:100%}
+     #top-header div.menu,#addsectionsTopperHead,.followmebuttons{display:block}
+#top-header div.menu-subvert{display:block}
+        .sri{max-width:550px} .sri650{max-width:650px}
+    #searchBlock{width:400px}
+h1, h2{font-size:28px}
+
+
+}
+@media only screen and (max-width: 768px) {
+#sideside{display:none}
+.sri,.sribig,.sri650{width:90%}
+    }
+@media only screen and (max-width: 632px) {
+        #mobileLogo{display:block;text-align:center}
+#desktopLogo,.countsocial  {display:none}
+input.gsc-input{width:90% !important;padding:6px !important}
+#searchBlock{float:right;margin-bottom: 20px; margin-top:0px !important}
+        #contentPart{padding-left:10px}
+      }
+
+
+@media only screen and (min-width: 1000px){
+
+   .countsocial,.fbtopbutton{display:block}
+   #container,#egglabs-header,#footer,.counterstat{width:1000px}
+   #top-header div.menu,#addsectionsTopperHead,.followmebuttons{display:block}
+#top-header div.menu-subvert{display:block}
+.sri{max-width:550px}
+ #searchBlock{width:400px;}
+h1, h2{font-size:36px}
+input.gsc-input{width:258px !important;padding:6px !important}
+}
+
+</style>
+<script type="text/javascript">
+<!-- Related Articles -->
+//<![CDATA[
+var relatedTitles = new Array();
+var relatedTitlesNum = 0;
+var relatedUrls = new Array();
+function related_results_labels(json) {
+for (var i = 0; i < json.feed.entry.length; i++) {
+var entry = json.feed.entry[i];
+relatedTitles[relatedTitlesNum] = entry.title.$t;
+for (var k = 0; k < entry.link.length; k++) {
+if (entry.link[k].rel == 'alternate') {
+relatedUrls[relatedTitlesNum] = entry.link[k].href;
+relatedTitlesNum++;
+break;
+}
+}
+}
+}
+function removeRelatedDuplicates() {
+var tmp = new Array(0);
+var tmp2 = new Array(0);
+for(var i = 0; i < relatedUrls.length; i++) {
+if(!contains(tmp, relatedUrls[i])) {
+tmp.length += 1;
+tmp[tmp.length - 1] = relatedUrls[i];
+tmp2.length += 1;
+tmp2[tmp2.length - 1] = relatedTitles[i];
+}
+}
+relatedTitles = tmp2;
+relatedUrls = tmp;
+}
+function contains(a, e) {
+for(var j = 0; j < a.length; j++) if (a[j]==e) return true;
+return false;
+}
+function printRelatedLabels() {
+var r = Math.floor((relatedTitles.length - 1) * Math.random());
+var i = 0;
+document.write('<ul>');
+while (i < relatedTitles.length && i < 10) {
+document.write('<li><a href="' + relatedUrls[r] + '">' + relatedTitles[r] + '</a></li>');
+if (r < relatedTitles.length - 1) {
+r++;
+} else {
+r = 0;
+}
+i++;
+}
+document.write('</ul>');
+
+}
+
+function rankPage(value) 
+{
+ga('send', {
+'hitType': 'event',
+'eventCategory': 'Page',
+'eventAction': 'Rank',
+'eventValue': value
+});
+
+}
+
+/* Notifications */
+document.addEventListener('DOMContentLoaded', function () {
+
+/* Survey */
+
+[].forEach.call(document.querySelectorAll(".surveryButton"), function(el) {
+el.addEventListener("click", function() {
+document.getElementById('surveyBlock').style.display = 'none';
+document.getElementById('thanks').classList.add('show');
+});
+});
+
+/* Survey End */
+
+
+if (Notification.permission !== "granted")
+{
+Notification.requestPermission();
+}
+});
+
+function notifyBrowser(title,desc,url) 
+{
+if (!Notification) {
+//console.log('Desktop notifications not available in your browser..'); 
+return;
+}
+if (Notification.permission !== "granted")
+{
+Notification.requestPermission();
+}
+else {
+var notification = new Notification(title, {
+icon:'https://lh3.googleusercontent.com/-aCFiK4baXX4/VjmGJojsQ_I/AAAAAAAANJg/h-sLVX1M5zA/s48-Ic42/eggsmall.png',
+body: desc,
+'tag' : 'unique string'
+});
+
+// Remove the notification from Notification Center when clicked.
+notification.onclick = function () {
+window.open(url);      
+};
+
+// Callback function when the notification is closed.
+notification.onclose = function () {
+//console.log('Notification closed');
+};
+
+}
+}
+
+var articles = [
+["Create Dynamic Subdomains using PHP and Htaccess","http://www.9lessons.info/2016/03/how-to-create-dynamic-subdomains-using-php-and-htaccess.html"],
+["Htaccess File Tutorial and Tips.","http://www.9lessons.info/2013/11/htaccess-file-tutorial-and-tips.html"],
+["Create a RESTful services using Slim PHP Framework","http://www.9lessons.info/2014/12/create-restful-services-using-slim-php.html"],
+["Social Network Script","http://www.thewallscript.com"],
+["9lesosns Demos","http://demos.9lessons.info"],
+["Pagination with Jquery, PHP , Ajax and MySQL.","http://www.9lessons.info/2010/10/pagination-with-jquery-php-ajax-and.html"],
+["Ajax Select and Upload Multiple Images with Jquery","http://www.9lessons.info/2013/09/multiple-ajax-image-upload-jquery.html"],
+["Ajax PHP Login Page with Shake Animation Effect.","http://www.9lessons.info/2014/07/ajax-php-login-page.html"],
+["Login with Google Account.","http://www.9lessons.info/2011/07/login-with-google-account.html"],
+["Introducing Wall Script 8 Build your Own Social Network","http://www.9lessons.info/2016/03/wall-script-build-your-own-social-network.html"]
+];
+
+setTimeout(function(){ 
+var x = Math.floor((Math.random() * 10) + 1);
+
+
+var title=articles[x][0];
+var desc='';
+var url=articles[x][1];
+notifyBrowser(title,desc,url);
+}, 180000);
+
+//]]>
+</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script>
+
+<div id="top-header">
+<div id="ab-message" style="display: none;">Please disable your ad blocker for 9lessons.info</div>
+<div id="egglabs-header">
+<div id="mobileLogo" itemprop="logo"><a href="http://www.9lessons.info/"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/9lessonsLogo.png" style="width:250px;margin-top:10px"></a></div>
+<div class="widthfull" style="position:relative">
+<div class="width200" id="desktopLogo" style="float:left">
+<a href="http://www.9lessons.info/" title="9lessons Programming Blog">
+<div id="logo">
+</div>
+</a>
+</div>
+<div class="countsocial valignbottom" style="float:left">
+<div class="logosocial">
+<span class="gap"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px;"><iframe title="+1" data-gapiattached="true" src="PHP%20Login%20System%20with%20PDO%20Connection_files/fastbutton.htm" name="I0_1466563050372" id="I0_1466563050372" vspace="0" tabindex="0" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" scrolling="no" marginwidth="0" marginheight="0" hspace="0" frameborder="0" width="100%"></iframe></div></span><span class="gap" style="margin-right:12px"><iframe data-url="http://www.9lessons.info" src="PHP%20Login%20System%20with%20PDO%20Connection_files/tweet_button.htm" title="Twitter Tweet Button" style="position: static; visibility: visible; width: 61px; height: 20px;" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" allowtransparency="true" scrolling="no" id="twitter-widget-1" frameborder="0"></iframe></span>
+<span class="gap" id="homeLike"><iframe allowtransparency="true" class="logofacebook" scrolling="no" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/9lessons&amp;send=false&amp;layout=button_count&amp;width=85&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" frameborder="0"></iframe></span>
+</div>
+</div>
+<div id="searchBlock">
+<div class="searchgoogletop">
+<div class="search_google">
+<div dir="ltr" id="cse-search-form"><form accept-charset="utf-8" class="gsc-search-box"><table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-input"><input style="outline: medium none; background: rgb(255, 255, 255) url(&quot;http://www.google.com/cse/static/en/google_custom_search_watermark.gif&quot;) no-repeat scroll left center;" spellcheck="false" dir="ltr" id="gsc-i-id1" title="search" name="search" class=" gsc-input" size="10" autocomplete="off" type="text"><input id="bgresponse" name="bgresponse" type="hidden"></td><td class="gsc-search-button"><input title="search" class="gsc-search-button" value="Search" type="button"></td><td class="gsc-clear-button"><div title="clear results" class="gsc-clear-button">&nbsp;</div></td></tr></tbody></table><table class="gsc-branding" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img class="gsc-branding-img" src="PHP%20Login%20System%20with%20PDO%20Connection_files/small-logo.png"></td></tr></tbody></table></form></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menu">
+<div class="menuin">
+<ul class="menu">
+<li><a class="home" href="http://www.9lessons.info/2008/08/table-of-contents.html" onclick="ga('send', 'event', 'Tutorials', 'click','Tutorials');" title="Tutorials">Tutorials</a></li>
+<li><a href="http://www.9lessons.info/2008/08/jquery-ajax-and-php-projects-9lessons.html" onclick="ga('send', 'event', 'Projects', 'click','Tutorials');" title="Projects"> 
+Projects</a></li>
+<li><a href="http://www.9lessons.info/search/label/jQuery" onclick="ga('send', 'event', 'Jquery', 'click','Jquery');" title="Jquery Tutorials demos">JQUERY</a></li>
+<li><a href="http://www.9lessons.info/search/label/php" onclick="ga('send', 'event', 'PHP', 'click','PHP');" title="PHP Tutorials">PHP</a></li>
+<li><a href="http://www.9lessons.info/search/label/HTML5" onclick="ga('send', 'event', 'HTML', 'click','html');" title="html Tutorials">HTML</a></li>
+<li><a href="http://www.9lessons.info/2008/08/most-popular-articles.html" onclick="ga('send', 'event', 'Popular', 'click','Popular');" title="Most Popular Tutorials">Popular</a></li>
+<li><a href="http://demos.9lessons.info/" onclick="ga('send', 'event', 'Demos', 'click','Demos');" title="Demos">Demos</a></li>
+<li><a href="http://wall.9lessons.info/" onclick="ga('send', 'event', 'WallScript', 'click','WallScript');" title="Facebook style wall script"> 
+Social Networking Script</a></li>
+<li><a href="http://www.oauthlogin.com/" onclick="ga('send', 'event', 'OauthLogin', 'click','OauthLogin');" title="FGLogin">Social Login</a></li>
+<li><a href="http://news.9lessons.info/" onclick="ga('send', 'event', 'TechNews', 'click','Tech News');" title="Tech News">Tech News</a></li>
+<li><a href="mailto:srinivas@9lessons.info?subject=Request%20Tutorial" onclick="ga('send', 'event', 'Request Tutorials', 'click','Request Tutorials');" target="_blank" title="Request Tutorial">Request Tutorial</a></li>
+</ul>
+</div>
+</div>
+<div class="menu-subvert">
+<div class="menu-ads">
+<div class="section" id="addsections3"><div class="widget HTML" data-version="1" id="HTML1">
+<div class="widget-content">
+<!-- 9lessons link ads -->
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display:inline-block;width:728px;height:15px" data-ad-client="ca-pub-6904774409601870" data-ad-slot="5642462839"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:15px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_3_anchor" style="display:block;border:none;height:15px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;" frameborder="0" height="15" width="728"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=992226187759619576&amp;widgetType=HTML&amp;widgetId=HTML1&amp;action=editWidget&amp;sectionId=addsections3" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target="configHTML1" title="Edit">
+<img alt="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+</div>
+<div id="container">
+<!-- <div class='wallbanner'> <a class='block' href='http://wall.9lessons.info' onclick='ga(&apos;send&apos;, &apos;event&apos;, &apos;WallScriptGif&apos;, &apos;click&apos;,&apos;WallScriptGif&apos;);' target='_blank'> <img alt='Wall Script 8 Social Network Software' class='borderzero bannerBig' src='https://lh3.googleusercontent.com/-BnO7wjBV3Go/Vt9JDCspLbI/AAAAAAAANoE/iLH01K4-wJ8/s1000-Ic42/wallbanner_white.gif'/> </a> </div> -->
+<div class="wallbanner">
+<a class="block" href="http://wall.9lessons.info/">
+<img alt="Wall Script" class="borderzero bannerBig" src="PHP%20Login%20System%20with%20PDO%20Connection_files/wallbanner_white.gif">
+</a>
+</div>
+<table class="fixed_table widthfull">
+<tbody><tr>
+<td id="contentPart" valign="top">
+<div class="margin10 followmebuttons">
+<div id="follow_text">Follow Me:</div>
+<div id="facebook_follow"><iframe allowtransparency="true" class="facebookfollow" scrolling="no" src="//www.facebook.com/plugins/subscribe.php?href=https%3A%2F%2Fwww.facebook.com%2Fsrinivas.tamada&amp;layout=button_count&amp;show_faces=true&amp;colorscheme=light&amp;font&amp;width=200&amp;appId=223109594375281" frameborder="0"></iframe></div>
+<div id="twitter_follow">
+<iframe data-screen-name="9lessons" src="PHP%20Login%20System%20with%20PDO%20Connection_files/follow_button.htm" title="Twitter Follow Button" style="position: static; visibility: visible; width: 214px; height: 20px;" class="twitter-follow-button twitter-follow-button-rendered" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0"></iframe>
+</div>
+<div class="clear-both"></div>
+</div>
+<div id="main_left">
+<!-- Google ads -->
+<div class="googleadsbig">
+<!-- Google Custom Search Element -->
+<div id="cse"><div class="gsc-control-cse gsc-control-cse-en"><div dir="ltr" class="gsc-control-wrapper-cse"><div class="gsc-results-wrapper-nooverlay"><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table class="gsc-above-wrapper-area-container" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table class="gsc-resultsHeader" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div title="show one result" class="gsc-result-selector gsc-one-result">&nbsp;</div><div title="show more results" class="gsc-result-selector gsc-more-results">&nbsp;</div><div title="show all results" class="gsc-result-selector gsc-all-results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div></div></div></div>
+</div>
+<div class="spacer"></div>
+<div class="section" id="main_s"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts hfeed" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<meta content="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html" itemprop="url mainEntityOfPage">
+<abbr class="updated" itemprop="datePublished dateModified" title="2016-04-12T11:53:00-04:00">Tuesday, April 12, 2016</abbr>
+<div class="post hentry">
+<a name="8450056181584758171"></a>
+<h1 class="entry-title" itemprop="headline">PHP Login System with PDO Connection. </h1>
+<div class="post-tag">
+<a class="tagstyle" href="http://www.9lessons.info/search/label/Database" rel="tag">
+<span itemprop="keywords">Database</span>
+</a>
+<a class="tagstyle" href="http://www.9lessons.info/search/label/Form" rel="tag">
+<span itemprop="keywords">Form</span>
+</a>
+<a class="tagstyle" href="http://www.9lessons.info/search/label/Mysql" rel="tag">
+<span itemprop="keywords">Mysql</span>
+</a>
+<a class="tagstyle" href="http://www.9lessons.info/search/label/PDO" rel="tag">
+<span itemprop="keywords">PDO</span>
+</a>
+<a class="tagstyle" href="http://www.9lessons.info/search/label/php" rel="tag">
+<span itemprop="keywords">php</span>
+</a>
+</div>
+<div class="socialicons">
+<div class="commentOld">
+{
+<b><a class="comment-link" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html#comment-form" onclick="">
+14
+</a></b>
+
+comments
+
+}</div>
+<div class="socialspace"> - 
+
+
+<span class="post-author vcard" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<meta content="https://plus.google.com/104100007347037324968" itemprop="url">
+<span class="fn author">
+<a href="https://plus.google.com/104100007347037324968" rel="author" title="author profile">
+<span itemprop="name">Srinivas Tamada</span>
+</a>
+</span>
+</span>
+</div>
+<div class="socialspace">
+<span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px ! important; margin: 0px ! important; text-indent: 0px ! important; display: inline-block ! important; vertical-align: baseline ! important; font-size: 1px ! important;"><span id="li_ui_li_gen_1466563051568_0"><a id="li_ui_li_gen_1466563051568_0-link" href="javascript:void(0);"><span id="li_ui_li_gen_1466563051568_0-logo">in</span><span id="li_ui_li_gen_1466563051568_0-title"><span id="li_ui_li_gen_1466563051568_0-mark"></span><span id="li_ui_li_gen_1466563051568_0-title-text">Share</span></span></a></span></span><span style="padding: 0px ! important; margin: 0px ! important; text-indent: 0px ! important; display: inline-block ! important; vertical-align: baseline ! important; font-size: 1px ! important;"><span id="li_ui_li_gen_1466563051588_1-container" class="IN-right"><span id="li_ui_li_gen_1466563051588_1" class="IN-right"><span id="li_ui_li_gen_1466563051588_1-inner" class="IN-right"><span id="li_ui_li_gen_1466563051588_1-content" class="IN-right">23</span></span></span></span></span></span><script data-counter="right" data-url="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html" type="in/share+init"></script>
+</div>
+<div class="socialspace">
+<div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 93px; height: 20px;"><iframe title="+Bagikan" data-gapiattached="true" src="PHP%20Login%20System%20with%20PDO%20Connection_files/sharebutton.htm" name="I1_1466563050380" id="I1_1466563050380" vspace="0" tabindex="0" style="position: static; top: 0px; width: 93px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" scrolling="no" marginwidth="0" marginheight="0" hspace="0" frameborder="0" width="100%"></iframe></div>
+</div>
+<div class="socialspace">
+<iframe data-url="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html" src="PHP%20Login%20System%20with%20PDO%20Connection_files/tweet_button_002.htm" title="Twitter Tweet Button" style="position: static; visibility: visible; width: 61px; height: 20px;" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" allowtransparency="true" scrolling="no" id="twitter-widget-2" frameborder="0"></iframe>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="ads">
+<script type="text/javascript">
+    google_ad_client = "ca-pub-6904774409601870";
+    google_ad_host = "ca-host-pub-1556223355139109";
+    google_ad_host_channel = "L0007";
+    google_ad_slot = "5289887236";
+    google_ad_width = 336;
+    google_ad_height = 280;
+</script>
+<!-- 9lessons_main_s_Blog1_336x280_as -->
+<script type="text/javascript" src="PHP%20Login%20System%20with%20PDO%20Connection_files/show_ads.js">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" frameborder="0" height="280" width="336"></iframe></ins></ins>
+</div>
+<div class="post-body-n">
+<span class="tweet" id="facebookLike"><iframe allowtransparency="true" class="facebooklike" scrolling="no" src="http://www.facebook.com/plugins/like.php?href=http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html&amp;layout=box_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light" frameborder="0"></iframe></span>
+<span class="post-body entry-content" id="post-body-8450056181584758171" itemprop="articleBody">
+<div class="bigInt">Very long back, we had  published a simple PHP login
+ system using PHP, which works only with MySQL database. Today, we are 
+providing you an easy registration and login process using PDO 
+connection with better password encryption, which has an advantage of 
+working on different database systems. PDO is a PHP extension that allow
+ us to implement code which is portable across many databases and 
+platforms. This registration process is used in our <a href="http://www.thewallscript.com/" target="_blank">Wall Script 8</a>. Here is the demo of this cool &amp; simple login / registration process. </div><br>
+<div class="cen"><img alt="PHP Login System with PDO Connection. " class="sri650" itemprop="image" src="PHP%20Login%20System%20with%20PDO%20Connection_files/phplogin.png"></div><br>
+<a name="more"></a><br>
+<a href="https://app.box.com/s/dpxe5glg2vacotghzbkil2jsl9jdqmkp" id="downloadScript"><br>
+<img alt="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/down.png" style="cursor: pointer;" border="0" align="absMiddle"> Download Script</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://demos.9lessons.info/PHPLoginHash/index.php"><img alt="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/live.png" style="cursor: pointer;" border="0" align="absMiddle"> Live Demo</a><br>
+<br>
+<div class="big">Users Table</div>User table contains all the users registration details. <br>
+<div class="code">CREATE TABLE `<span style="color: #cc0000;"><b>users</b></span>` (<br>
+`<span style="color: #3d85c6;">uid</span>` int NOT NULL <span style="color: blue;">PRIMARY KEY</span> <span style="color: #a64d79;">AUTO_INCREMENT</span> ,<br>
+`<span style="color: #3d85c6;">username</span>` varchar(<span style="color: #cc0000;">25</span>) NOT NULL UNIQUE,<br>
+`<span style="color: #3d85c6;">password</span>` varchar(<span style="color: #cc0000;">200</span>) NOT NULL ,<br>
+`<span style="color: #3d85c6;">email</span>` varchar(<span style="color: #cc0000;">100</span>) NOT NULL,<br>
+`<span style="color: #3d85c6;">name</span>` varchar(<span style="color: #cc0000;">100</span>) NOT NULL,<br>
+`<span style="color: #3d85c6;">profile_pic</span>` varchar(<span style="color: #cc0000;">200</span>) NOT NULL,<br>
+);</div><br>
+Enable PDO extension for PHP, find this in <i>php.ini</i> configuration file. <br>
+<br>
+<b>config.php</b><br>
+Database connection configuration file, here you have to modify 
+username, password and database details. If you are using other database
+ modify <i>PDO()</i> driver connection value. <br>
+<div class="code"><span style="color: #cc0000;"><b>&lt;?php</b></span><br>
+<span style="color: blue;">session_start</span>();<br>
+<span style="color: #e69138;">/* DATABASE CONFIGURATION */</span><br>
+<span style="color: #38761d;">define</span>('<span style="color: #3d85c6;">DB_SERVER</span>', '<span style="color: #e06666;">localhost</span>');<br>
+<span style="color: #38761d;">define</span>('<span style="color: #3d85c6;">DB_USERNAME</span>', '<span style="color: #e06666;">username</span>');<br>
+<span style="color: #38761d;">define</span>('<span style="color: #3d85c6;">DB_PASSWORD</span>', '<span style="color: #e06666;">password</span>');<br>
+<span style="color: #38761d;">define</span>('<span style="color: #3d85c6;">DB_DATABASE</span>', '<span style="color: #e06666;">databasename</span>');<br>
+<span style="color: #38761d;">define</span>("<span style="color: #3d85c6;">BASE_URL</span>", "<span style="color: #e06666;">http://localhost/PHPLoginHash/</span>"); <span style="color: #e69138;">// Eg. http://yourwebsite.com</span><br>
+<br>
+<br>
+<b>function</b> <span style="color: blue;">getDB</span>() <br>
+{<br>
+$dbhost=<span style="color: #3d85c6;">DB_SERVER</span>;<br>
+$dbuser=<span style="color: #3d85c6;">DB_USERNAME</span>;<br>
+$dbpass=<span style="color: #3d85c6;">DB_PASSWORD</span>;<br>
+$dbname=<span style="color: #3d85c6;">DB_DATABASE</span>;<br>
+<span style="color: #cc0000;">try</span> {<br>
+$dbConnection = new <span style="color: #cc0000;">PDO</span>("<span style="color: #3d85c6;">mysql:host=</span><span style="color: #444444;">$dbhost</span><span style="color: #3d85c6;">;dbname=</span><span style="color: #444444;">$dbname</span><span style="color: #3d85c6;">", </span><span style="color: #444444;">$dbuser</span><span style="color: #3d85c6;">, </span><span style="color: #444444;">$dbpass</span>); <br>
+$dbConnection-&gt;<span style="color: blue;">exec</span>("set names utf8");<br>
+$dbConnection-&gt;<span style="color: blue;">setAttribute</span>(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);<br>
+<span style="color: #3d85c6;">return</span> $dbConnection;<br>
+}<br>
+<span style="color: #cc0000;">catch</span> (PDOException $e) {<br>
+<span style="color: blue;">echo</span> '<span style="color: #e06666;">Connection failed:</span> ' . $e-&gt;<span style="color: blue;">getMessage</span>();<br>
+}<br>
+<br>
+}<br>
+<b style="color: #cc0000;">?&gt;</b></div><br>
+<b>PostgreSQL PDO connection</b><br>
+Enable PDO_PGSQL extension and use <i>pgsql:host=$dbhost;port=5432;dbname=$dbname;$dbuser, $dbpass</i><br>
+<br>
+<br>
+<b id="htmlLoginForm">HTML Login Form</b><br>
+Contains simple HTML code. <br>
+<div class="code"><span style="color: #3d85c6;">&lt;div id="</span><span style="color: #cc0000;">login</span><span style="color: #3d85c6;">"&gt;</span><br>
+<span style="color: #3d85c6;">&lt;h3&gt;</span><span style="color: #444444;">Login</span><span style="color: #3d85c6;">&lt;/h3&gt;</span><br>
+<span style="color: #e69138;">&lt;form method="</span><span style="color: blue;">post</span><span style="color: #e69138;">" action="" name="login"&gt;</span><br>
+<span style="color: #444444;">&lt;label&gt;Username or Email&lt;/label&gt;</span><br>
+<span style="color: #38761d;">&lt;input type="</span><span style="color: blue;">text</span><span style="color: #38761d;">" name="</span><span style="color: blue;">usernameEmail</span><span style="color: #38761d;">" autocomplete="off" /&gt;</span><br>
+<span style="color: #444444;">&lt;label&gt;Password&lt;/label&gt;</span><br>
+<span style="color: #38761d;">&lt;input type="</span><span style="color: blue;">password</span><span style="color: #38761d;">" name="</span><span style="color: blue;">password</span><span style="color: #38761d;">" autocomplete="off"/&gt;</span><br>
+<span style="color: #3d85c6;">&lt;div class="errorMsg"&gt;</span><span style="color: #cc0000;">&lt;?php</span><span style="color: #3d85c6;"> </span><span style="color: blue;">echo</span><span style="color: #3d85c6;"> </span><span style="color: #444444;">$errorMsgLogin;</span><span style="color: #3d85c6;"> </span><span style="color: #cc0000;">?&gt;</span><span style="color: #3d85c6;">&lt;/div&gt;</span><br>
+<span style="color: #38761d;">&lt;input type="</span><span style="color: blue;">submit</span><span style="color: #38761d;">" class="button" name="</span><span style="color: #cc0000;"><b>loginSubmit</b></span><span style="color: #38761d;">" value="Login"&gt;</span><br>
+<span style="color: #e69138;">&lt;/form&gt;</span><br>
+<span style="color: #3d85c6;">&lt;/div&gt;</span></div><br>
+<div class="cen"><img alt="Login HTML Page" class="sri" src="PHP%20Login%20System%20with%20PDO%20Connection_files/reg.png"></div><br>
+<b>HTML Signup Code</b><br>
+User registration page. <br>
+<div class="code"><span style="color: #3d85c6;">&lt;div id="</span><span style="color: #cc0000;">signup</span><span style="color: #3d85c6;">"&gt;</span><br>
+<span style="color: #3d85c6;">&lt;h3&gt;</span><span style="color: #444444;">Registration</span><span style="color: #3d85c6;">&lt;/h3&gt;</span><br>
+<span style="color: #e69138;">&lt;form method="</span><span style="color: blue;">post</span><span style="color: #e69138;">" action="" name="signup"&gt;</span><br>
+<span style="color: #444444;">&lt;label&gt;Name&lt;/label&gt;</span><br>
+<span style="color: #38761d;">&lt;input type="</span><span style="color: blue;">text</span><span style="color: #38761d;">" name="nameReg" autocomplete="off" /&gt;</span><br>
+<span style="color: #444444;">&lt;label&gt;Email&lt;/label&gt;</span><br>
+<span style="color: #38761d;">&lt;input type="</span><span style="color: blue;">text</span><span style="color: #38761d;">" name="emailReg" autocomplete="off" /&gt;</span><br>
+<span style="color: #444444;">&lt;label&gt;Username&lt;/label&gt;</span><br>
+<span style="color: #38761d;">&lt;input type="</span><span style="color: blue;">text</span><span style="color: #38761d;">" name="usernameReg" autocomplete="off" /&gt;</span><br>
+<span style="color: #444444;">&lt;label&gt;Password&lt;/label&gt;</span><br>
+<span style="color: #38761d;">&lt;input type="</span><span style="color: blue;">password</span><span style="color: #38761d;">" name="passwordReg" autocomplete="off"/&gt;</span><br>
+<span style="color: #3d85c6;">&lt;div class="errorMsg"&gt;</span><span style="color: #cc0000;">&lt;?php</span><span style="color: #3d85c6;">&nbsp;</span><span style="color: blue;">echo</span><span style="color: #3d85c6;">&nbsp;</span><span style="color: #444444;">$errorMsgReg;</span><span style="color: #3d85c6;">&nbsp;</span><span style="color: #cc0000;">?&gt;</span><span style="color: #3d85c6;">&lt;/div&gt;</span><br>
+<span style="color: #38761d;">&lt;input type="</span><span style="color: blue;">submit</span><span style="color: #38761d;">" class="button" name="</span><span style="color: #cc0000;"><b>signupSubmit</b></span><span style="color: #38761d;">" value="Signup"&gt;</span><br>
+<span style="color: #3d85c6;">&lt;/form&gt;</span><br>
+<span style="color: #3d85c6;">&lt;/div&gt;</span></div><br>
+<div class="cen"><img alt="Signup HTML Page" class="sri" src="PHP%20Login%20System%20with%20PDO%20Connection_files/login.png"></div><br>
+<br>
+<b>CSS Code</b><br>
+<div class="code">#<span style="color: #cc0000;">login</span>,#<span style="color: #cc0000;">signup</span>{<br>
+width: 300px; border: 1px solid #d6d7da; <br>
+padding: 0px 15px 15px 15px; <br>
+border-radius: 5px;font-family: arial; <br>
+line-height: 16px;color: #333333; font-size: 14px; <br>
+background: #ffffff;rgba(200,200,200,0.7) 0 4px 10px -1px<br>
+}<br>
+#<span style="color: #cc0000;">login</span>{float:left;}<br>
+#<span style="color: #cc0000;">signup</span>{float:right;}<br>
+h3{color:#365D98}<br>
+<span style="color: #e69138;">form</span> <span style="color: #444444;">label</span>{font-weight: bold;}<br>
+<span style="color: #e69138;">form</span> label, <span style="color: #e69138;">form</span> <span style="color: #38761d;">input</span>{display: block;margin-bottom: 5px;width: 90%}<br>
+<span style="color: #e69138;">form</span>&nbsp;<span style="color: #38761d;">input</span>{ <br>
+border: solid 1px #666666;padding: 10px;<br>
+border: solid 1px #BDC7D8; margin-bottom: 20px<br>
+}<br>
+.<span style="color: #38761d;">button</span> {<br>
+background-color: #5fcf80 ;<br>
+border-color: #3ac162;<br>
+font-weight: bold;<br>
+padding: 12px 15px;<br>
+max-width: 100px;<br>
+color: #ffffff;<br>
+}<br>
+.<span style="color: #45818e;">errorMsg</span>{color: #cc0000;margin-bottom: 10px}</div><br>
+<b>userClass.php</b><br>
+This class contains there methods userLogin, userRegistion and userDetails.<br>
+<div class="code"><b style="color: #cc0000;">&lt;?php</b><br>
+class <span style="color: #cc0000;">userClass</span><br>
+{<br>
+<span style="color: #e69138;">/* User Login */</span><br>
+<span style="color: #3d85c6;">public</span> <b>function</b> <span style="color: blue;">userLogin</span>($usernameEmail,$password)<br>
+{<br>
+try{<br>
+$db = <span style="color: blue;">getDB</span>();<br>
+$hash_password= <span style="color: #cc0000;">hash</span>('<span style="color: blue;">sha256</span>', $password); <span style="color: #e69138;">//Password encryption&nbsp;</span><br>
+$stmt = $db-&gt;<span style="color: blue;">prepare</span>("<span style="color: #e06666;">SELECT uid FROM users WHERE  (username=</span><span style="color: #444444;">:usernameEmail</span><span style="color: #e06666;"> or email=</span><span style="color: #444444;">:usernameEmail</span><span style="color: #e06666;">) AND  password=</span><span style="color: #444444;">:hash_password</span>");  <br>
+$stmt-&gt;<span style="color: #cc0000;">bindParam</span>("usernameEmail", $usernameEmail,<span style="color: #3d85c6;">PDO::PARAM_STR</span>) ;<br>
+$stmt-&gt;<span style="color: #cc0000;">bindParam</span>("hash_password", $hash_password,<span style="color: #3d85c6;">PDO::PARAM_STR</span>) ;<br>
+$stmt-&gt;<span style="color: blue;">execute</span>();<br>
+$count=$stmt-&gt;<span style="color: #cc0000;">rowCount</span>();<br>
+$data=$stmt-&gt;<span style="color: blue;">fetch</span>(<span style="color: #8e7cc3;">PDO::FETCH_OBJ</span>);<br>
+$db = null;<br>
+if($count)<br>
+{<br>
+$<span style="color: #3d85c6;">_SESSION</span>['uid']=$data<span style="color: #cc0000;">-&gt;</span>uid; <span style="color: #e69138;">// Storing user session value</span><br>
+<span style="color: #0b5394;">return</span> true;<br>
+}<br>
+else<br>
+{<br>
+<span style="color: #0b5394;">return</span> <span style="color: #cc0000;">false</span>;<br>
+}    <br>
+}<br>
+<span style="color: #cc0000;">catch</span>(<span style="color: #3d85c6;">PDOException</span>&nbsp;$e) {<br>
+<span style="color: blue;">echo</span>&nbsp;'{"error":{"text":'. $e-&gt;<span style="color: blue;">getMessage</span>() .'}}';<br>
+}<br>
+<br>
+}<br>
+<br>
+<span style="color: #e69138;">/* User Registration */</span><br>
+<span style="color: #3d85c6;">public</span> <b>function</b> <span style="color: blue;">userRegistration</span>($username,$password,$email,$name)<br>
+{<br>
+try{<br>
+$db = <span style="color: blue;">getDB</span>();<br>
+$st = $db-&gt;<span style="color: blue;">prepare</span>("<span style="color: #e06666;">SELECT uid FROM users WHERE username=:username OR email=:email</span>");  <br>
+$st-&gt;<span style="color: #cc0000;">bindParam</span>("username", $username,<span style="color: #3d85c6;">PDO::PARAM_STR</span>);<br>
+$st-&gt;<span style="color: #cc0000;">bindParam</span>("email", $email,<span style="color: #3d85c6;">PDO::PARAM_STR</span>);<br>
+$st-&gt;<span style="color: blue;">execute</span>();<br>
+$count=$st-&gt;rowCount();<br>
+if($count<span style="color: #cc0000;">&lt;</span>1)<br>
+{<br>
+$stmt = $db-&gt;<span style="color: blue;">prepare</span>("<span style="color: #e06666;">INSERT INTO users(username,password,email,name) VALUES (</span><span style="color: #444444;">:username</span><span style="color: #e06666;">,</span><span style="color: #444444;">:hash_password</span><span style="color: #e06666;">,</span><span style="color: #444444;">:email</span><span style="color: #e06666;">,</span><span style="color: #444444;">:name</span><span style="color: #e06666;">)</span>");<br>
+$stmt-&gt;<span style="color: #cc0000;">bindParam</span>("username", $username,<span style="color: #3d85c6;">PDO::PARAM_STR</span>) ;<br>
+$hash_password= <span style="color: blue;">hash</span>('<span style="color: #cc0000;">sha256</span>', $password); <span style="color: #e69138;">//Password encryption</span><br>
+$stmt-&gt;<span style="color: #cc0000;">bindParam</span>("hash_password", $hash_password,<span style="color: #3d85c6;">PDO::PARAM_STR</span>) ;<br>
+$stmt-&gt;<span style="color: #cc0000;">bindParam</span>("email", $email,<span style="color: #3d85c6;">PDO::PARAM_STR</span>) ;<br>
+$stmt-&gt;<span style="color: #cc0000;">bindParam</span>("name", $name,<span style="color: #3d85c6;">PDO::PARAM_STR</span>) ;<br>
+$stmt-&gt;<span style="color: blue;">execute</span>();<br>
+$uid=$db-&gt;<span style="color: blue;">lastInsertId</span>(); <span style="color: #e69138;">// Last inserted row id</span><br>
+$db = null;<br>
+$<span style="color: blue;">_SESSION</span>['uid']=$uid;<br>
+<span style="color: #3d85c6;"> return</span> true;<br>
+}<br>
+else<br>
+{<br>
+$db = null;<br>
+<span style="color: #0b5394;"> return</span> false;<br>
+}<br>
+<br>
+} <br>
+<span style="color: #cc0000;"> catch</span>(<span style="color: #3d85c6;">PDOException</span> $e) {<br>
+<span style="color: blue;"> echo</span> '{"error":{"text":'. $e-&gt;<span style="color: blue;">getMessage</span>() .'}}'; <br>
+}<br>
+}<br>
+<br>
+<span style="color: #e69138;"> /* User Details */</span><br>
+<span style="color: #3d85c6;"> public</span> <b>function</b> <span style="color: blue;">userDetails</span>($uid)<br>
+{<br>
+<span style="color: #cc0000;"> try</span>{<br>
+$db = <span style="color: blue;">getDB</span>();<br>
+$stmt = $db-&gt;<span style="color: blue;">prepare</span>("<span style="color: #e06666;">SELECT email,username,name FROM users WHERE uid=</span>:uid");  <br>
+$stmt-&gt;<span style="color: #cc0000;">bindParam</span>("uid", $uid,<span style="color: #3d85c6;">PDO::PARAM_INT</span>);<br>
+$stmt-&gt;<span style="color: blue;">execute</span>();<br>
+$data = $stmt-&gt;<span style="color: blue;">fetch</span>(<span style="color: #3d85c6;">PDO::FETCH_OBJ</span>); <span style="color: #e69138;">//User data</span><br>
+<span style="color: blue;"> return</span> $data;<br>
+}<br>
+<span style="color: #cc0000;">catch</span>(<span style="color: #3d85c6;">PDOException</span>&nbsp;$e) {<br>
+<span style="color: blue;">echo</span>&nbsp;'{"error":{"text":'. $e-&gt;<span style="color: blue;">getMessage</span>() .'}}';<br>
+}<br>
+}<br>
+}<br>
+<b style="color: #cc0000;">?&gt;</b> <!--1--></div><br>
+<b>index.php</b><br>
+Contains PHP and HTML code, works base on user form submit.<br>
+<div class="code"><b style="color: #cc0000;">&lt;?php</b><br>
+<span style="color: #38761d;">include</span>("<span style="color: #e06666;">config.php</span>");<br>
+<span style="color: #38761d;">include</span>('<span style="color: #e06666;">class/userClass.php</span>');<br>
+$userClass = <span style="color: #3d85c6;">new</span> <span style="color: #cc0000;">userClass</span>();<br>
+<br>
+$errorMsgReg='';<br>
+$errorMsgLogin='';<br>
+<span style="color: #e69138;">/* Login Form */</span><br>
+if (<span style="color: #cc0000;">!</span><span style="color: blue;">empty</span>($<span style="color: #3d85c6;">_POST</span>['<span style="color: #e06666;">loginSubmit</span>'])) <br>
+{<br>
+$usernameEmail=$<span style="color: #3d85c6;">_POST</span>['<span style="color: #e06666;">usernameEmail</span>'];<br>
+$password=$<span style="color: #3d85c6;">_POST</span>['<span style="color: #e06666;">password</span>'];<br>
+if(<span style="color: blue;">strlen</span>(<span style="color: blue;">trim</span>($usernameEmail))&gt;1 &amp;&amp; <span style="color: blue;">strlen</span>(<span style="color: blue;">trim</span>($password))&gt;1 )<br>
+{<br>
+$uid=$userClass-&gt;<span style="color: blue;">userLogin</span>($usernameEmail,$password);<br>
+if($uid)<br>
+{<br>
+$url=<span style="color: #3d85c6;">BASE_URL</span>.'<span style="color: #cc0000;">home.php</span>';<br>
+<span style="color: blue;">header</span>("<span style="color: #e06666;">Location: $url</span>"); <span style="color: #e69138;">// Page redirecting to home.php&nbsp;</span><br>
+}<br>
+else<br>
+{<br>
+$errorMsgLogin="<span style="color: #e06666;">Please check login details.</span>";<br>
+}<br>
+}<br>
+}<br>
+<br>
+<span style="color: #e69138;">/* Signup Form */</span><br>
+if (<span style="color: #cc0000;">!</span><span style="color: blue;">empty</span>($<span style="color: #3d85c6;">_POST</span>['<span style="color: #e06666;">signupSubmit</span>'])) <br>
+{<br>
+$username=$<span style="color: #3d85c6;">_POST</span>['<span style="color: #e06666;">usernameReg</span>'];<br>
+$email=$<span style="color: #3d85c6;">_POST</span>['<span style="color: #e06666;">emailReg</span>'];<br>
+$password=$<span style="color: #3d85c6;">_POST</span>['<span style="color: #e06666;">passwordReg</span>'];<br>
+$name=$<span style="color: #3d85c6;">_POST</span>['<span style="color: #e06666;">nameReg</span>'];<br>
+<span style="color: #e69138;">/* Regular expression check */</span><br>
+$username_check = <span style="color: blue;">preg_match</span>('<span style="color: #6aa84f;">~^[A-Za-z0-9_]{3,20}$~i</span>', $username);<br>
+$email_check = <span style="color: blue;">preg_match</span>('<span style="color: #6aa84f;">~^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.([a-zA-Z]{2,4})$~i</span>', $email);<br>
+$password_check = <span style="color: blue;">preg_match</span>('<span style="color: #6aa84f;">~^[A-Za-z0-9!@#$%^&amp;*()_]{6,20}$~i</span>', $password);<br>
+<br>
+if($username_check <span style="color: #cc0000;">&amp;&amp;</span> $email_check&nbsp;<span style="color: #cc0000;">&amp;&amp;</span>&nbsp;$password_check&nbsp;<span style="color: #cc0000;">&amp;&amp;&nbsp;</span>strlen(trim($name))&gt;0) <br>
+{<br>
+$uid=$userClass-&gt;<span style="color: blue;">userRegistration</span>($username,$password,$email,$name);<br>
+if($uid)<br>
+{<br>
+$url=<span style="color: #3d85c6;">BASE_URL</span>.'<span style="color: #cc0000;">home.php</span>';<br>
+<span style="color: blue;">header</span>("<span style="color: #e06666;">Location: $url</span>");&nbsp;<span style="color: #e69138;">// Page redirecting to home.php&nbsp;</span><br>
+}<br>
+else<br>
+{<br>
+$errorMsgReg="<span style="color: #e06666;">Username or Email already exists.</span>";<br>
+}<br>
+}<br>
+}<br>
+<b style="color: #cc0000;">?&gt;</b><br>
+<span style="color: #cc0000;"><span style="color: #e69138;">//HTML Code</span></span><br>
+<span style="color: #cc0000;"><span style="color: #444444;">....Login Form HTML Code....</span></span><br>
+<span style="color: #cc0000;"><span style="color: #444444;"><br>
+</span></span> <span style="color: #cc0000;"><span style="color: #444444;">....Signup Form HTML Code...</span></span></div><br>
+<span style="color: #cc0000;">Note:</span> You have to include JavaScript validations for better user experience. <br>
+<br>
+<b>session.php</b><br>
+This will validate and store user session value.<br>
+<div class="code"><b style="color: #cc0000;">&lt;?php</b><br>
+if(!<span style="color: blue;">empty</span>($<span style="color: #3d85c6;">_SESSION</span>['uid']))<br>
+{<br>
+$session_uid=$<span style="color: #3d85c6;">_SESSION</span>['uid'];<br>
+<span style="color: #38761d;">include</span>('<span style="color: #e06666;">class/userClass.php</span>');<br>
+$userClass = <span style="color: #3d85c6;">new</span> <span style="color: #cc0000;">userClass</span>();<br>
+}<br>
+if(<span style="color: blue;">empty</span>($session_uid))<br>
+{<br>
+$url=<span style="color: #3d85c6;">BASE_URL</span>.'<span style="color: #cc0000;">index.php</span>';<br>
+<span style="color: blue;">header</span>("<span style="color: #e06666;">Location: $url</span>");<br>
+}<br>
+<b style="color: #cc0000;">?&gt;</b></div><br>
+<b>home.php</b><br>
+User welcome page, display user details base on user session value.<br>
+<div class="code"><b style="color: #cc0000;">&lt;?php</b><br>
+<span style="color: #38761d;">include</span>('<span style="color: #e06666;">config.php</span>');<br>
+<span style="color: #38761d;">include</span>('<span style="color: #e06666;">session.php</span>');<br>
+$userDetails=$userClass-&gt;<span style="color: blue;">userDetails</span>($session_uid);<br>
+<b style="color: #cc0000;">?&gt;</b><br>
+<span style="color: #3d85c6;">&lt;h1&gt;</span>Welcome&nbsp;<b style="color: #cc0000;">&lt;?php</b>&nbsp;echo $userDetails-&gt;name;&nbsp;<b style="color: #cc0000;">?&gt;</b><span style="color: #3d85c6;">&lt;/h1&gt;</span><br>
+<br>
+<span style="color: #3d85c6;">&lt;h4&gt;</span><span style="color: #38761d;">&lt;a href="</span><b style="color: #cc0000;">&lt;?php</b>&nbsp;echo BASE_URL;&nbsp;<b style="color: #cc0000;">?&gt;</b><span style="color: #38761d;">logout.php"&gt;Logout&lt;/a&gt;</span><span style="color: #3d85c6;">&lt;/h4&gt;</span></div><br>
+<b>logout.php</b><br>
+This code will clear user session values. <br>
+<div class="code"><b style="color: #cc0000;">&lt;?php</b><br>
+<span style="color: #38761d;">include</span>('<span style="color: #e06666;">config.php</span>');<br>
+$session_uid='';<br>
+$<span style="color: #3d85c6;">_SESSION</span>['uid']=''; <br>
+if(<span style="color: blue;">empty</span>($session_uid) <span style="color: #cc0000;">&amp;&amp;</span> <span style="color: blue;">empty</span>($<span style="color: #3d85c6;">_SESSION</span>['uid']))<br>
+{<br>
+$url=<span style="color: #3d85c6;">BASE_URL</span>.'<span style="color: #cc0000;">index.php</span>';<br>
+<span style="color: blue;">header</span>("<span style="color: #e06666;">Location: $url</span>");<br>
+<span style="color: #e69138;">//echo "&lt;script&gt;window.location='$url'&lt;/script&gt;";</span><br>
+}<br>
+<span style="color: #cc0000;"><b>?&gt;</b></span></div>
+</span>
+<div id="survey">
+<div id="surveyBlock">
+<div><b>Was this article helpful?</b></div>
+<div class="surveyGrid surveryA"><a class="surveryButton" href="#surveyGridOne" onclick="rankPage(1)">Yes, thanks!</a></div>
+<div class="surveyGrid surveryB"><a class="surveryButton" href="#surveyGridTwo" onclick="rankPage(-1)">Not really</a></div>
+</div>
+<div id="thanks">
+<b>Thanks!</b>
+
+  Your feedback helps us to improve <span itemprop="publisher">9lessons.info</span>
+</div>
+</div>
+<br>
+<br>
+<div class="clearboth"></div>
+</div>
+<div class="widthfull">
+<div style="float:left;width:330px">
+<div class="margin10">
+<script type="text/javascript">
+    google_ad_client = "ca-pub-6904774409601870";
+    google_ad_host = "ca-host-pub-1556223355139109";
+    google_ad_host_channel = "L0007";
+    google_ad_slot = "5289887236";
+    google_ad_width = 336;
+    google_ad_height = 280;
+</script>
+<!-- 9lessons_main_s_Blog1_336x280_as -->
+<script type="text/javascript" src="PHP%20Login%20System%20with%20PDO%20Connection_files/show_ads.js">
+</script><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" frameborder="0" height="280" width="336"></iframe></ins></ins>
+</div>
+</div>
+<div style="float:right;width:330px">
+<div class="margin10">
+<script type="text/javascript">
+    google_ad_client = "ca-pub-6904774409601870";
+    google_ad_host = "ca-host-pub-1556223355139109";
+    google_ad_host_channel = "L0007";
+    google_ad_slot = "5289887236";
+    google_ad_width = 336;
+    google_ad_height = 280;
+</script>
+<!-- 9lessons_main_s_Blog1_336x280_as -->
+<script type="text/javascript" src="PHP%20Login%20System%20with%20PDO%20Connection_files/show_ads.js">
+</script><ins id="aswift_2_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_2_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;" frameborder="0" height="280" width="336"></iframe></ins></ins>
+</div>
+</div>
+</div>
+<div style="clear:both">
+<script type="text/javascript">
+setTimeout(function(){ 
+document.getElementById('facebookLike').innerHTML="<iframe allowTransparency='true' class='facebooklike' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/like.php?href=http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html&layout=box_count&show_faces=false&width=450&action=like&colorscheme=light'></iframe>";
+}, 8000);
+</script>
+<div id="related-posts">
+<div style="display:none">
+<abbr class="published updated" title="2016-04-12T11:53:00-04:00">Tuesday, April 12, 2016</abbr>
+</div>
+<h3>Related Posts</h3><span class="cf">Database,
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/Database" type="text/javascript"></script>Form,
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/Form" type="text/javascript"></script>Mysql,
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/Mysql" type="text/javascript"></script>PDO,
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/PDO" type="text/javascript"></script>php
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/php" type="text/javascript"></script>
+</span>
+<script type="text/javascript"> removeRelatedDuplicates(); printRelatedLabels();
+</script><ul><li><a href="http://www.9lessons.info/2016/05/create-token-based-restful-services.html">Create Token Based RESTful services using Slim PHP Framework</a></li><li><a href="http://www.9lessons.info/2016/03/how-to-create-dynamic-subdomains-using-php-and-htaccess.html">Create Dynamic Subdomains using PHP and Htaccess</a></li><li><a href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html">PHP Login System with PDO Connection. </a></li><li><a href="http://www.9lessons.info/2015/02/facebook-style-background-image-upload.html">Facebook Style Background Image Upload and Position Adjustment.</a></li><li><a href="http://www.9lessons.info/2014/10/groups-or-pages-database-design.html">Groups or Pages Database Design. </a></li><li><a href="http://www.9lessons.info/2014/03/facebook-style-friend-request-system.html">Facebook Style Friend Request System Database Design. </a></li><li><a href="http://www.9lessons.info/2013/09/angularjs-tutorial-two-way-data-binding.html">AngularJS Tutorial Two Way Data Binding </a></li><li><a href="http://www.9lessons.info/2016/06/google-two-factor-authentication-login.html">Google Two Factor Authentication Login with PHP</a></li><li><a href="http://www.9lessons.info/2015/10/payment-system-with-braintree-paypal.html">Payment System with BrainTree PayPal using PHP</a></li><li><a href="http://www.9lessons.info/2014/12/google-new-recaptcha-using-php-are-you.html">Google New reCaptcha using PHP - Are you a Robot?</a></li></ul>
+</div>
+<div class="widget2" id="top-comment1">
+<div class="centerare1">
+<div class="comments" id="comments">
+<a name="comments"></a>
+<div class="komhead">
+<h4>
+14
+comments:
+      
+</h4>
+<div class="stripe-line"></div>
+</div>
+<div class="comments-content">
+<script async="async" src="PHP%20Login%20System%20with%20PDO%20Connection_files/comments.js" type="text/javascript"></script>
+<script type="text/javascript">
+    (function() {
+      var items = [{'id': '3731536541433000055', 'body': 'thanks for the article!', 'timestamp': '1460564708796', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1460564708796#c3731536541433000055', 'author': {'name': 'Felipe Marschall', 'avatarUrl': '//lh3.googleusercontent.com/-2-LfiCVvJPQ/AAAAAAAAAAI/AAAAAAAAPTs/GbKvOmm_rFU/s35-c/photo.jpg', 'profileUrl': 'https://www.blogger.com/profile/17083977251100747407'}, 'displayTime': 'April 13, 2016 at 12:25 PM', 'deleteclass': 'item-control blog-admin pid-895093964'}, {'id': '6470975310897455889', 'body': 'Thanks', 'timestamp': '1460568552918', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1460568552918#c6470975310897455889', 'author': {'name': 'Unknown', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/07498731293573973414'}, 'displayTime': 'April 13, 2016 at 1:29 PM', 'deleteclass': 'item-control blog-admin pid-365364143'}, {'id': '6307783645973766610', 'body': 'thanks. i just do not like to use pdo directly, you recomend any ORM Library for small to medium php projects?', 'timestamp': '1460571007882', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1460571007882#c6307783645973766610', 'author': {'name': 'Marcelo Santtana', 'avatarUrl': '//lh3.googleusercontent.com/-QL_z8NI_OIo/AAAAAAAAAAI/AAAAAAAAAMU/Uq3jSx-17aM/s35-c/photo.jpg', 'profileUrl': 'https://www.blogger.com/profile/14351691636163763982'}, 'displayTime': 'April 13, 2016 at 2:10 PM', 'deleteclass': 'item-control blog-admin pid-559922233'}, {'id': '5003895186293956049', 'body': 'Thanks for the article bro..', 'timestamp': '1460627346303', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1460627346303#c5003895186293956049', 'author': {'name': 'stats guru', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/08858709610762950692'}, 'displayTime': 'April 14, 2016 at 5:49 AM', 'deleteclass': 'item-control blog-admin pid-1921365991'}, {'id': '7921701770671995507', 'body': 'Thanks For tutorial on PDO', 'timestamp': '1460631094963', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1460631094963#c7921701770671995507', 'author': {'name': 'Unknown', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/00683371212746843173'}, 'displayTime': 'April 14, 2016 at 6:51 AM', 'deleteclass': 'item-control blog-admin pid-1320326996'}, {'id': '256539628801501731', 'body': 'I like to see a real login system this is for simple, no risk login, this is a good information, But for real life good process and/or secure login, with use salt and session regeneration. ', 'timestamp': '1460639507462', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1460639507462#c256539628801501731', 'author': {'name': 'Xavier Martinez', 'avatarUrl': '//lh3.googleusercontent.com/-P7ZH9VGIGMM/AAAAAAAAAAI/AAAAAAAABGg/hL8VHaepvEY/s35-c/photo.jpg', 'profileUrl': 'https://www.blogger.com/profile/08646819879429113294'}, 'displayTime': 'April 14, 2016 at 9:11 AM', 'deleteclass': 'item-control blog-admin pid-373789567'}, {'id': '5555158471802334624', 'body': 'Ottimo!!! grazie!!!\x3cbr /\x3eBRAVISSIMO E COMPLIMENTI', 'timestamp': '1461224429380', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1461224429380#c5555158471802334624', 'author': {'name': 'Vittorio G', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/02215781297783458652'}, 'displayTime': 'April 21, 2016 at 3:40 AM', 'deleteclass': 'item-control blog-admin pid-208394906'}, {'id': '3598597148457072724', 'parentId': '256539628801501731', 'body': 'Same here', 'timestamp': '1461622000371', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1461622000371#c3598597148457072724', 'author': {'name': 'Unknown', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/15950642214131178532'}, 'displayTime': 'April 25, 2016 at 6:06 PM', 'deleteclass': 'item-control blog-admin pid-1427682981'}, {'id': '6937147458208998318', 'body': 'To avoid session hijacking \x3cbr /\x3e\x3cbr /\x3e$_SESSION[\x26#39;ip\x26#39;] \x3d $_SERVER[\x26#39;REMOTE_ADDR\x26#39;];\x3cbr /\x3e\x3cbr /\x3eif($_SESSION[\x26#39;ip\x26#39;] !\x3d $_SERVER[\x26#39;REMOTE_ADDR\x26#39;])\x3cbr /\x3e{\x3cbr /\x3e//die(\x26#39;Session MAY have been hijacked\x26#39;);\x3cbr /\x3e$url\x3dBASE_URL.\x26#39;logout.php\x26#39;;\x3cbr /\x3eheader(\x26quot;Location: $url\x26quot;);\x3cbr /\x3e}', 'timestamp': '1461682413975', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1461682413975#c6937147458208998318', 'author': {'name': 'Srinivas Tamada', 'avatarUrl': '//lh4.googleusercontent.com/-aKTHp74010k/AAAAAAAAAAI/AAAAAAAANpc/M9QWGzJehJk/s35-c/photo.jpg', 'profileUrl': 'https://www.blogger.com/profile/17418084732618477326'}, 'displayTime': 'April 26, 2016 at 10:53 AM', 'deleteclass': 'item-control blog-admin pid-57914092'}, {'id': '1813800910847065100', 'body': 'Unable to login in localhost \x26amp; in demo too .', 'timestamp': '1461909517249', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1461909517249#c1813800910847065100', 'author': {'name': 'sam cha', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/06629732188617375118'}, 'displayTime': 'April 29, 2016 at 1:58 AM', 'deleteclass': 'item-control blog-admin pid-1602193211'}, {'id': '4676029126323253000', 'body': 'Hi... Awesome article for one just learning to use PDO, thanks so much! Curious, when the files are uploaded and one registers/logs in, should the object information (users information) be displayed at the top of the \x26quot;home.php\x26quot; page? I was following along with the article, but perhaps I missed something, not sure. Thanks again!', 'timestamp': '1463193560239', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1463193560239#c4676029126323253000', 'author': {'name': 'Arista', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/16458812647973694803'}, 'displayTime': 'May 13, 2016 at 10:39 PM', 'deleteclass': 'item-control blog-admin pid-622229841'}, {'id': '1289123467734112665', 'body': 'The reason that the login doesn\x26#39;t work is because the password field in users table is limited to 50 characters while the actual hash is longer than that. To solve this, increase the limit to at least 64 (I increased it to 250) as the SHA256 generates a hash of length 64', 'timestamp': '1463909066967', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1463909066967#c1289123467734112665', 'author': {'name': 'Pat', 'avatarUrl': '//2.bp.blogspot.com/_NnvFkqzdDb0/Saq0bYQgktI/AAAAAAAAAOQ/8X05QVLQqVg/S45-s35/A-New-Day.jpg', 'profileUrl': 'https://www.blogger.com/profile/11105696934231898824'}, 'displayTime': 'May 22, 2016 at 5:24 AM', 'deleteclass': 'item-control blog-admin pid-1939532959'}, {'id': '716750614414866969', 'parentId': '1289123467734112665', 'body': 'Thanks updated password length to 200 ', 'timestamp': '1464105101459', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1464105101459#c716750614414866969', 'author': {'name': 'Srinivas Tamada', 'avatarUrl': '//lh4.googleusercontent.com/-aKTHp74010k/AAAAAAAAAAI/AAAAAAAANpc/M9QWGzJehJk/s35-c/photo.jpg', 'profileUrl': 'https://www.blogger.com/profile/17418084732618477326'}, 'displayTime': 'May 24, 2016 at 11:51 AM', 'deleteclass': 'item-control blog-admin pid-57914092'}, {'id': '1668817954177743156', 'body': 'Hi, how can I upload profile image and recovery to home.php?\x3cbr /\x3e\x3cbr /\x3eThanks', 'timestamp': '1464972986327', 'permalink': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment\x3d1464972986327#c1668817954177743156', 'author': {'name': 'no66other', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/15259762219351812515'}, 'displayTime': 'June 3, 2016 at 12:56 PM', 'deleteclass': 'item-control blog-admin pid-1005121331'}];
+      var msgs = {'loadMore': 'Load more...', 'loading': 'Loading...', 'loaded': 'No more!', 'addComment': 'Add comment', 'reply': 'Reply', 'delete': 'Delete'};
+      var config = {'blogId': '992226187759619576', 'postId': '8450056181584758171', 'feed': 'http://www.9lessons.info/feeds/8450056181584758171/comments/default', 'authorName': 'Srinivas Tamada', 'authorUrl': 'https://www.blogger.com/profile/17418084732618477326', 'baseUri': 'https://www.blogger.com', 'maxThreadDepth': 2};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        if (entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + entry.content.$t + '</span>';
+            }
+          }
+        }
+        return entry.content.$t;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+</script>
+<div id="comment-holder">
+
+<div id="bc_0_15C" kind="c"><div id="bc_0_15CT"><div id="bc_0_14T" class="comment-thread" kind="r" t="0" u="0"><ol id="bc_0_14TB"><li id="bc_0_0B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/photo_002.jpg"></div><div id="c3731536541433000055" class="comment-block"><div id="bc_0_0M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/17083977251100747407">Felipe Marschall</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1460564708796#c3731536541433000055">April 13, 2016 at 12:25 PM</a></span></div><p id="bc_0_0MC" class="comment-content">thanks for the article!</p><span id="bc_0_0MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-895093964"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=3731536541433000055">Delete</a></span></span></div><div id="bc_0_0BR" class="comment-replies"></div><div id="bc_0_0B_box" class="comment-replybox-single"></div></li><li id="bc_0_1B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/b16-rounded.gif"></div><div id="c6470975310897455889" class="comment-block"><div id="bc_0_1M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/07498731293573973414">Unknown</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1460568552918#c6470975310897455889">April 13, 2016 at 1:29 PM</a></span></div><p id="bc_0_1MC" class="comment-content">Thanks</p><span id="bc_0_1MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-365364143"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=6470975310897455889">Delete</a></span></span></div><div id="bc_0_1BR" class="comment-replies"></div><div id="bc_0_1B_box" class="comment-replybox-single"></div></li><li id="bc_0_2B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/photo.jpg"></div><div id="c6307783645973766610" class="comment-block"><div id="bc_0_2M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/14351691636163763982">Marcelo Santtana</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1460571007882#c6307783645973766610">April 13, 2016 at 2:10 PM</a></span></div><p id="bc_0_2MC" class="comment-content">thanks. i just do not like to use pdo directly, you recomend any ORM Library for small to medium php projects?</p><span id="bc_0_2MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-559922233"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=6307783645973766610">Delete</a></span></span></div><div id="bc_0_2BR" class="comment-replies"></div><div id="bc_0_2B_box" class="comment-replybox-single"></div></li><li id="bc_0_3B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/b16-rounded.gif"></div><div id="c5003895186293956049" class="comment-block"><div id="bc_0_3M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/08858709610762950692">stats guru</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1460627346303#c5003895186293956049">April 14, 2016 at 5:49 AM</a></span></div><p id="bc_0_3MC" class="comment-content">Thanks for the article bro..</p><span id="bc_0_3MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-1921365991"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=5003895186293956049">Delete</a></span></span></div><div id="bc_0_3BR" class="comment-replies"></div><div id="bc_0_3B_box" class="comment-replybox-single"></div></li><li id="bc_0_4B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/b16-rounded.gif"></div><div id="c7921701770671995507" class="comment-block"><div id="bc_0_4M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/00683371212746843173">Unknown</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1460631094963#c7921701770671995507">April 14, 2016 at 6:51 AM</a></span></div><p id="bc_0_4MC" class="comment-content">Thanks For tutorial on PDO</p><span id="bc_0_4MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-1320326996"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=7921701770671995507">Delete</a></span></span></div><div id="bc_0_4BR" class="comment-replies"></div><div id="bc_0_4B_box" class="comment-replybox-single"></div></li><li id="bc_0_6B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/photo_003.jpg"></div><div id="c256539628801501731" class="comment-block"><div id="bc_0_6M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/08646819879429113294">Xavier Martinez</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1460639507462#c256539628801501731">April 14, 2016 at 9:11 AM</a></span></div><p id="bc_0_6MC" class="comment-content">I
+ like to see a real login system this is for simple, no risk login, this
+ is a good information, But for real life good process and/or secure 
+login, with use salt and session regeneration. </p><span id="bc_0_6MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-373789567"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=256539628801501731">Delete</a></span></span></div><div id="bc_0_6BR" class="comment-replies"><span id="bc_0_6b+seedDJezD" kind="d"><div id="bc_0_5T" class="comment-thread inline-thread" kind="t" t="0" u="0"><span id="bc_0_5TT" class="thread-toggle thread-expanded" kind="g"><span id="bc_0_5TA" class="thread-arrow"></span><span id="bc_0_5TN" class="thread-count"><span id="bc_0_5TNT" style="display: none;"></span><span id="bc_0_5TNU" style="display: none;"></span><a href="javascript:;" target="_self">Replies</a><div id="bc_0_5TD" class="thread-dropContainer thread-expanded"><span class="thread-drop"></span></div></span></span><ol id="bc_0_5TC" class="thread-chrome thread-expanded"><div><li id="bc_0_5B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/b16-rounded.gif"></div><div id="c3598597148457072724" class="comment-block"><div id="bc_0_5M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/15950642214131178532">Unknown</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1461622000371#c3598597148457072724">April 25, 2016 at 6:06 PM</a></span></div><p id="bc_0_5MC" class="comment-content">Same here</p><span id="bc_0_5MN" class="comment-actions secondary-text" kind="m"><span class="item-control blog-admin pid-1427682981"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=3598597148457072724">Delete</a></span></span></div><div id="bc_0_5BR" class="comment-replies"></div><div id="bc_0_5B_box" class="comment-replybox-single"></div></li></div><div id="bc_0_5I" class="continue" kind="ci"><a href="javascript:;" target="_self">Reply</a></div></ol><div id="bc_0_5T_box" class="comment-replybox-thread"></div></div></span></div><div id="bc_0_6B_box" class="comment-replybox-single"></div></li><li id="bc_0_7B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/b16-rounded.gif"></div><div id="c5555158471802334624" class="comment-block"><div id="bc_0_7M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/02215781297783458652">Vittorio G</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1461224429380#c5555158471802334624">April 21, 2016 at 3:40 AM</a></span></div><p id="bc_0_7MC" class="comment-content">Ottimo!!! grazie!!!<br>BRAVISSIMO E COMPLIMENTI</p><span id="bc_0_7MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-208394906"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=5555158471802334624">Delete</a></span></span></div><div id="bc_0_7BR" class="comment-replies"></div><div id="bc_0_7B_box" class="comment-replybox-single"></div></li><li id="bc_0_8B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/photo.png"></div><div id="c6937147458208998318" class="comment-block authorBlock"><div id="bc_0_8M" class="comment-header" kind="m"><cite class="user blog-author"><a rel="nofollow" href="https://www.blogger.com/profile/17418084732618477326">Srinivas Tamada</a></cite><span class="icon user blog-author"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1461682413975#c6937147458208998318">April 26, 2016 at 10:53 AM</a></span></div><p id="bc_0_8MC" class="comment-content">To avoid session hijacking <br><br>$_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];<br><br>if($_SESSION['ip'] != $_SERVER['REMOTE_ADDR'])<br>{<br>//die('Session MAY have been hijacked');<br>$url=BASE_URL.'logout.php';<br>header("Location: $url");<br>}</p><span id="bc_0_8MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-57914092"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=6937147458208998318">Delete</a></span></span></div><div id="bc_0_8BR" class="comment-replies"></div><div id="bc_0_8B_box" class="comment-replybox-single"></div></li><li id="bc_0_9B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/b16-rounded.gif"></div><div id="c1813800910847065100" class="comment-block"><div id="bc_0_9M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/06629732188617375118">sam cha</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1461909517249#c1813800910847065100">April 29, 2016 at 1:58 AM</a></span></div><p id="bc_0_9MC" class="comment-content">Unable to login in localhost &amp; in demo too .</p><span id="bc_0_9MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-1602193211"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=1813800910847065100">Delete</a></span></span></div><div id="bc_0_9BR" class="comment-replies"></div><div id="bc_0_9B_box" class="comment-replybox-single"></div></li><li id="bc_0_10B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/b16-rounded.gif"></div><div id="c4676029126323253000" class="comment-block"><div id="bc_0_10M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/16458812647973694803">Arista</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1463193560239#c4676029126323253000">May 13, 2016 at 10:39 PM</a></span></div><p id="bc_0_10MC" class="comment-content">Hi...
+ Awesome article for one just learning to use PDO, thanks so much! 
+Curious, when the files are uploaded and one registers/logs in, should 
+the object information (users information) be displayed at the top of 
+the "home.php" page? I was following along with the article, but perhaps
+ I missed something, not sure. Thanks again!</p><span id="bc_0_10MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-622229841"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=4676029126323253000">Delete</a></span></span></div><div id="bc_0_10BR" class="comment-replies"></div><div id="bc_0_10B_box" class="comment-replybox-single"></div></li><li id="bc_0_12B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/A-New-Day.jpg"></div><div id="c1289123467734112665" class="comment-block"><div id="bc_0_12M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/11105696934231898824">Pat</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1463909066967#c1289123467734112665">May 22, 2016 at 5:24 AM</a></span></div><p id="bc_0_12MC" class="comment-content">The
+ reason that the login doesn't work is because the password field in 
+users table is limited to 50 characters while the actual hash is longer 
+than that. To solve this, increase the limit to at least 64 (I increased
+ it to 250) as the SHA256 generates a hash of length 64</p><span id="bc_0_12MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-1939532959"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=1289123467734112665">Delete</a></span></span></div><div id="bc_0_12BR" class="comment-replies"><span id="bc_0_12b+seedDJe4D" kind="d"><div id="bc_0_11T" class="comment-thread inline-thread" kind="t" t="0" u="0"><span id="bc_0_11TT" class="thread-toggle thread-expanded" kind="g"><span id="bc_0_11TA" class="thread-arrow"></span><span id="bc_0_11TN" class="thread-count"><span id="bc_0_11TNT" style="display: none;"></span><span id="bc_0_11TNU" style="display: none;"></span><a href="javascript:;" target="_self">Replies</a><div id="bc_0_11TD" class="thread-dropContainer thread-expanded"><span class="thread-drop"></span></div></span></span><ol id="bc_0_11TC" class="thread-chrome thread-expanded"><div><li id="bc_0_11B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/photo.png"></div><div id="c716750614414866969" class="comment-block authorBlock"><div id="bc_0_11M" class="comment-header" kind="m"><cite class="user blog-author"><a rel="nofollow" href="https://www.blogger.com/profile/17418084732618477326">Srinivas Tamada</a></cite><span class="icon user blog-author"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1464105101459#c716750614414866969">May 24, 2016 at 11:51 AM</a></span></div><p id="bc_0_11MC" class="comment-content">Thanks updated password length to 200 </p><span id="bc_0_11MN" class="comment-actions secondary-text" kind="m"><span class="item-control blog-admin pid-57914092"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=716750614414866969">Delete</a></span></span></div><div id="bc_0_11BR" class="comment-replies"></div><div id="bc_0_11B_box" class="comment-replybox-single"></div></li></div><div id="bc_0_11I" class="continue" kind="ci"><a href="javascript:;" target="_self">Reply</a></div></ol><div id="bc_0_11T_box" class="comment-replybox-thread"></div></div></span></div><div id="bc_0_12B_box" class="comment-replybox-single"></div></li><li id="bc_0_13B" class="comment" kind="b"><div class="avatar-image-container"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/b16-rounded.gif"></div><div id="c1668817954177743156" class="comment-block"><div id="bc_0_13M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/15259762219351812515">no66other</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html?showComment=1464972986327#c1668817954177743156">June 3, 2016 at 12:56 PM</a></span></div><p id="bc_0_13MC" class="comment-content">Hi, how can I upload profile image and recovery to home.php?<br><br>Thanks</p><span id="bc_0_13MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-1005121331"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=992226187759619576&amp;postID=1668817954177743156">Delete</a></span></span></div><div id="bc_0_13BR" class="comment-replies"></div><div id="bc_0_13B_box" class="comment-replybox-single"></div></li></ol><div style="display: none;" id="bc_0_14I" class="continue" kind="ci"><a href="javascript:;" target="_self">Add comment</a></div><div id="bc_0_14T_box" class="comment-replybox-thread"><iframe style="display: block;" data-resized="true" allowtransparency="true" class="blogger-iframe-colorize blogger-comment-from-post" id="comment-editor" name="comment-editor" src="PHP%20Login%20System%20with%20PDO%20Connection_files/comment-iframe.htm" frameborder="0" height="213px" width="100%"></iframe></div><div id="bc_0_14L" class="loadmore loaded" kind="rb"><a href="javascript:;" target="_self">Load more...</a></div></div></div></div></div>
+</div>
+<p class="comment-footer">
+</p><div class="comment-form">
+<a name="comment-form"></a>
+<p>
+</p>
+<a href="https://www.blogger.com/comment-iframe.g?blogID=992226187759619576&amp;postID=8450056181584758171&amp;blogspotRpcToken=9037882" id="comment-editor-src"></a>
+
+<script type="text/javascript" src="PHP%20Login%20System%20with%20PDO%20Connection_files/592886021-comment_from_post_iframe.js"></script>
+<script type="text/javascript">
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+<p></p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacer"></div>
+</div>
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" href="http://www.9lessons.info/2016/04/integrate-ckeditor-in-html-page-using.html" id="Blog1_blog-pager-newer-link" title="Newer Post">Newer Post</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="http://www.9lessons.info/2016/04/facebook-like-reactions-using-php-mysql.html" id="Blog1_blog-pager-older-link" title="Older Post">Older Post</a>
+</span>
+<a class="home-link" href="http://www.9lessons.info/">Home</a>
+</div>
+<div class="clear"></div>
+</div></div>
+</div></td>
+<td id="sideside">
+<div class="side_box vcard"><div class="section-links" id="aboutme"><img alt="Srinivas Tamada" class="face" src="PHP%20Login%20System%20with%20PDO%20Connection_files/SrinivasTamada.png" title="Srinivas Tamada">
+<span class=" author"><a class="nametitle fn" href="https://plus.google.com/104100007347037324968?rel=author" itemprop="author" rel="author me">Srinivas Tamada</a></span><br>
+  Entrepreneur, Blogger,Thinker <br> I love the WEB - <b>Indian</b><br>Invented <a class="dblue" href="http://wall.9lessons.info/">The WALL SCRIPT</a><br>Lives in <span class="adr">
+<span class="locality">Atlanta - United States</span></span><br>
+<a href="mailto:srinivas@9lessons.info" id="email">srinivas@9lessons.info</a>
+<a class="dnone" href="http://www.9lessons.info/p/about.html" rel="author" title="Srinivas Tamada">more</a>
+<div id="sbar">
+<a class="profile_facebook profile_social profile_left dnone" href="http://www.facebook.com/srinivas.tamada" rel="nofollow" target="_blank"></a>
+<a class="profile_gplus profile_social profile_left" href="https://plus.google.com/+SrinivasTamada" rel="nofollow" target="_blank"></a>
+<a class="profile_twitter profile_social profile_left" href="http://www.twitter.com/9lessons" rel="nofollow" target="_blank"></a>
+<a class="profile_tumblr profile_social profile_left" href="http://www.srinivastamada.com/" rel="nofollow" target="_blank"></a>
+<a class="profile_rss profile_social profile_left" href="http://feeds2.feedburner.com/9lesson" rel="nofollow" target="_blank"></a>
+<a class="profile_vimeo profile_social profile_left" href="http://www.vimeo.com/srinivas" rel="nofollow" target="_blank"></a>
+<a class="profile_youtube profile_social" href="http://www.youtube.com/9lessons" rel="nofollow" target="_blank"></a>
+</div>
+<div class="m5">
+<a href="http://www.facebook.com/srinivas.tamada" onclick="ga('send', 'event', 'Sidebar', 'click','take a look');" target="_blank"><img alt="Srinivas Tamada Facebook Profile" class="borderzero" src="PHP%20Login%20System%20with%20PDO%20Connection_files/TakeMyLook.png"></a>
+</div>
+<div class="clear-both"></div>
+</div>
+<div class="section-links">
+<div class="mb6">
+Subscribe my updates via <b>Email </b>
+</div><div><form action="http://feedburner.google.com/fb/a/mailverify" method="post"><input class="feedinput" id="femail" name="email" type="text"><input name="uri" value="9lesson" type="hidden"><input name="loc" value="en_US" type="hidden"><input class="gsc-search-button" value="Sign Up" type="submit"></form></div>
+<div class="marginfive">
+<div>
+<a href="http://feeds2.feedburner.com/9lesson" title="9lessons feed"><img alt="feed" id="fcount" src="PHP%20Login%20System%20with%20PDO%20Connection_files/9lesson.gif" height="26" width="88"></a>
+</div>
+</div>
+<div class="clearboth"></div>
+<!-- details end -->
+</div>
+<div class="section-links p5">
+<div class="section" id="mailBlockSide"><div class="widget HTML" data-version="1" id="HTML4">
+<div class="widget-content">
+<!-- 28/4 to 27/6 -->
+<div class="cen" style="margin-bottom:5px;margin-top:3px">
+<a href="https://promoheads.com/" target="_blank">
+<img src="PHP%20Login%20System%20with%20PDO%20Connection_files/250x125.gif" alt="buy website traffic "></a>
+</div>
+
+
+
+
+<div class="buy" id="buysellads_div">
+<div data-serve="CEADV2V" class="bsap bsap_1245205" id="bsap_1245205">
+
+<style type="text/css">
+div.bsap_1245205{width:100%;display:block;}div.bsap_1245205 a{width:125px;}div.bsap_1245205 a img{padding:0;}div.bsap_1245205 a em{font-style:normal;}div.bsap_1245205 a{display:block;font-size:11px;color:#333;font-family:verdana,sans-serif;margin-left:4px;text-align:center;text-decoration:none;overflow:hidden;float:left;margin-bottom:4px;}
+div.bsap_1245205 img{border:0;clear:right;}
+div.bsap_1245205 a.adhere{color:#333;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#fff;text-align:center;margin-left:4px;margin-bottom:4px;}
+div.bsap_1245205 a.adhere:hover{border:1px solid #333;background:#ffffff;color:#000;}div.bsap_1245205 a{line-height:100%;}div.bsap_1245205 a.adhere{width:125px;height:125px;line-height:1000%;}html>body div.bsap_1245205 a.adhere{width:123px;height:123px;}div.bsap_1245205 img.s{height:0;width:0;}
+</style>
+<a href="http://srv.buysellads.com/ads/click/x/GTND423NCYBIP27IFTALYKQWCYSDP2QECAYITZ3JCESDK2QWFTYDCK3KC6BDK2JMCYYDEK3EHJNCLSIZ" class="ad0 odd " title="The Ultimate WordPress Theme" id="bsa_4204669" target="_blank" rel="nofollow">
+<img src="PHP%20Login%20System%20with%20PDO%20Connection_files/223418-1400702611.jpg" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423NCYBIP27IFTALYKQWCYSDP2QECAYDLZ3JCESDK2QWFTYD65QKC6BDK2JMCYYDEK3EHJNCLSIZ" class="ad1  even" title=".htaccess book" id="bsa_2797424" target="_blank" rel="nofollow">
+<img src="PHP%20Login%20System%20with%20PDO%20Connection_files/133302-1350087509.jpg" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423NCYBIP27IFTALYKQWCYSDPK3YCEBDVZ3JCESDK23MF6YDK53KC6BDK2JMCYYDEK3EHJNCLSIZ" class="ad2 odd " title="Log Parser Lizard: Your swiss army knife for system logs and databases" id="bsa_6793833" target="_blank" rel="nofollow">
+<img src="PHP%20Login%20System%20with%20PDO%20Connection_files/6793833-1464953580.jpg" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423NCYBIP27IFTALYKQWCYSDP2QECAYD5Z3JCESDK2QWFTYD627KC6BDK2JMCYYDEK3EHJNCLSIZ" class="ad3  even" title="PHPRunner. Build better PHP code. Now with WYSIWYG support. " id="bsa_2127897" target="_blank" rel="nofollow">
+<img src="PHP%20Login%20System%20with%20PDO%20Connection_files/102751-1334692332.gif" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423NCYBIP27IFTALYKQWCYSDPK3YF6YDKZ3JCESDK23MF6AI527KC6BDK2JMCYYDEK3EHJNCLSIZ" class="ad4 odd " title="OnTargetHTML5 Video Training Site" id="bsa_6822433" target="_blank" rel="nofollow">
+<img src="PHP%20Login%20System%20with%20PDO%20Connection_files/6822433-1465843582.png" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423NCYBIP27IFTALYKQWCYSDPK7LCVYILZ3JCESDK23UCEBDC5QKC6BDK2JMCYYDEK3EHJNCLSIZ" class="ad5  even" title="Programming Homework Help" id="bsa_6599815" target="_blank" rel="nofollow">
+<img src="PHP%20Login%20System%20with%20PDO%20Connection_files/5527409-1457367585.gif" alt="" height="125" width="125"></a>
+<script class="ignoreme" id="auto_1" type="text/javascript"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+
+<!-- Dont Delete BuySellAds.com Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- END BuySellAds.com Ad Code -->
+
+<script type="text/javascript">
+(function() {
+  var ARTICLE_URL = window.location.href;
+  var CONTENT_ID = 'everything';
+  document.write(
+    '<scr'+'ipt '+
+    'src="//survey.g.doubleclick.net/survey?site=_ggu6yt4t74qduabwt35x3tynry'+
+    '&amp;url='+encodeURIComponent(ARTICLE_URL)+
+    (CONTENT_ID ? '&amp;cid='+encodeURIComponent(CONTENT_ID) : '')+
+    '&amp;random='+(new Date).getTime()+
+    '" type="text/javascript">'+'\x3C/scr'+'ipt>');
+})();
+</script><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/survey" type="text/javascript"></script></div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=992226187759619576&amp;widgetType=HTML&amp;widgetId=HTML4&amp;action=editWidget&amp;sectionId=mailBlockSide" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML4"));' target="configHTML4" title="Edit">
+<img alt="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+<div class="section-links p5">
+<div class="clear-both tc">
+<div class="section" id="newadsblock"><div class="widget HTML" data-version="1" id="HTML3">
+<div class="widget-content">
+<!-- OCT 31st -->
+<div id="banner250">
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-6904774409601870" data-ad-slot="7085657233"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent"><ins id="aswift_4_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;" frameborder="0" height="250" width="250"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+<!-- 
+<script>
+var totalCount = 4;
+function myFunction()
+{
+var num = Math.ceil( Math.random()* totalCount );
+var x=document.getElementById("banner250");
+if(num%2)
+{
+x.innerHTML='<a href="https://goo.gl/3DPfUT" target="_blank" ><img src="https://lh3.googleusercontent.com/-5ujQc0nsAIA/VfhA7m1vNFI/AAAAAAAANAQ/HpGvmrwip2Q/s256-Ic42/256X125.png" style="border:solid 1px #333333;width:250px"/></a><a href="http://twikster.com/index.php?controller=home&tracking=55efe0e9ba659" target="_blank"><img src="https://lh3.googleusercontent.com/-DGZNd-NAoXM/VfF3ZpAP8QI/AAAAAAAAM9s/bg9yPTCJ71s/s250-Ic42/ad.png" style="border:solid 1px #333333"/></a>';
+}
+else
+{
+x.innerHTML='<a href="http://twikster.com/index.php?controller=home&tracking=55efe0e9ba659" target="_blank"><img src="https://lh3.googleusercontent.com/-DGZNd-NAoXM/VfF3ZpAP8QI/AAAAAAAAM9s/bg9yPTCJ71s/s250-Ic42/ad.png" style="border:solid 1px #333333"/></a><a href="https://goo.gl/3DPfUT" target="_blank" ><img src="https://lh3.googleusercontent.com/-5ujQc0nsAIA/VfhA7m1vNFI/AAAAAAAANAQ/HpGvmrwip2Q/s256-Ic42/256X125.png" style="border:solid 1px #333333;width:250px"/></a>';
+}
+}
+myFunction();
+</script>
+-->
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=992226187759619576&amp;widgetType=HTML&amp;widgetId=HTML3&amp;action=editWidget&amp;sectionId=newadsblock" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target="configHTML3" title="Edit">
+<img alt="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="section-links"><h3>Most Popular Posts</h3><div class="section" id="addsections7"><div class="widget PopularPosts" data-version="1" id="PopularPosts1">
+<div class="widget-content popular-posts">
+<ul>
+<li>
+<a href="http://www.9lessons.info/2011/02/login-with-facebook-and-twitter.html">Login with Facebook and Twitter</a>
+</li>
+<li>
+<a href="http://www.9lessons.info/2011/08/ajax-image-upload-without-refreshing.html">Ajax Image Upload without Refreshing Page using Jquery.</a>
+</li>
+<li>
+<a href="http://www.9lessons.info/2009/09/php-login-page-example.html">PHP Login Page Example.</a>
+</li>
+<li>
+<a href="http://www.9lessons.info/2009/07/auto-load-refresh-every-10-seconds-with.html">Auto Load and Refresh  Div every 10 Seconds with jQuery.</a>
+</li>
+<li>
+<a href="http://www.9lessons.info/2009/03/upload-and-resize-image-with-php.html">Upload and Resize an Image with PHP</a>
+</li>
+<li>
+<a href="http://www.9lessons.info/2012/05/create-restful-services-api-in-php.html">Create a RESTful Services API in PHP.</a>
+</li>
+<li>
+<a href="http://www.9lessons.info/2011/07/login-with-google-account.html">Login with Google Account OpenID</a>
+</li>
+<li>
+<a href="http://www.9lessons.info/2009/09/pagination-with-jquery-mysql-and-php.html">Pagination with jQuery, MySQL and PHP.</a>
+</li>
+<li>
+<a href="http://www.9lessons.info/2010/10/pagination-with-jquery-php-ajax-and.html">Pagination with Jquery, PHP , Ajax and MySQL.</a>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=992226187759619576&amp;widgetType=PopularPosts&amp;widgetId=PopularPosts1&amp;action=editWidget&amp;sectionId=addsections7" onclick='return _WidgetManager._PopupConfig(document.getElementById("PopularPosts1"));' target="configPopularPosts1" title="Edit">
+<img alt="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div></div>
+<!-- <div class='section-links'><h3>Media Partner</h3> <b:section id='mediaPartner'> <b:widget id='HTML4' locked='false' title='' type='HTML'> <b:includable id='main'> <b:if cond='data:title != &quot;&quot;'> <h2 class='title'><data:title/></h2> </b:if> <div class='widget-content'> <data:content/> </div> <b:include name='quickedit'/> </b:includable> </b:widget> </b:section> </div> -->
+</div>
+<!-- New Ad -->
+<div class="shade">
+<div class="no-items section" id="addsections38"></div>
+</div>
+<div class="side_box">
+<div class="section-links" id="cat"><h3>Categories</h3>
+<div class="spacer"></div><div class="site-reviews f45"><ul><li><a href="http://www.9lessons.info/search/label/Facebook"><b>Facebook</b></a></li><li><a href="http://www.9lessons.info/search/label/Database">Database</a></li><li><a href="http://www.9lessons.info/search/label/jQuery"><b>jQuery</b></a></li><li><a href="http://www.9lessons.info/search/label/javascipt">JavaScript</a></li><li><a href="http://www.9lessons.info/2008/08/table-of-contents.html">Tutorials</a></li><li><a href="http://www.9lessons.info/search/label/WebDesign">Web Design</a></li></ul></div>
+<div class="site-reviews fr45"><ul><li><a href="http://www.9lessons.info/search/label/J2EE">J2EE</a></li><li><a href="http://www.9lessons.info/search/label/HTML5">HTML5</a></li><li><a href="http://www.9lessons.info/search/label/Twitter%20API"><b>Twitter API</b>(new)</a></li><li><a href="http://www.9lessons.info/search/label/Mysql">MySQL</a></li><li><a href="http://www.9lessons.info/search/label/Ajax"><b>Ajax</b></a></li><li><a href="http://www.9lessons.info/2008/08/most-popular-articles.html"><b>Most Popular</b></a></li></ul></div><div class="spacer he1"></div></div>
+<div class="section-links">
+<a href="http://www.oauthlogin.com/" onclick="ga('send', 'event', 'Sidebar', 'click', 'OAuth Login');">
+<img alt="Facebook and Google Login" class="borderzero" src="PHP%20Login%20System%20with%20PDO%20Connection_files/OauthBanner.gif"></a>
+</div>
+<div class="section-links"><h3>Recent Posts</h3><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/9lesson.js" type="text/javascript"></script><div class="feedburnerFeedBlock" id="9lesson1fmia57ot1vum58ne424lur804"><ul><li><span class="headline"><a href="http://www.9lessons.info/2016/06/google-two-factor-authentication-login.html">Google Two Factor Authentication Login with PHP</a></span></li><li><span class="headline"><a href="http://www.9lessons.info/2016/06/create-error-free-application-and-build.html">Create an Error Free Application and Build an Amazing Customer Experience with Raygun</a></span></li><li><span class="headline"><a href="http://www.9lessons.info/2016/06/rethink-database-for-creating-realtime.html">Rethink Database for Creating a Realtime Web Application with Node JS</a></span></li><li><span class="headline"><a href="http://www.9lessons.info/2016/05/create-token-based-restful-services.html">Create Token Based RESTful services using Slim PHP Framework</a></span></li><li><span class="headline"><a href="http://www.9lessons.info/2016/04/track-html5-video-views-with-google.html">Track HTML5 Video Views with Google Analytics</a></span></li><li><span class="headline"><a href="http://www.9lessons.info/2016/04/integrate-ckeditor-in-html-page-using.html">Integrate CKEditor in Html Page using JavaScript</a></span></li><li><span class="headline"><a href="http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html">PHP Login System with PDO Connection.</a></span></li><li><span class="headline"><a href="http://www.9lessons.info/2016/04/facebook-like-reactions-using-php-mysql.html">Facebook Like Reactions using PHP, MySQL and Jquery.</a></span></li><li><span class="headline"><a href="http://www.9lessons.info/2016/03/google-analytics-custom-dashboards-websites.html">Google Analytics Custom Dashboards for Websites</a></span></li></ul> <div id="creditfooter"><a href="https://feedburner.google.com/" target="_blank"><img src="PHP%20Login%20System%20with%20PDO%20Connection_files/buzzboost-pwrd.gif" alt="Headlines by FeedBurner" style="border:0"></a></div></div></div>
+<div class="section-links">
+<div class="section" id="addsections71"><div class="widget HTML" data-version="1" id="HTML5">
+<div class="widget-content">
+<!--
+<div style='text-align:center'>
+<a href='http://wall.9lessons.info' onclick='ga(&apos;send&apos;, &apos;event&apos;, &apos;Sidebar&apos;, &apos;click&apos;, &apos;Video Banner&apos;);'><img src='https://lh3.googleusercontent.com/-aVkfr3D68e8/VFvsHbVeN6I/AAAAAAAAMFs/9cxaebsipRI/s250/wall7.PNG' border='0'/></a>
+
+</div>
+-->
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=992226187759619576&amp;widgetType=HTML&amp;widgetId=HTML5&amp;action=editWidget&amp;sectionId=addsections71" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML5"));' target="configHTML5" title="Edit">
+<img alt="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="m5" id="googleplus">
+<!-- Place this tag where you want the widget to render. -->
+<div id="___person_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 300px; height: 353px;"><iframe title="+Badge" data-gapiattached="true" src="PHP%20Login%20System%20with%20PDO%20Connection_files/person.htm" name="I2_1466563050385" id="I2_1466563050385" vspace="0" tabindex="0" style="position: static; top: 0px; width: 300px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 353px;" scrolling="no" marginwidth="0" marginheight="0" hspace="0" frameborder="0" width="100%"></iframe></div>
+</div>
+<div class="margin10">
+<div class="section" id="addsections31"><div class="widget HTML" data-version="1" id="HTML2">
+<div class="widget-content">
+<!-- Ad Blocker -->
+<script>
+function adBlockDownload()
+{
+alert("Please disable your ad blocker for 9lessons.info and download.");
+}
+
+function adBlockFunction()
+{
+setTimeout(function() { 
+ga('send', 'event', 'Blocker', 'click','Blocker');
+},2000);
+document.getElementById('ab-message').style.display = 'block';
+var b = document.getElementById('downloadScript'); 
+b.setAttribute("href", "#block");
+b.setAttribute("onclick", "adBlockDownload();");
+
+}
+</script>
+
+
+<div style="margin:10px 0px 10px 0px;">
+<!-- 
+<script id="mNCC" language="javascript">  medianet_width='300';  medianet_height= '600';  medianet_crid='891463657';  </script>  <script id="mNSC" src="http://contextual.media.net/nmedianet.js?cid=8CUKL8Z3C" language="javascript"></script> 
+-->
+
+<!-- Big Banner 600X300 -->
+<script async="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/adsbygoogle.js" onerror="adBlockFunction();"></script>
+<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-6904774409601870" data-ad-slot="9830233637"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_5_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;" frameborder="0" height="600" width="300"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+<!-- Facebook FanPage 
+
+<div style='margin-top:10px' id="facebookFanPage">
+
+<iframe allowtransparency='true' class='flikebox' frameborder='0' scrolling='no' src='//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2F9lessons&amp;width=300&amp;height=400&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=338891096245500'/>
+
+  </iframe></div>
+
+<a class="twitter-timeline" href="https://twitter.com/9lessons" data-widget-id="444174574024810496">Tweets by @9lessons</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+--></div>
+
+<div style="margin-top:20px; text-align:center">
+<img src="PHP%20Login%20System%20with%20PDO%20Connection_files/makeinindia.png" alt="Make in India" style="width:100px">
+</div>
+
+<!--
+<script type="text/javascript">
+  !function(a,b,c,d,e,f,g){a.RaygunObject=e,a[e]=a[e]||function(){
+  (a[e].o=a[e].o||[]).push(arguments)},f=b.createElement(c),g=b.getElementsByTagName(c)[0],
+  f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","//cdn.raygun.io/raygun4js/raygun.min.js","rg4js");
+
+  rg4js('apiKey', 'kxM3KnfKY/VR5gSeTLZcvA==');
+  rg4js('enablePulse', true);
+  rg4js('enableCrashReporting', true);
+
+
+</script>
+
+-->
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=992226187759619576&amp;widgetType=HTML&amp;widgetId=HTML2&amp;action=editWidget&amp;sectionId=addsections31" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target="configHTML2" title="Edit">
+<img alt="" src="PHP%20Login%20System%20with%20PDO%20Connection_files/icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</td>
+</tr>
+</tbody></table>
+<!-- google ads -->
+<div>
+<div class="no-items section" id="addsectionsFooterTop"></div>
+</div>
+<!--google end -->
+</div>
+<!-- Footer part -->
+<div id="container-footer2">
+<div class="tc" id="container-footer">
+<div class="counterstat"><script type="text/javascript">
+var sc_project=3967696; 
+var sc_invisible=0; 
+var sc_partition=46; 
+var sc_click_stat=1; 
+var sc_security="6979b175"; 
+var sc_text=1; 
+</script>
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/counter.js" type="text/javascript"></script><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/text.htm"></script>36452498
+<noscript><div class='statcounter'><img alt='free html hit counter' class='statcounter' src='http://c.statcounter.com/3967696/0/6979b175/0/'/></div></noscript></div>
+<div id="footer">
+<table class="widthfull">
+<tbody><tr>
+<td>
+<span class="fl"><a href="http://egglabs.in/" onclick="ga('send', 'event', 'Footer', 'click', 'Egglabs');" title="Egglabs"><img alt="egglabs" src="PHP%20Login%20System%20with%20PDO%20Connection_files/eggsmall.png" style="border:none"></a></span>
+<span class="cpright">
+  © 2008-2016 9lessons.info <b>Made in India</b>. All rights reserved the content is copyrighted to Srinivas Tamada  - <a href="http://www.9lessons.info/2009/05/advertising-on-9lessons.html" title="9lessons Advertisement">Advertise</a>
+</span>
+</td>
+<td class="tr">
+<span flass="fr">
+<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons License" src="PHP%20Login%20System%20with%20PDO%20Connection_files/80x15.png" style="border-width:0;margin-top:10px"></a>
+</span>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div></div>
+<!-- Footer end -->
+<script>
+//<![CDATA[
+  var elems = document.getElementsByClassName('blog-author');
+  for (var i=0;i<elems.length;i+=1){
+    
+    elems[i].parentNode.parentNode.classList.add('authorBlock');
+  }
+
+setTimeout(function(){ 
+  document.getElementById('homeLike').innerHTML="<iframe allowTransparency='true' class='logofacebook' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/9lessons&amp;send=false&amp;layout=button_count&amp;width=85&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21'/>";
+
+document.getElementById('facebook_follow').innerHTML="<iframe allowTransparency='true' class='facebookfollow' frameborder='0' scrolling='no' src='//www.facebook.com/plugins/subscribe.php?href=https%3A%2F%2Fwww.facebook.com%2Fsrinivas.tamada&amp;layout=button_count&amp;show_faces=true&amp;colorscheme=light&amp;font&amp;width=200&amp;appId=223109594375281'/>";
+
+}, 8000);
+
+
+
+//]]>
+  
+
+
+/*		
+if (top.location!= self.location) {
+			top.location = self.location
+		}
+*/
+
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10999810-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+/*Google Search*/
+   google.load('search', '1');
+  google.setOnLoadCallback(function(){
+    var customSearchControl = new google.search.CustomSearchControl();
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.setSearchFormRoot('cse-search-form');
+    customSearchControl.enableAds('pub-6904774409601870');
+    customSearchControl.draw('cse', options);
+  }, true);
+</script><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/a" type="text/javascript"></script><link href="PHP%20Login%20System%20with%20PDO%20Connection_files/defaulten.css" type="text/css" rel="stylesheet"><script src="PHP%20Login%20System%20with%20PDO%20Connection_files/defaulten.js" type="text/javascript"></script>
+<!--Page Navigation Ends -->
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/widgets.js" type="text/javascript"></script>
+<script src="PHP%20Login%20System%20with%20PDO%20Connection_files/in.js" type="text/javascript"></script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="PHP%20Login%20System%20with%20PDO%20Connection_files/4222102575-widgets.js"></script>
+<script gapi_processed="true" type="text/javascript" src="PHP%20Login%20System%20with%20PDO%20Connection_files/plusone.js"></script>
+<script type="text/javascript">
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '992226187759619576';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d992226187759619576','//www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html','992226187759619576');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '992226187759619576', 'bloggerUrl': 'https://www.blogger.com', 'title': '9lessons Programming Blog', 'pageType': 'item', 'postId': '8450056181584758171', 'url': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html', 'canonicalUrl': 'http://www.9lessons.info/2016/04/php-login-system-with-pdo-connection.html', 'homepageUrl': 'http://www.9lessons.info/', 'searchUrl': 'http://www.9lessons.info/search', 'canonicalHomepageUrl': 'http://www.9lessons.info/', 'blogspotFaviconUrl': 'http://www.9lessons.info/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'analyticsAccountNumber': 'UA-10999810-1', 'useUniversalAnalytics': false, 'pageName': 'PHP Login System with PDO Connection. ', 'pageTitle': '9lessons Programming Blog: PHP Login System with PDO Connection. ', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x229lessons Programming Blog - Atom\x22 href\x3d\x22http://www.9lessons.info/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x229lessons Programming Blog - RSS\x22 href\x3d\x22http://www.9lessons.info/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x229lessons Programming Blog - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/992226187759619576/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x229lessons Programming Blog - Atom\x22 href\x3d\x22http://www.9lessons.info/feeds/8450056181584758171/comments/default\x22 /\x3e\n', 'meTag': '', 'openIdOpTag': '', 'postImageThumbnailUrl': 'https://lh3.googleusercontent.com/-F_VjfINklfA/VwkxITBctRI/AAAAAAAANxQ/el4a-HHKaHYMj_CY2JF9c7aUafa7WtDkwCCo/s72-c-Ic42/phplogin.png', 'postImageUrl': 'https://lh3.googleusercontent.com/-F_VjfINklfA/VwkxITBctRI/AAAAAAAANxQ/el4a-HHKaHYMj_CY2JF9c7aUafa7WtDkwCCo/s650-Ic42/phplogin.png', 'latencyHeadScript': '\x3cscript type\x3d\x22text/javascript\x22\x3e(function() { (function(){function c(a){this.t\x3d{};this.tick\x3dfunction(a,c,b){var d\x3dvoid 0!\x3db?b:(new Date).getTime();this.t[a]\x3d[d,c];if(void 0\x3d\x3db)try{window.console.timeStamp(\x22CSI/\x22+a)}catch(e){}};this.tick(\x22start\x22,null,a)}var a;window.performance\x26\x26(a\x3dwindow.performance.timing);var h\x3da?new c(a.responseStart):new c;window.jstiming\x3d{Timer:c,load:h};if(a){var b\x3da.navigationStart,e\x3da.responseStart;0\x3cb\x26\x26e\x3e\x3db\x26\x26(window.jstiming.srt\x3de-b)}if(a){var d\x3dwindow.jstiming.load;0\x3cb\x26\x26e\x3e\x3db\x26\x26(d.tick(\x22_wtsrt\x22,void 0,b),d.tick(\x22wtsrt_\x22,\n\x22_wtsrt\x22,e),d.tick(\x22tbsd_\x22,\x22wtsrt_\x22))}try{a\x3dnull,window.chrome\x26\x26window.chrome.csi\x26\x26(a\x3dMath.floor(window.chrome.csi().pageT),d\x26\x260\x3cb\x26\x26(d.tick(\x22_tbnd\x22,void 0,window.chrome.csi().startE),d.tick(\x22tbnd_\x22,\x22_tbnd\x22,b))),null\x3d\x3da\x26\x26window.gtbExternal\x26\x26(a\x3dwindow.gtbExternal.pageT()),null\x3d\x3da\x26\x26window.external\x26\x26(a\x3dwindow.external.pageT,d\x26\x260\x3cb\x26\x26(d.tick(\x22_tbnd\x22,void 0,window.external.startE),d.tick(\x22tbnd_\x22,\x22_tbnd\x22,b))),a\x26\x26(window.jstiming.pt\x3da)}catch(k){}})();window.tickAboveFold\x3dfunction(c){var a\x3d0;if(c.offsetParent){do a+\x3dc.offsetTop;while(c\x3dc.offsetParent)}c\x3da;750\x3e\x3dc\x26\x26window.jstiming.load.tick(\x22aft\x22)};var f\x3d!1;function g(){f||(f\x3d!0,window.jstiming.load.tick(\x22firstScrollTime\x22))}window.addEventListener?window.addEventListener(\x22scroll\x22,g,!1):window.attachEvent(\x22onscroll\x22,g);\n })();\x3c/script\x3e', 'mobileHeadScript': '', 'adsenseClientId': 'ca-pub-6904774409601870', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/536eee40b230fcfe', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n', 'tf': '', 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Google+', 'key': 'googlePlus', 'shareMessage': 'Share to Google+', 'target': 'googleplus'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}}}, {'name': 'features', 'data': {'templateBrowserTheme': true, 'widgetVisibility': true}}, {'name': 'messages', 'data': {'adsGoHere': 'Ads go here', 'archive': 'Archive', 'authorSaid': '%1 said...', 'authorSaidWithLink': '\x3ca href\x3d\x22%2\x22 rel\x3d\x22nofollow\x22\x3e%1\x3c/a\x3e said...', 'blogArchive': 'Blog Archive', 'by': 'By', 'byAuthor': 'By %1', 'byAuthorLink': 'By \x3ca href\x3d\x22%2\x22\x3e%1\x3c/a\x3e', 'configurationRequired': 'Configuration required', 'deleteBacklink': 'Delete Backlink', 'deleteComment': 'Delete Comment', 'edit': 'Edit', 'emailAddress': 'Email Address', 'getEmailNotifications': 'Get email notifications', 'hidden': 'Hidden', 'keepReading': 'Keep reading', 'labels': 'Labels', 'loadMorePosts': 'Load more posts', 'loading': 'Loading...', 'myBlogList': 'My Blog List', 'myFavoriteSites': 'My favorite sites', 'newer': 'Newer', 'newerPosts': 'Newer Posts', 'newest': 'Newest', 'noResultsFound': 'No results found', 'noTitle': 'No title', 'numberOfComments': '{numComments, plural, \x3d0 {No comments} \x3d1 {1 comment} other {# comments}}', 'older': 'Older', 'olderPosts': 'Older Posts', 'oldest': 'Oldest', 'onlyTeamMembersCanComment': 'Note: Only a member of this blog may post a comment.', 'popularPosts': 'Popular Posts', 'popularPostsFromThisBlog': 'Popular posts from this blog', 'postAComment': 'Post a Comment', 'postedBy': 'Posted by', 'postedByAuthor': 'Posted by %1', 'postedByAuthorLink': 'Posted by \x3ca href\x3d\x22%2\x22\x3e%1\x3c/a\x3e', 'readMore': 'Read more', 'recentPosts': 'Recent posts', 'reportAbuse': 'Report Abuse', 'search': 'Search', 'searchBlog': 'Search blog', 'share': 'Share', 'showAll': 'Show all', 'showLess': 'Show less', 'showMore': 'Show more', 'someOfMyFavoriteSites': 'Some of my favorite sites', 'subscribe': 'Subscribe', 'subscribeTo': 'Subscribe to:', 'subscribeToThisBlog': 'Subscribe to this blog', 'theresNothingHere': 'There\x27s nothing here!', 'viewAll': 'View all', 'visible': 'Visible', 'visitProfile': 'Visit profile', 'widgetNotAvailableInPreview': 'This content is not available in blog preview.', 'widgetNotAvailableOnHttps': 'This content is not yet available over encrypted connections.'}}, {'name': 'skin', 'data': {'vars': {}, 'override': ''}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'title': 'PHP Login System with PDO Connection. ', 'description': 'Very long back, we had  published a simple PHP login system using PHP, which works only with MySQL database. Today, we are providing you an ...', 'featuredImage': 'https://lh3.googleusercontent.com/-F_VjfINklfA/VwkxITBctRI/AAAAAAAANxQ/el4a-HHKaHYMj_CY2JF9c7aUafa7WtDkwCCo/s650-Ic42/phplogin.png'}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'addsections3', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML6', 'addsectionsTopperHead', null, document.getElementById('HTML6'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main_s', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1997811526-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'mailBlockSide', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'newadsblock', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'addsections7', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'addsections71', null, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'addsections31', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+</script>
+
+<table class="gstl_50 gssb_c" style="width: 272px; display: none; top: 79px; left: 825px; position: absolute;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gssb_f"></td><td style="width: 100%;" class="gssb_e"></td></tr></tbody></table><iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="PHP%20Login%20System%20with%20PDO%20Connection_files/postmessageRelay.htm" id="oauth2relay536430780" name="oauth2relay536430780"></iframe><iframe style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" allowfullscreen="true" allowtransparency="true" scrolling="no" id="rufous-sandbox" frameborder="0"></iframe></body></html>

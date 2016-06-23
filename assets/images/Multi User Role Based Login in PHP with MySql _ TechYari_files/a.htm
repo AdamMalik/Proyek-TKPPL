@@ -1,0 +1,3346 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" dir="ltr" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" dir="ltr" class="ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="js no-touch localstorage sessionstorage contenteditable use-opacity-transitions" dir="ltr" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Disqus Comments</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <style>
+        .alert--warning {
+            border-radius: 3px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background-color: #FFE070;
+            color: #A47703;
+        }
+
+        .alert--warning a,
+        .alert--warning a:hover,
+        .alert--warning strong {
+            color: #A47703;
+            font-weight: bold;
+        }
+
+        .alert--error p,
+        .alert--warning p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        </style>
+    
+    <style>
+        html {
+            overflow: hidden;
+        }
+
+        #error {
+            display: none;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        
+    </style>
+
+<link href="a_data/lounge.css" rel="stylesheet"><script src="a_data/config.js" data-requiremodule="remote/config" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="a_data/common.js" data-requiremodule="common.bundle" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="a_data/lounge.js" data-requiremodule="lounge.bundle" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="a_data/ga.js" data-requiremodule="ga" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><style id="css_1466562616048"></style><!-- base href="http://disqus.com/embed/comments/?base=default&version=63f286951b62f092334356b5ccdf355f&f=techyariadmin&t_u=http%3A%2F%2Fwww.techyari.in%2F2014%2F10%2Fmulti-user-role-based-login-in-php-with-mysql.html&t_d=Multi%20User%20Role%20Based%20Login%20in%20PHP%20with%20MySql%20%7C%20TechYari&t_t=Multi%20User%20Role%20Based%20Login%20in%20PHP%20with%20MySql%20%7C%20TechYari&s_o=default" --><link href="a_data/discovery.css" rel="stylesheet"><script src="a_data/discovery.js" data-requiremodule="discovery/main" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script></head>
+<body>
+    
+
+    
+    <!--[if lt IE 10]><div class="alert--warning">
+        <p>You're using a browser that Disqus plans to stop supporting soon. For more information, visit our list of
+        <a href="https://help.disqus.com/customer/portal/articles/466228-which-browsers-does-disqus-work-with-" style="color: #fff; text-decoration: underline;">supported browsers</a>
+        and consider upgrading.</p>
+    </div><![endif]-->
+    <div id="error" class="alert--error">
+        <p>We were unable to load Disqus. If you are a moderator please see our <a href="https://docs.disqus.com/help/83/"> troubleshooting guide</a>. </p>
+    </div>
+
+    
+    <script type="text/json" id="disqus-forumData">{"session":{"canModerate":false,"audienceSyncVerified":false,"mustVerify":false,"canReply":true,"mustVerifyEmail":false},"features":{},"forum":{"category":"Tech","description":"","founder":"130247217","twitterName":"techyari","url":"http://www.techyari.in/","raw_description":"","guidelines":null,"favicon":{"permalink":"http://disqus.com/api/forums/favicons/techyariadmin.jpg","cache":"//a.disquscdn.com/uploads/forums/330/26/favicon.png"},"raw_guidelines":null,"language":"en","daysThreadAlive":0,"avatar":{"small":{"permalink":"http://disqus.com/api/forums/avatars/techyariadmin.jpg?size=32","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"large":{"permalink":"http://disqus.com/api/forums/avatars/techyariadmin.jpg?size=92","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}},"channel":null,"daysAlive":0,"pk":"3300026","signedUrl":"http://disq.us/?url=http%3A%2F%2Fwww.techyari.in%2F&key=UPa5fkZ1kfvpdSRq4j4iGQ","settings":{"supportLevel":0,"adsDRNativeEnabled":false,"disable3rdPartyTrackers":false,"adsVideoEnabled":false,"adsProductVideoEnabled":false,"adsPositionTopEnabled":false,"ssoRequired":false,"linkAffiliationEnabled":true,"adsProductLinksThumbnailsEnabled":false,"adsProductStoriesEnabled":false,"organicDiscoveryEnabled":true,"allowMedia":false,"discoveryMax":false,"discoveryLocked":false,"moderatorText":"","adsEnabled":false,"allowAnonPost":false,"hasCustomAvatar":false,"adultContent":false,"promotedDiscoveryEnabled":false,"allowAnonVotes":false,"mustVerify":true,"colorScheme":"auto","adsSettingsLocked":false,"mustVerifyEmail":true,"audienceSyncEnabled":false,"typeface":"auto","adsPositionBottomEnabled":false,"mediaembedEnabled":false,"adsProductLinksEnabled":false,"discoveryThumbnailsEnabled":false,"isVIP":false},"id":"techyariadmin","createdAt":"2014-11-07T07:01:45.227422","name":"TechYari"}}</script>
+
+    
+    <script type="text/json" id="disqus-threadData">{"cursor":{"hasPrev":false,"prev":null,"total":29,"hasNext":false,"next":"1:0:0"},"code":0,"response":{"lastModified":1462440075,"posts":[{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"sargunanraman","about":"","name":"sargunan raman","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/sargunanraman/","url":"","reputation":1.232124,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2016-05-05T09:18:54","id":"206957598","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/sargunanraman.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/sargunanraman.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/sargunanraman.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"hello i want ask can i do login from tabel_customer and tabel_staff to access certain page only","createdAt":"2016-05-05T09:21:15","id":"2659562104","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>hello i want ask can i do login from tabel_customer and tabel_staff to access certain page only\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"balagurur","about":"","name":"BALAGURU R","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232862,"profileUrl":"https://disqus.com/by/balagurur/","url":"","reputation":1.232862,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2016-02-18T06:25:51","id":"197116497","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/balagurur.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/balagurur.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/balagurur.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"how this authenticate code knows who is the admin or user... please help me with that sir asap\nmail me @ rbalaguru013@gmail.com","createdAt":"2016-02-18T06:30:06","id":"2520786896","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>how this authenticate code knows who is the admin or user... please help me with that sir asap\u003cbr>mail me @ rbalaguru013@gmail.com\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"balagurur","about":"","name":"BALAGURU R","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232862,"profileUrl":"https://disqus.com/by/balagurur/","url":"","reputation":1.232862,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2016-02-18T06:25:51","id":"197116497","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/balagurur.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/balagurur.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/balagurur.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"sir i am new to php, i cant understand the database means of role","createdAt":"2016-02-18T06:28:25","id":"2520785450","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>sir i am new to php, i cant understand the database means of role\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"balagurur","about":"","name":"BALAGURU R","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232862,"profileUrl":"https://disqus.com/by/balagurur/","url":"","reputation":1.232862,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2016-02-18T06:25:51","id":"197116497","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/balagurur.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/balagurur.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/balagurur.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"hello sir please help with the database","createdAt":"2016-02-18T06:26:49","id":"2520784113","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>hello sir please help with the database\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"craigseotech","about":"","name":"Craig Seotech","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/craigseotech/","url":"","reputation":1.232124,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-07-13T17:34:34","id":"165303331","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/craigseotech.jpg","cache":"//a.disquscdn.com/uploads/users/16530/3331/avatar32.jpg?1436808887"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/craigseotech.jpg","cache":"//a.disquscdn.com/uploads/users/16530/3331/avatar92.jpg?1436808887","large":{"permalink":"http://disqus.com/api/users/avatars/craigseotech.jpg","cache":"//a.disquscdn.com/uploads/users/16530/3331/avatar92.jpg?1436808887"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Got the script to work with multiple roles by using a few switches on auth page but it sticks to the auth page. Is there a way to ad if and else to add on 2 more roles and redirect them to their pages? This switch works but seems to mess everything up including backend navigation.\n\nSay I got 4 roles, Admin, EP, NonPAY, Disco . I keep getting errors when I add more else or else if statements to the auth page. Btw thank you for this source code, it saved me a lot of time. I would most appreciate some sort of fix for this. Thanks!","createdAt":"2015-07-13T17:34:46","id":"2133831402","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Got the script to work with multiple roles by using a few switches on auth page but it sticks to the auth page. Is there a way to ad if and else to add on 2 more roles and redirect them to their pages? This switch works but seems to mess everything up including backend navigation.\u003c/p>\u003cp>Say I got 4 roles, Admin, EP, NonPAY, Disco . I keep getting errors when I add more else or else if statements to the auth page. Btw thank you for this source code, it saved me a lot of time. I would most appreciate some sort of fix for this. Thanks!\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":2133831402,"isApproved":true,"author":{"username":"muhammadfahdaltaf","about":"","name":"Muhammad Fahd Altaf","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2324929999999998,"profileUrl":"https://disqus.com/by/muhammadfahdaltaf/","url":"","reputation":1.2324929999999998,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-07-26T05:15:12","id":"166905693","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/muhammadfahdaltaf.jpg","cache":"//a.disquscdn.com/uploads/users/16690/5693/avatar32.jpg?1437899011"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/muhammadfahdaltaf.jpg","cache":"//a.disquscdn.com/uploads/users/16690/5693/avatar92.jpg?1437899011","large":{"permalink":"http://disqus.com/api/users/avatars/muhammadfahdaltaf.jpg","cache":"//a.disquscdn.com/uploads/users/16690/5693/avatar92.jpg?1437899011"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"I have try this code\n\n**********************Replace This code*************************\n \n if( $_SESSION['sess_userrole'] == \"admin\"){\n   header('Location: adminhome.php');\n  }else{\n   header('Location: userhome.php');\n  }\n\n************** With This code************************\n\n$multirole = $row['role'];\n\nswitch ($multirole) {\n\ncase \"admin\":\n\nheader('Location: include/admin/home.php');\n\nbreak;\n\ncase \"user\":\n\nheader('Location: include/user/home.php');\n\nbreak;\n\ncase \"teamleader\":\n\nheader('Location: include/teamleader/home.php');\n\nbreak;\n\ndefault:\n\necho \"No User Found ! Please Contact Admin\";\n\n}\n\n\n\n\n\n================================\nAdd how many user roles you required","createdAt":"2015-07-26T08:23:29","id":"2157428540","thread":"3201827463","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>I have try this code\u003c/p>\u003cp>**********************Replace This code*************************\u003c/p>\u003cp> if( $_SESSION['sess_userrole'] == \"admin\"){\u003cbr>   header('Location: adminhome.php');\u003cbr>  }else{\u003cbr>   header('Location: userhome.php');\u003cbr>  }\u003c/p>\u003cp>************** With This code************************\u003c/p>\u003cp>$multirole = $row['role'];\u003c/p>\u003cp>switch ($multirole) {\u003c/p>\u003cp>case \"admin\":\u003c/p>\u003cp>header('Location: include/admin/home.php');\u003c/p>\u003cp>break;\u003c/p>\u003cp>case \"user\":\u003c/p>\u003cp>header('Location: include/user/home.php');\u003c/p>\u003cp>break;\u003c/p>\u003cp>case \"teamleader\":\u003c/p>\u003cp>header('Location: include/teamleader/home.php');\u003c/p>\u003cp>break;\u003c/p>\u003cp>default:\u003c/p>\u003cp>echo \"No User Found ! Please Contact Admin\";\u003c/p>\u003cp>}\u003c/p>\u003cp>================================\u003cbr>Add how many user roles you required\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":2157428540,"isApproved":true,"author":{"username":"rohit_potdar","about":"","name":"Rohit Potdar","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/rohit_potdar/","url":"","reputation":1.232124,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-07-29T20:12:38","id":"167381530","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/rohit_potdar.jpg","cache":"//a.disquscdn.com/uploads/users/16738/1530/avatar32.jpg?1440759203"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/rohit_potdar.jpg","cache":"//a.disquscdn.com/uploads/users/16738/1530/avatar92.jpg?1440759203","large":{"permalink":"http://disqus.com/api/users/avatars/rohit_potdar.jpg","cache":"//a.disquscdn.com/uploads/users/16738/1530/avatar92.jpg?1440759203"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"instead I added below line\nheader(\"Location: \".$_SESSION['sess_userpage']);\n\nand assigned particular page to each user.\nalso added this field in database.","createdAt":"2015-08-28T10:53:21","id":"2222769038","thread":"3201827463","depth":2,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":true,"message":"\u003cp>instead I added below line\u003cbr>header(\"Location: \".$_SESSION['sess_userpage']);\u003c/p>\u003cp>and assigned particular page to each user.\u003cbr>also added this field in database.\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":2222769038,"isApproved":true,"author":{"username":"olubiyiibrahimenitaneniola","about":"WEB MASTER","name":"Olubiyi Ibrahim Enitan Eniola","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2324929999999998,"profileUrl":"https://disqus.com/by/olubiyiibrahimenitaneniola/","url":"http://www.eniwonderstechnologies.com/","reputation":1.2324929999999998,"location":"LAGOS NIGEIRIA","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Fwww.eniwonderstechnologies.com%2F&key=msVFV31f6b2LcWkuCuqjUA","isPrimary":true,"joinedAt":"2015-03-02T13:41:54","id":"146604816","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/olubiyiibrahimenitaneniola.jpg","cache":"//a.disquscdn.com/uploads/users/14660/4816/avatar32.jpg?1455752343"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/olubiyiibrahimenitaneniola.jpg","cache":"//a.disquscdn.com/uploads/users/14660/4816/avatar92.jpg?1455752343","large":{"permalink":"http://disqus.com/api/users/avatars/olubiyiibrahimenitaneniola.jpg","cache":"//a.disquscdn.com/uploads/users/14660/4816/avatar92.jpg?1455752343"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"where do i add the code?","createdAt":"2016-02-17T23:39:01","id":"2520316209","thread":"3201827463","depth":3,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>where do i add the code?\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":2133831402,"isApproved":true,"author":{"username":"muhammadfahdaltaf","about":"","name":"Muhammad Fahd Altaf","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2324929999999998,"profileUrl":"https://disqus.com/by/muhammadfahdaltaf/","url":"","reputation":1.2324929999999998,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-07-26T05:15:12","id":"166905693","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/muhammadfahdaltaf.jpg","cache":"//a.disquscdn.com/uploads/users/16690/5693/avatar32.jpg?1437899011"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/muhammadfahdaltaf.jpg","cache":"//a.disquscdn.com/uploads/users/16690/5693/avatar92.jpg?1437899011","large":{"permalink":"http://disqus.com/api/users/avatars/muhammadfahdaltaf.jpg","cache":"//a.disquscdn.com/uploads/users/16690/5693/avatar92.jpg?1437899011"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"any solution? i am facing the same situation.","createdAt":"2015-07-26T05:15:20","id":"2157316995","thread":"3201827463","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>any solution? i am facing the same situation.\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"disqus_8yQzLUjJTw","about":"tech engineer","name":"Arun M","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.229935,"profileUrl":"https://disqus.com/by/disqus_8yQzLUjJTw/","url":"","reputation":1.229935,"location":"bangalore","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-07-01T08:00:55","id":"163740229","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_8yQzLUjJTw.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/disqus_8yQzLUjJTw.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_8yQzLUjJTw.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"if i logged  into user id it's should shows the that user dwtails \nplease provide codes for this","createdAt":"2015-07-01T08:06:10","id":"2110077347","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>if i logged  into user id it's should shows the that user dwtails \u003cbr>please provide codes for this\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"disqus_8yQzLUjJTw","about":"tech engineer","name":"Arun M","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.229935,"profileUrl":"https://disqus.com/by/disqus_8yQzLUjJTw/","url":"","reputation":1.229935,"location":"bangalore","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-07-01T08:00:55","id":"163740229","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_8yQzLUjJTw.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/disqus_8yQzLUjJTw.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_8yQzLUjJTw.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":true,"dislikes":0,"raw_message":"can u please share the code for creating the user dashboard","createdAt":"2015-07-01T08:01:39","id":"2110073856","thread":"3201827463","depth":0,"numReports":1,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>can u please share the code for creating the user dashboard\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"disqus_dld6dprwzw","about":"","name":"uday","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/disqus_dld6dprwzw/","url":"","reputation":1.232124,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-03-25T08:34:58","id":"150848261","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_dld6dprwzw.jpg","cache":"//a.disquscdn.com/uploads/users/15084/8261/avatar32.jpg?1427272506"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_dld6dprwzw.jpg","cache":"//a.disquscdn.com/uploads/users/15084/8261/avatar92.jpg?1427272506","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_dld6dprwzw.jpg","cache":"//a.disquscdn.com/uploads/users/15084/8261/avatar92.jpg?1427272506"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"what is the probleam ? \n\nadmin : adminlog\nWarning: session_regenerate_id(): Cannot regenerate session id - headers\n already sent in C:\\Winginx\\home\\localhost\\public_html\\authenticate.php \non line 32\nadmin\nWarning: Cannot modify header information - headers already sent by \n(output started at \nC:\\Winginx\\home\\localhost\\public_html\\authenticate.php:17) in \nC:\\Winginx\\home\\localhost\\public_html\\authenticate.php on line 41","createdAt":"2015-03-25T08:35:05","id":"1926780687","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>what is the probleam ?\u003c/p>\u003cp>admin : adminlog\u003cbr>Warning: session_regenerate_id(): Cannot regenerate session id - headers\u003cbr> already sent in C:\\Winginx\\home\\localhost\\public_html\\authenticate.php \u003cbr>on line 32\u003cbr>admin\u003cbr>Warning: Cannot modify header information - headers already sent by \u003cbr>(output started at \u003cbr>C:\\Winginx\\home\\localhost\\public_html\\authenticate.php:17) in \u003cbr>C:\\Winginx\\home\\localhost\\public_html\\authenticate.php on line 41\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":1926780687,"isApproved":true,"author":{"username":"arsalan_jawaid","about":"","name":"Arsalan Jawaid","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2324929999999998,"profileUrl":"https://disqus.com/by/arsalan_jawaid/","url":"","reputation":1.2324929999999998,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-05-17T11:26:56","id":"157926000","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/arsalan_jawaid.jpg","cache":"//a.disquscdn.com/uploads/users/15792/6000/avatar32.jpg?1431862018"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/arsalan_jawaid.jpg","cache":"//a.disquscdn.com/uploads/users/15792/6000/avatar92.jpg?1431862018","large":{"permalink":"http://disqus.com/api/users/avatars/arsalan_jawaid.jpg","cache":"//a.disquscdn.com/uploads/users/15792/6000/avatar92.jpg?1431862018"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"use \n\nob_start();\n\nbefore session start in authenticate.php","createdAt":"2015-05-17T11:30:10","id":"2029948739","thread":"3201827463","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>use\u003c/p>\u003cp>ob_start();\u003c/p>\u003cp>before session start in authenticate.php\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":1926780687,"isApproved":true,"author":{"username":"arsalan_jawaid","about":"","name":"Arsalan Jawaid","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2324929999999998,"profileUrl":"https://disqus.com/by/arsalan_jawaid/","url":"","reputation":1.2324929999999998,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-05-17T11:26:56","id":"157926000","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/arsalan_jawaid.jpg","cache":"//a.disquscdn.com/uploads/users/15792/6000/avatar32.jpg?1431862018"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/arsalan_jawaid.jpg","cache":"//a.disquscdn.com/uploads/users/15792/6000/avatar92.jpg?1431862018","large":{"permalink":"http://disqus.com/api/users/avatars/arsalan_jawaid.jpg","cache":"//a.disquscdn.com/uploads/users/15792/6000/avatar92.jpg?1431862018"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"I have same issue...did u find the solution?","createdAt":"2015-05-17T11:27:03","id":"2029946300","thread":"3201827463","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>I have same issue...did u find the solution?\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"zeizurvas","about":"","name":"zeizur vas","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/zeizurvas/","url":"","reputation":1.232124,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-03-20T11:03:02","id":"150178158","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/zeizurvas.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/zeizurvas.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/zeizurvas.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"clear and simple!! it works:)","createdAt":"2015-03-20T11:03:12","id":"1917860029","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>clear and simple!! it works:)\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"amranrahman","about":"","name":"Amran Rahman","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.229566,"profileUrl":"https://disqus.com/by/amranrahman/","url":"","reputation":1.229566,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2014-09-24T07:16:28","id":"123128348","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/amranrahman.jpg","cache":"//a.disquscdn.com/uploads/users/12312/8348/avatar32.jpg?1426326859"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/amranrahman.jpg","cache":"//a.disquscdn.com/uploads/users/12312/8348/avatar92.jpg?1426326859","large":{"permalink":"http://disqus.com/api/users/avatars/amranrahman.jpg","cache":"//a.disquscdn.com/uploads/users/12312/8348/avatar92.jpg?1426326859"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"thanks bro helpful work","createdAt":"2015-03-14T09:54:18","id":"1906590936","thread":"3201827463","depth":0,"numReports":1,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>thanks bro helpful work\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"disqus_BUJ0604HZl","about":"beginner devloper","name":"Abhishek gupta","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/disqus_BUJ0604HZl/","url":"http://indiawebnet.com","reputation":1.232124,"location":"delhi","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Findiawebnet.com&key=5n9LSnXkp8goQlmDeAO-nw","isPrimary":true,"joinedAt":"2015-03-14T07:10:24","id":"148688750","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_BUJ0604HZl.jpg","cache":"//a.disquscdn.com/uploads/users/14868/8750/avatar32.jpg?1426317036"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_BUJ0604HZl.jpg","cache":"//a.disquscdn.com/uploads/users/14868/8750/avatar92.jpg?1426317036","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_BUJ0604HZl.jpg","cache":"//a.disquscdn.com/uploads/users/14868/8750/avatar92.jpg?1426317036"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"can you send me role base access login sytems as 6 members on my mail id abhishekkumargupta33@gmail.com","createdAt":"2015-03-14T07:10:35","id":"1906501161","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>can you send me role base access login sytems as 6 members on my mail id abhishekkumargupta33@gmail.com\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"jitusorout","about":"","name":"Jitender","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232862,"profileUrl":"https://disqus.com/by/jitusorout/","url":"","reputation":1.232862,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2013-03-18T15:16:49","id":"45936289","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/jitusorout.jpg","cache":"//a.disquscdn.com/uploads/users/4593/6289/avatar32.jpg?1434882882"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/jitusorout.jpg","cache":"//a.disquscdn.com/uploads/users/4593/6289/avatar92.jpg?1434882882","large":{"permalink":"http://disqus.com/api/users/avatars/jitusorout.jpg","cache":"//a.disquscdn.com/uploads/users/4593/6289/avatar92.jpg?1434882882"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Great tutorial\n \nBut there is a error , this error can make a big problem.\nI just test your script , its working great.\nbut no matter i am user or admin, i can access user or admin page just by changing the page name in URL.\n\ntry to remove that error.\n\njitu.sorout@gmail.com","createdAt":"2015-03-06T02:59:16","id":"1891013630","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Great tutorial\u003c/p>\u003cp>But there is a error , this error can make a big problem.\u003cbr>I just test your script , its working great.\u003cbr>but no matter i am user or admin, i can access user or admin page just by changing the page name in URL.\u003c/p>\u003cp>try to remove that error.\u003c/p>\u003cp>jitu.sorout@gmail.com\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":1891013630,"isApproved":true,"author":{"username":"techyari","about":"","name":"TechYari","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2303039999999998,"profileUrl":"https://disqus.com/by/techyari/","url":"http://techyari.in/","reputation":1.2303039999999998,"location":"India","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Ftechyari.in%2F&key=5FI-7Hwm42EzOJGiqOHaSw","isPrimary":true,"joinedAt":"2012-12-13T14:34:16","id":"38669438","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/techyari.jpg","cache":"//a.disquscdn.com/uploads/users/3866/9438/avatar32.jpg?1425632349"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/techyari.jpg","cache":"//a.disquscdn.com/uploads/users/3866/9438/avatar92.jpg?1425632349","large":{"permalink":"http://disqus.com/api/users/avatars/techyari.jpg","cache":"//a.disquscdn.com/uploads/users/3866/9438/avatar92.jpg?1425632349"}}},"media":[],"isDeleted":false,"isFlagged":true,"dislikes":0,"raw_message":"You can update code in userhome.php & adminhome.php, replace the && (AND) with || (OR) in the if condition at the top. I had updated the tutorial but forgot to update the downloadable script. You can click on demo to see.","createdAt":"2015-03-06T08:59:08","id":"1891308194","thread":"3201827463","depth":1,"numReports":1,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>You can update code in userhome.php &amp; adminhome.php, replace the &amp;&amp; (AND) with || (OR) in the if condition at the top. I had updated the tutorial but forgot to update the downloadable script. You can click on demo to see.\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"disqus_hAy5WVHxpN","about":"Dummy ","name":"Wisnu Hidayat","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/disqus_hAy5WVHxpN/","url":"","reputation":1.232124,"location":"Jakarta","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-02-28T18:12:06","id":"146375458","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_hAy5WVHxpN.jpg","cache":"//a.disquscdn.com/uploads/users/14637/5458/avatar32.jpg?1425147368"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_hAy5WVHxpN.jpg","cache":"//a.disquscdn.com/uploads/users/14637/5458/avatar92.jpg?1425147368","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_hAy5WVHxpN.jpg","cache":"//a.disquscdn.com/uploads/users/14637/5458/avatar92.jpg?1425147368"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Great post but I have problem,  \n\nwisnu : wisnu\n\nWarning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /var/www/html/it/tes/login-system/authenticate.php on line 32\n\nadmin\n\nWarning:  Cannot modify header information - headers already sent\n by (output started at \n/var/www/html/it/tes/login-system/authenticate.php:17) in /var/www/html/it/tes/login-system/authenticate.php on line 41\nI hope I can find my way out, thank you","createdAt":"2015-02-28T18:16:07","id":"1880664213","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Great post but I have problem,\u003c/p>\u003cp>wisnu : wisnu\u003c/p>\u003cp>Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /var/www/html/it/tes/login-system/authenticate.php on line 32\u003c/p>\u003cp>admin\u003c/p>\u003cp>Warning:  Cannot modify header information - headers already sent\u003cbr> by (output started at \u003cbr>/var/www/html/it/tes/login-system/authenticate.php:17) in /var/www/html/it/tes/login-system/authenticate.php on line 41\u003cbr>I hope I can find my way out, thank you\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"disqus_pTNqHhqQ3U","about":"","name":"Saif","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2363009999999999,"profileUrl":"https://disqus.com/by/disqus_pTNqHhqQ3U/","url":"http://www.ourowncloud.tk/","reputation":1.2363009999999999,"location":"","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Fwww.ourowncloud.tk%2F&key=zYxsuvbk8NoKpwiAff7IaA","isPrimary":true,"joinedAt":"2015-02-14T16:29:35","id":"144497526","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_pTNqHhqQ3U.jpg","cache":"//a.disquscdn.com/uploads/users/14449/7526/avatar32.jpg?1423931794"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_pTNqHhqQ3U.jpg","cache":"//a.disquscdn.com/uploads/users/14449/7526/avatar92.jpg?1423931794","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_pTNqHhqQ3U.jpg","cache":"//a.disquscdn.com/uploads/users/14449/7526/avatar92.jpg?1423931794"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"whats the command to load user and pass from database?","createdAt":"2015-02-14T16:36:33","id":"1855380753","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>whats the command to load user and pass from database?\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"disqus_pTNqHhqQ3U","about":"","name":"Saif","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2363009999999999,"profileUrl":"https://disqus.com/by/disqus_pTNqHhqQ3U/","url":"http://www.ourowncloud.tk/","reputation":1.2363009999999999,"location":"","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Fwww.ourowncloud.tk%2F&key=zYxsuvbk8NoKpwiAff7IaA","isPrimary":true,"joinedAt":"2015-02-14T16:29:35","id":"144497526","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_pTNqHhqQ3U.jpg","cache":"//a.disquscdn.com/uploads/users/14449/7526/avatar32.jpg?1423931794"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_pTNqHhqQ3U.jpg","cache":"//a.disquscdn.com/uploads/users/14449/7526/avatar92.jpg?1423931794","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_pTNqHhqQ3U.jpg","cache":"//a.disquscdn.com/uploads/users/14449/7526/avatar92.jpg?1423931794"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"How to Make it load user and password from database and create tables in database.Help","createdAt":"2015-02-14T16:29:40","id":"1855371598","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":true,"message":"\u003cp>How to Make it load user and password from database and create tables in database.Help\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"kwaabs","about":"","name":"Kwaabs","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/kwaabs/","url":"","reputation":1.232124,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-02-06T00:02:48","id":"143126617","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/kwaabs.jpg","cache":"//a.disquscdn.com/uploads/users/14312/6617/avatar32.jpg?1423180979"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/kwaabs.jpg","cache":"//a.disquscdn.com/uploads/users/14312/6617/avatar92.jpg?1423180979","large":{"permalink":"http://disqus.com/api/users/avatars/kwaabs.jpg","cache":"//a.disquscdn.com/uploads/users/14312/6617/avatar92.jpg?1423180979"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"I would love to have a registration.php to this. Could you provide one using salted hashes?","createdAt":"2015-02-06T00:02:58","id":"1837492039","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>I would love to have a registration.php to this. Could you provide one using salted hashes?\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"elsgraph","about":"funny","name":"elsgraph","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/elsgraph/","url":"","reputation":1.232124,"location":"indonesia","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-01-24T13:06:31","id":"141032419","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/elsgraph.jpg","cache":"//a.disquscdn.com/uploads/users/14103/2419/avatar32.jpg?1422104805"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/elsgraph.jpg","cache":"//a.disquscdn.com/uploads/users/14103/2419/avatar92.jpg?1422104805","large":{"permalink":"http://disqus.com/api/users/avatars/elsgraph.jpg","cache":"//a.disquscdn.com/uploads/users/14103/2419/avatar92.jpg?1422104805"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Awesome, Thank you for sharing this tutorial. It really helped me, ^^","createdAt":"2015-01-24T13:06:43","id":"1814581534","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Awesome, Thank you for sharing this tutorial. It really helped me, ^^\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"disqus_qRe0ktizW3","about":"programmer","name":"santosh","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/disqus_qRe0ktizW3/","url":"http://www.pcfun.in","reputation":1.232124,"location":"gurgao delhi ncr","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Fwww.pcfun.in&key=COVGRo_kBR0wfd0TcGXZCQ","isPrimary":true,"joinedAt":"2015-01-18T04:14:49","id":"139921215","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_qRe0ktizW3.jpg","cache":"//a.disquscdn.com/uploads/users/13992/1215/avatar32.jpg?1421554498"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_qRe0ktizW3.jpg","cache":"//a.disquscdn.com/uploads/users/13992/1215/avatar92.jpg?1421554498","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_qRe0ktizW3.jpg","cache":"//a.disquscdn.com/uploads/users/13992/1215/avatar92.jpg?1421554498"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"There is a problem. When user logged in then if user open adminhome.php url directly then user can access admin page. User should not be access admin page. Please provide code for more secure login system.","createdAt":"2015-01-18T04:14:57","id":"1799182570","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>There is a problem. When user logged in then if user open adminhome.php url directly then user can access admin page. User should not be access admin page. Please provide code for more secure login system.\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":1799182570,"isApproved":true,"author":{"username":"disqus_1x5MWboZ4m","about":"Web Developer","name":"TechYari","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2402069999999998,"profileUrl":"https://disqus.com/by/disqus_1x5MWboZ4m/","url":"http://www.techyari.in","reputation":1.2402069999999998,"location":"Mumbai","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Fwww.techyari.in&key=xXFic4E6_6I3MBjeTQn-2A","isPrimary":true,"joinedAt":"2015-01-18T07:40:08","id":"139938040","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_1x5MWboZ4m.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/disqus_1x5MWboZ4m.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_1x5MWboZ4m.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Thanks fo pointing out the bug. Have updated the tutorial to resolve the issue. You can update code in userhome.php & adminhome.php, replace the && (AND) with || (OR) in the if condition at the top.","createdAt":"2015-01-18T07:40:27","id":"1799318730","thread":"3201827463","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":1,"isEdited":false,"message":"\u003cp>Thanks fo pointing out the bug. Have updated the tutorial to resolve the issue. You can update code in userhome.php &amp; adminhome.php, replace the &amp;&amp; (AND) with || (OR) in the if condition at the top.\u003c/p>","isSpam":false,"isHighlighted":false,"points":1},{"forum":"techyariadmin","parent":null,"isApproved":true,"author":{"username":"gautamsh","about":"","name":"Gautam Sharma","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2388839999999999,"profileUrl":"https://disqus.com/by/gautamsh/","url":"","reputation":1.2388839999999999,"location":"mumbai","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2014-09-28T12:41:03","id":"123654383","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/gautamsh.jpg","cache":"//a.disquscdn.com/uploads/users/12365/4383/avatar32.jpg?1426818732"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/gautamsh.jpg","cache":"//a.disquscdn.com/uploads/users/12365/4383/avatar92.jpg?1426818732","large":{"permalink":"http://disqus.com/api/users/avatars/gautamsh.jpg","cache":"//a.disquscdn.com/uploads/users/12365/4383/avatar92.jpg?1426818732"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"awesome role based login script...\nthanx for sharing..\n\nvipin sir\ni want to know that which tools you use to create images for posts\nit would be appreciated..\nthanx..","createdAt":"2015-01-08T04:32:38","id":"1777766655","thread":"3201827463","depth":0,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>awesome role based login script...\u003cbr>thanx for sharing..\u003c/p>\u003cp>vipin sir\u003cbr>i want to know that which tools you use to create images for posts\u003cbr>it would be appreciated..\u003cbr>thanx..\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":1777766655,"isApproved":true,"author":{"username":"disqus_1x5MWboZ4m","about":"Web Developer","name":"TechYari","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2402069999999998,"profileUrl":"https://disqus.com/by/disqus_1x5MWboZ4m/","url":"http://www.techyari.in","reputation":1.2402069999999998,"location":"Mumbai","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Fwww.techyari.in&key=xXFic4E6_6I3MBjeTQn-2A","isPrimary":true,"joinedAt":"2015-01-18T07:40:08","id":"139938040","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_1x5MWboZ4m.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/disqus_1x5MWboZ4m.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_1x5MWboZ4m.jpg","cache":"//a.disquscdn.com/1466423158/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Thanks. I use Photoshop and Picasa.","createdAt":"2015-01-18T07:42:01","id":"1799319455","thread":"3201827463","depth":1,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Thanks. I use Photoshop and Picasa.\u003c/p>","isSpam":false,"isHighlighted":false,"points":0},{"forum":"techyariadmin","parent":1799319455,"isApproved":true,"author":{"username":"gautamsh","about":"","name":"Gautam Sharma","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2388839999999999,"profileUrl":"https://disqus.com/by/gautamsh/","url":"","reputation":1.2388839999999999,"location":"mumbai","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2014-09-28T12:41:03","id":"123654383","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/gautamsh.jpg","cache":"//a.disquscdn.com/uploads/users/12365/4383/avatar32.jpg?1426818732"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/gautamsh.jpg","cache":"//a.disquscdn.com/uploads/users/12365/4383/avatar92.jpg?1426818732","large":{"permalink":"http://disqus.com/api/users/avatars/gautamsh.jpg","cache":"//a.disquscdn.com/uploads/users/12365/4383/avatar92.jpg?1426818732"}}},"media":[],"isDeleted":false,"isFlagged":false,"dislikes":0,"raw_message":"Thank you So much Sir...\nand keep sharing...","createdAt":"2015-01-19T18:15:16","id":"1802710221","thread":"3201827463","depth":2,"numReports":0,"isDeletedByAuthor":false,"likes":0,"isEdited":false,"message":"\u003cp>Thank you So much Sir...\u003cbr>and keep sharing...\u003c/p>","isSpam":false,"isHighlighted":false,"points":0}],"thread":{"feed":"https://techyariadmin.disqus.com/multi_user_role_based_login_in_php_with_mysql_techyari/latest.rss","identifiers":[],"dislikes":0,"likes":0,"message":"","id":"3201827463","isDeleted":false,"category":"3352983","author":"130247217","userScore":0,"userSubscription":false,"isSpam":false,"signedLink":"http://disq.us/?url=http%3A%2F%2Fwww.techyari.in%2F2014%2F10%2Fmulti-user-role-based-login-in-php-with-mysql.html&key=5TIzym2hUcFeR61S_LyCFA","createdAt":"2014-11-07T15:30:08","hasStreaming":false,"raw_message":"","isClosed":false,"link":"http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html","slug":"multi_user_role_based_login_in_php_with_mysql_techyari","forum":"techyariadmin","clean_title":"Multi User Role Based Login in PHP with MySql","posts":29,"moderators":[130247217],"title":"Multi User Role Based Login in PHP with MySql | TechYari","highlightedPost":null}},"order":"popular"}</script>
+
+    
+
+    <div id="fixed-content"></div>
+
+
+    
+        
+        <!--[if lte IE 8]>
+<script src="//a.disquscdn.com/1466423158/build/vendor/ie8.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<script src="//a.disquscdn.com/1466423158/build/vendor/ie9.js"></script>
+<![endif]-->
+
+        
+<script type="text/json" id="disqus-urls">{
+    "root":"//disqus.com",
+    "next":"//a.disquscdn.com/next/current/embed"
+}</script>
+
+        <script src="a_data/lounge_002.js" id="bootstrap-script" data-app="lounge" async=""></script>
+    
+
+
+<div id="layout" data-tracking-area="layout">
+
+<div id="onboard" data-tracking-area="onboard"></div>
+
+<div style="display: none;" id="highlighted-post" data-tracking-area="highlighted" class="highlighted-post"></div>
+
+<div id="global-alert"></div>
+
+<header id="main-nav" data-tracking-area="main-nav">
+<nav class="nav nav-primary">
+<ul>
+<li class="tab-conversation active" data-role="post-count"><a class="publisher-nav-color">
+<span class="comment-count">
+29 comments
+</span>
+
+<span class="comment-count-placeholder">
+Comments
+</span>
+</a>
+</li>
+<li class="tab-community">
+<a href="https://disqus.com/home/forums/techyariadmin/" class="publisher-nav-color" data-action="community-sidebar" data-forum="techyariadmin" id="community-tab">
+<span class="community-name">
+<strong>TechYari</strong>
+
+</span>
+
+<strong class="community-name-placeholder">Community</strong>
+</a>
+</li>
+<li class="dropdown user-menu" data-role="logout"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<span class="dropdown-toggle-wrapper">
+
+<span>
+Login
+</span>
+
+</span> <span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+
+
+<li>
+<a href="#" data-action="auth:disqus">Disqus</a>
+</li>
+<li>
+<a href="#" data-action="auth:facebook">Facebook</a>
+</li>
+<li>
+<a href="#" data-action="auth:twitter">Twitter</a>
+</li>
+<li>
+<a href="#" data-action="auth:google">Google</a>
+</li>
+
+
+
+</ul>
+</li>
+<li class="notification-menu unread" data-role="notification-menu"><a href="https://disqus.com/home/inbox/" class="notification-container" data-action="home" data-home-path="home/inbox/">
+<span class="notification-icon icon-comment" aria-hidden=""></span>
+<span class="notification-count" data-role="notification-count">1</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+
+<section id="conversation" data-role="main" data-tracking-area="main">
+<div class="nav nav-secondary" data-tracking-area="secondary-nav">
+<ul>
+<li id="recommend-button" class="recommend dropdown">
+<div class="thread-likes"><a href="#" data-action="recommend" title="Recommend this discussion" class="dropdown-toggle ">
+<span class="icon-heart"></span>
+<span class="label label-default">Recommend</span>
+<span class="label label-recommended">Recommended</span>
+</a>
+<ul class="dropdown-menu coachmark">
+<li>
+<h2>Discussion Recommended!</h2>
+<p>Recommending means this is a discussion worth sharing. It gets shared
+ to your followers' Disqus feeds, and gives the creator kudos!</p>
+<a href="http://disqus.com/home/?utm_source=disqus_embed&amp;utm_content=recommend_btn" class="btn btn-primary" target="_blank">
+ Find More Discussions 
+</a>
+</li>
+</ul>
+</div></li>
+<li id="thread-share-menu" class="dropdown share-menu hidden-sm"><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Share">
+<span class="icon-export"></span>
+<span class="label">Share</span>
+</a>
+<ul class="share-menu dropdown-menu">
+<li class="share">Share this discussion on
+<ul>
+<li class="twitter">
+<a data-action="share:twitter" href="#">Twitter</a>
+</li>
+<li class="facebook">
+<a data-action="share:facebook" href="#">Facebook</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-role="post-sort" class="dropdown sorting pull-right">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+Sort by Best
+
+
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu pull-right">
+<li class="selected">
+<a href="#" data-action="sort" data-sort="popular">Best<i aria-hidden="true" class="icon-checkmark"></i></a>
+</li>
+
+<li>
+<a href="#" data-action="sort" data-sort="desc">Newest<i aria-hidden="true" class="icon-checkmark"></i></a>
+</li>
+
+<li>
+<a href="#" data-action="sort" data-sort="asc">Oldest<i aria-hidden="true" class="icon-checkmark"></i></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div id="posts">
+<div id="form"><form class="reply">
+<div class="postbox">
+<div role="alert"></div>
+<div class="avatar">
+<span class="user">
+<img data-role="user-avatar" src="a_data/noavatar92.png" alt="Avatar">
+</span>
+</div>
+
+<div class="textarea-wrapper" data-role="textarea" dir="auto"><div><span class="placeholder">Join the discussion…</span><div aria-label="Join the discussion…" style="overflow: auto; max-height: 350px;" data-role="editable" aria-multiline="true" role="textbox" tabindex="0" class="textarea" contenteditable="true"><p><br></p></div><div style="display: none;"><ul class="suggestions">
+<li class="header">
+<h5>in this conversation</h5>
+</li>
+</ul>
+</div></div>
+<div data-role="drag-drop-placeholder" class="media-drag-hover" style="display: none">
+<div class="drag-text">
+⬇ Drag and drop your images here to upload them.
+</div>
+</div>
+<div class="edit-alert" role="postbox-alert"></div>
+<div class="post-actions">
+<ul class="wysiwyg">
+</ul>
+</div>
+</div>
+
+<div data-role="login-form"><div><section class="auth-section logged-out">
+<div class="connect">
+<h6>Log in with</h6>
+<ul data-role="login-menu" class="services login-buttons">
+
+
+<li class="auth-disqus">
+<button type="button" data-action="auth:disqus" title="Disqus"><i class="icon-disqus"></i></button>
+</li>
+<li class="auth-facebook">
+<button type="button" data-action="auth:facebook" title="Facebook"><i class="icon-facebook-circle"></i></button>
+</li>
+<li class="auth-twitter">
+<button type="button" data-action="auth:twitter" title="Twitter"><i class="icon-twitter-circle"></i></button>
+</li>
+<li class="auth-google">
+<button type="button" data-action="auth:google" title="Google"><i class="icon-google-plus-circle"></i></button>
+</li>
+</ul>
+</div>
+<div class="guest">
+<h6 class="guest-form-title">
+<span class="register-text"> or sign up with Disqus </span>
+<span class="guest-text"> or pick a name </span>
+</h6>
+
+<div class="what-is-disqus help-icon">
+<div id="rules" class="tooltip show">
+<h3>Disqus is a discussion network</h3>
+<ul>
+<li><span>Disqus never moderates or censors. The rules on this community are its own.</span></li>
+<li><span>Your email is safe with us. It's only used for moderation and optional notifications.</span></li>
+<li><span>Don't be a jerk or do anything illegal. Everything is easier that way.</span></li>
+</ul>
+<p class="clearfix"><a href="https://docs.disqus.com/kb/terms-and-policies/" class="btn btn-small" target="_blank">Read full terms and conditions</a></p>
+</div>
+</div>
+
+<p class="input-wrapper">
+<input dir="auto" placeholder="Name" name="display_name" id="view82_display_name" maxlength="30" type="text">
+</p>
+
+<div class="guest-details " data-role="guest-details">
+<p class="input-wrapper">
+<input dir="auto" placeholder="Email" name="email" id="view82_email" type="email">
+</p>
+
+<p class="input-wrapper">
+<input dir="auto" class="register-text" placeholder="Password" name="password" id="view82_password" type="password">
+</p>
+
+<div class="acceptance-wrapper register-text">
+By signing up, you agree to the Disqus <a target="_blank" href="https://help.disqus.com/customer/portal/articles/1753105-basic-rules-for-disqus-powered-profiles-and-discussions">Basic Rules</a>, <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466260-terms-of-service">Terms of Service</a>, and <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466259-privacy-policy">Privacy Policy</a>.
+</div>
+<div class="acceptance-wrapper guest-text">
+By posting, you agree to the Disqus <a target="_blank" href="https://help.disqus.com/customer/portal/articles/1753105-basic-rules-for-disqus-powered-profiles-and-discussions">Basic Rules</a>, <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466260-terms-of-service">Terms of Service</a>, and <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466259-privacy-policy">Privacy Policy</a>.
+</div>
+
+<input name="author-guest" style="display:none" type="checkbox">
+
+<div class="proceed" data-role="submit-btn-container">
+<button type="submit" class="btn submit" aria-label="Next"><span class="icon-proceed"></span><div class="spinner"></div></button>
+</div>
+</div>
+</div>
+</section>
+
+</div></div>
+</div>
+</form></div>
+
+<button class="alert realtime" style="display: none" data-role="realtime-notification">
+</button>
+
+<div id="no-posts" style="display:none"></div>
+
+<ul id="post-list" class="post-list"><li id="post-2659562104" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/sargunanraman/" class="user" data-action="profile" data-username="sargunanraman">
+<img data-role="user-avatar" data-user="206957598" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/sargunanraman/" data-action="profile" data-username="sargunanraman" data-role="username">sargunan raman</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2659562104" data-role="relative-time" class="time-ago" title="Thursday, May 5, 2016 4:21 PM">2 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>hello i want ask can i do login from tabel_customer and tabel_staff to access certain page only</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/17zfn94">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2659562104">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-2520786896" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/balagurur/" class="user" data-action="profile" data-username="balagurur">
+<img data-role="user-avatar" data-user="197116497" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/balagurur/" data-action="profile" data-username="balagurur" data-role="username">BALAGURU R</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2520786896" data-role="relative-time" class="time-ago" title="Thursday, February 18, 2016 1:30 PM">4 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>how this authenticate code knows who is the admin or user... please help me with that sir asap<br>mail me @ rbalaguru013@gmail.com</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/15ot7m8">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2520786896">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-2520785450" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/balagurur/" class="user" data-action="profile" data-username="balagurur">
+<img data-role="user-avatar" data-user="197116497" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/balagurur/" data-action="profile" data-username="balagurur" data-role="username">BALAGURU R</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2520785450" data-role="relative-time" class="time-ago" title="Thursday, February 18, 2016 1:28 PM">4 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>sir i am new to php, i cant understand the database means of role</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/15ot6i2">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2520785450">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-2520784113" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/balagurur/" class="user" data-action="profile" data-username="balagurur">
+<img data-role="user-avatar" data-user="197116497" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/balagurur/" data-action="profile" data-username="balagurur" data-role="username">BALAGURU R</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2520784113" data-role="relative-time" class="time-ago" title="Thursday, February 18, 2016 1:26 PM">4 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>hello sir please help with the database</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/15ot5gx">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2520784113">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-2133831402" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/craigseotech/" class="user" data-action="profile" data-username="craigseotech">
+<img data-role="user-avatar" data-user="165303331" src="a_data/avatar92_002.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/craigseotech/" data-action="profile" data-username="craigseotech" data-role="username">Craig Seotech</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2133831402" data-role="relative-time" class="time-ago" title="Tuesday, July 14, 2015 12:34 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Got the script to work with multiple roles by using a few switches on
+ auth page but it sticks to the auth page. Is there a way to ad if and 
+else to add on 2 more roles and redirect them to their pages? This 
+switch works but seems to mess everything up including backend 
+navigation.</p><p>Say I got 4 roles, Admin, EP, NonPAY, Disco . I keep 
+getting errors when I add more else or else if statements to the auth 
+page. Btw thank you for this source code, it saved me a lot of time. I 
+would most appreciate some sort of fix for this. Thanks!</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/zafeui">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2133831402">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-2157428540" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/muhammadfahdaltaf/" class="user" data-action="profile" data-username="muhammadfahdaltaf">
+<img data-role="user-avatar" data-user="166905693" src="a_data/avatar92_013.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/muhammadfahdaltaf/" data-action="profile" data-username="muhammadfahdaltaf" data-role="username">Muhammad Fahd Altaf</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2133831402" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Craig Seotech</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2157428540" data-role="relative-time" class="time-ago" title="Sunday, July 26, 2015 3:23 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div style="height: 374px;" class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>I have try this code</p><p>**********************Replace This code*************************</p><p> if( $_SESSION['sess_userrole'] == "admin"){<br>   header('Location: adminhome.php');<br>  }else{<br>   header('Location: userhome.php');<br>  }</p><p>************** With This code************************</p><p>$multirole = $row['role'];</p><p>switch ($multirole) {</p><p>case "admin":</p><p>header('Location: include/admin/home.php');</p><p>break;</p><p>case "user":</p><p>header('Location: include/user/home.php');</p><p>break;</p><p>case "teamleader":</p><p>header('Location: include/teamleader/home.php');</p><p>break;</p><p>default:</p><p>echo "No User Found ! Please Contact Admin";</p><p>}</p><p>================================<br>Add how many user roles you required</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/zoh6ik">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2157428540">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-2222769038" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/rohit_potdar/" class="user" data-action="profile" data-username="rohit_potdar">
+<img data-role="user-avatar" data-user="167381530" src="a_data/avatar92_012.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/rohit_potdar/" data-action="profile" data-username="rohit_potdar" data-role="username">Rohit Potdar</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2157428540" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Muhammad Fahd Altaf</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2222769038" data-role="relative-time" class="time-ago" title="Friday, August 28, 2015 5:53 PM">10 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>instead I added below line<br>header("Location: ".$_SESSION['sess_userpage']);</p><p>and assigned particular page to each user.<br>also added this field in database.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/10rdnke">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2222769038">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-2520316209" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/olubiyiibrahimenitaneniola/" class="user" data-action="profile" data-username="olubiyiibrahimenitaneniola">
+<img data-role="user-avatar" data-user="146604816" src="a_data/avatar92_014.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/olubiyiibrahimenitaneniola/" data-action="profile" data-username="olubiyiibrahimenitaneniola" data-role="username">Olubiyi Ibrahim Enitan Eniola</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2222769038" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Rohit Potdar</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2520316209" data-role="relative-time" class="time-ago" title="Thursday, February 18, 2016 6:39 AM">4 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>where do i add the code?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/15oj4fl">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2520316209">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li></ul>
+
+</li><li id="post-2157316995" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/muhammadfahdaltaf/" class="user" data-action="profile" data-username="muhammadfahdaltaf">
+<img data-role="user-avatar" data-user="166905693" src="a_data/avatar92_013.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/muhammadfahdaltaf/" data-action="profile" data-username="muhammadfahdaltaf" data-role="username">Muhammad Fahd Altaf</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2133831402" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Craig Seotech</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2157316995" data-role="relative-time" class="time-ago" title="Sunday, July 26, 2015 12:15 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>any solution? i am facing the same situation.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/zoesg3">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2157316995">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li><li id="post-2110077347" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_8yQzLUjJTw/" class="user" data-action="profile" data-username="disqus_8yQzLUjJTw">
+<img data-role="user-avatar" data-user="163740229" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_8yQzLUjJTw/" data-action="profile" data-username="disqus_8yQzLUjJTw" data-role="username">Arun M</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2110077347" data-role="relative-time" class="time-ago" title="Wednesday, July 1, 2015 3:06 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>if i logged  into user id it's should shows the that user dwtails <br>please provide codes for this</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/ywaa3n">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2110077347">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-2110073856" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_8yQzLUjJTw/" class="user" data-action="profile" data-username="disqus_8yQzLUjJTw">
+<img data-role="user-avatar" data-user="163740229" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_8yQzLUjJTw/" data-action="profile" data-username="disqus_8yQzLUjJTw" data-role="username">Arun M</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2110073856" data-role="relative-time" class="time-ago" title="Wednesday, July 1, 2015 3:01 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>can u please share the code for creating the user dashboard</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/ywa7eo">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2110073856">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1926780687" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_dld6dprwzw/" class="user" data-action="profile" data-username="disqus_dld6dprwzw">
+<img data-role="user-avatar" data-user="150848261" src="a_data/avatar92.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_dld6dprwzw/" data-action="profile" data-username="disqus_dld6dprwzw" data-role="username">uday</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1926780687" data-role="relative-time" class="time-ago" title="Wednesday, March 25, 2015 3:35 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>what is the probleam ?</p><p>admin : adminlog<br>Warning: session_regenerate_id(): Cannot regenerate session id - headers<br> already sent in C:\Winginx\home\localhost\public_html\authenticate.php <br>on line 32<br>admin<br>Warning: Cannot modify header information - headers already sent by <br>(output started at <br>C:\Winginx\home\localhost\public_html\authenticate.php:17) in <br>C:\Winginx\home\localhost\public_html\authenticate.php on line 41</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/vv5lhr">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1926780687">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-2029948739" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/arsalan_jawaid/" class="user" data-action="profile" data-username="arsalan_jawaid">
+<img data-role="user-avatar" data-user="157926000" src="a_data/avatar92_011.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/arsalan_jawaid/" data-action="profile" data-username="arsalan_jawaid" data-role="username">Arsalan Jawaid</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1926780687" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> uday</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2029948739" data-role="relative-time" class="time-ago" title="Sunday, May 17, 2015 6:30 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>use</p><p>ob_start();</p><p>before session start in authenticate.php</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/xkkugz">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2029948739">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-2029946300" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/arsalan_jawaid/" class="user" data-action="profile" data-username="arsalan_jawaid">
+<img data-role="user-avatar" data-user="157926000" src="a_data/avatar92_011.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/arsalan_jawaid/" data-action="profile" data-username="arsalan_jawaid" data-role="username">Arsalan Jawaid</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1926780687" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> uday</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-2029946300" data-role="relative-time" class="time-ago" title="Sunday, May 17, 2015 6:27 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>I have same issue...did u find the solution?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/xkksl8">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2029946300">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li><li id="post-1917860029" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/zeizurvas/" class="user" data-action="profile" data-username="zeizurvas">
+<img data-role="user-avatar" data-user="150178158" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/zeizurvas/" data-action="profile" data-username="zeizurvas" data-role="username">zeizur vas</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1917860029" data-role="relative-time" class="time-ago" title="Friday, March 20, 2015 6:03 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>clear and simple!! it works:)</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/vpue9p">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1917860029">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1906590936" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/amranrahman/" class="user" data-action="profile" data-username="amranrahman">
+<img data-role="user-avatar" data-user="123128348" src="a_data/avatar92_007.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/amranrahman/" data-action="profile" data-username="amranrahman" data-role="username">Amran Rahman</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1906590936" data-role="relative-time" class="time-ago" title="Saturday, March 14, 2015 4:54 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>thanks bro helpful work</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/vj4uzc">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1906590936">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1906501161" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_BUJ0604HZl/" class="user" data-action="profile" data-username="disqus_BUJ0604HZl">
+<img data-role="user-avatar" data-user="148688750" src="a_data/avatar92_015.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_BUJ0604HZl/" data-action="profile" data-username="disqus_BUJ0604HZl" data-role="username">Abhishek gupta</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1906501161" data-role="relative-time" class="time-ago" title="Saturday, March 14, 2015 2:10 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>can you send me role base access login sytems as 6 members on my mail id abhishekkumargupta33@gmail.com</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/vj2xpl">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1906501161">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1891013630" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/jitusorout/" class="user" data-action="profile" data-username="jitusorout">
+<img data-role="user-avatar" data-user="45936289" src="a_data/avatar92_004.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/jitusorout/" data-action="profile" data-username="jitusorout" data-role="username">Jitender</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1891013630" data-role="relative-time" class="time-ago" title="Friday, March 6, 2015 9:59 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Great tutorial</p><p>But there is a error , this error can make a big problem.<br>I just test your script , its working great.<br>but no matter i am user or admin, i can access user or admin page just by changing the page name in URL.</p><p>try to remove that error.</p><p>jitu.sorout@gmail.com</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/v9uzge">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1891013630">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-1891308194" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/techyari/" class="user" data-action="profile" data-username="techyari">
+<img data-role="user-avatar" data-user="38669438" src="a_data/avatar92_010.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/techyari/" data-action="profile" data-username="techyari" data-role="username">TechYari</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1891013630" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Jitender</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1891308194" data-role="relative-time" class="time-ago" title="Friday, March 6, 2015 3:59 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>You can update code in userhome.php &amp; adminhome.php, replace the 
+&amp;&amp; (AND) with || (OR) in the if condition at the top. I had 
+updated the tutorial but forgot to update the downloadable script. You 
+can click on demo to see.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/va1aqq">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1891308194">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li><li id="post-1880664213" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_hAy5WVHxpN/" class="user" data-action="profile" data-username="disqus_hAy5WVHxpN">
+<img data-role="user-avatar" data-user="146375458" src="a_data/avatar92_008.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_hAy5WVHxpN/" data-action="profile" data-username="disqus_hAy5WVHxpN" data-role="username">Wisnu Hidayat</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1880664213" data-role="relative-time" class="time-ago" title="Sunday, March 1, 2015 1:16 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Great post but I have problem,</p><p>wisnu : wisnu</p><p>Warning:  
+session_regenerate_id(): Cannot regenerate session id - headers already 
+sent in /var/www/html/it/tes/login-system/authenticate.php on line 32</p><p>admin</p><p>Warning:  Cannot modify header information - headers already sent<br> by (output started at <br>/var/www/html/it/tes/login-system/authenticate.php:17) in /var/www/html/it/tes/login-system/authenticate.php on line 41<br>I hope I can find my way out, thank you</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/v3p5sl">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1880664213">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1855380753" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_pTNqHhqQ3U/" class="user" data-action="profile" data-username="disqus_pTNqHhqQ3U">
+<img data-role="user-avatar" data-user="144497526" src="a_data/avatar92_009.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_pTNqHhqQ3U/" data-action="profile" data-username="disqus_pTNqHhqQ3U" data-role="username">Saif</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1855380753" data-role="relative-time" class="time-ago" title="Saturday, February 14, 2015 11:36 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>whats the command to load user and pass from database?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/uon8y9">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1855380753">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1855371598" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_pTNqHhqQ3U/" class="user" data-action="profile" data-username="disqus_pTNqHhqQ3U">
+<img data-role="user-avatar" data-user="144497526" src="a_data/avatar92_009.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_pTNqHhqQ3U/" data-action="profile" data-username="disqus_pTNqHhqQ3U" data-role="username">Saif</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1855371598" data-role="relative-time" class="time-ago" title="Saturday, February 14, 2015 11:29 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>How to Make it load user and password from database and create tables in database.Help</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/uon1vy">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1855371598">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1837492039" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/kwaabs/" class="user" data-action="profile" data-username="kwaabs">
+<img data-role="user-avatar" data-user="143126617" src="a_data/avatar92_005.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/kwaabs/" data-action="profile" data-username="kwaabs" data-role="username">Kwaabs</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1837492039" data-role="relative-time" class="time-ago" title="Friday, February 6, 2015 7:02 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>I would love to have a registration.php to this. Could you provide one using salted hashes?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/udztxj">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1837492039">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1814581534" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/elsgraph/" class="user" data-action="profile" data-username="elsgraph">
+<img data-role="user-avatar" data-user="141032419" src="a_data/avatar92_006.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/elsgraph/" data-action="profile" data-username="elsgraph" data-role="username">elsgraph</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1814581534" data-role="relative-time" class="time-ago" title="Saturday, January 24, 2015 8:06 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Awesome, Thank you for sharing this tutorial. It really helped me, ^^</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/u0cs2m">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1814581534">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li id="post-1799182570" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_qRe0ktizW3/" class="user" data-action="profile" data-username="disqus_qRe0ktizW3">
+<img data-role="user-avatar" data-user="139921215" src="a_data/avatar92_016.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_qRe0ktizW3/" data-action="profile" data-username="disqus_qRe0ktizW3" data-role="username">santosh</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1799182570" data-role="relative-time" class="time-ago" title="Sunday, January 18, 2015 11:14 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>There is a problem. When user logged in then if user open 
+adminhome.php url directly then user can access admin page. User should 
+not be access admin page. Please provide code for more secure login 
+system.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/tr6q5m">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1799182570">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-1799318730" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_1x5MWboZ4m/" class="user" data-action="profile" data-username="disqus_1x5MWboZ4m">
+<img data-role="user-avatar" data-user="139938040" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_1x5MWboZ4m/" data-action="profile" data-username="disqus_1x5MWboZ4m" data-role="username">TechYari</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1799182570" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> santosh</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1799318730" data-role="relative-time" class="time-ago" title="Sunday, January 18, 2015 2:40 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Thanks fo pointing out the bug. Have updated the tutorial to resolve 
+the issue. You can update code in userhome.php &amp; adminhome.php, 
+replace the &amp;&amp; (AND) with || (OR) in the if condition at the 
+top.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-1" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">1</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/tr9n7u">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1799318730">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li><li id="post-1777766655" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/gautamsh/" class="user" data-action="profile" data-username="gautamsh">
+<img data-role="user-avatar" data-user="123654383" src="a_data/avatar92_003.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/gautamsh/" data-action="profile" data-username="gautamsh" data-role="username">Gautam Sharma</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1777766655" data-role="relative-time" class="time-ago" title="Thursday, January 8, 2015 11:32 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>awesome role based login script...<br>thanx for sharing..</p><p>vipin sir<br>i want to know that which tools you use to create images for posts<br>it would be appreciated..<br>thanx..</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/tefpj3">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1777766655">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-1799319455" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_1x5MWboZ4m/" class="user" data-action="profile" data-username="disqus_1x5MWboZ4m">
+<img data-role="user-avatar" data-user="139938040" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_1x5MWboZ4m/" data-action="profile" data-username="disqus_1x5MWboZ4m" data-role="username">TechYari</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1777766655" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Gautam Sharma</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1799319455" data-role="relative-time" class="time-ago" title="Sunday, January 18, 2015 2:42 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Thanks. I use Photoshop and Picasa.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/tr9nrz">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1799319455">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li id="post-1802710221" class="post"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/gautamsh/" class="user" data-action="profile" data-username="gautamsh">
+<img data-role="user-avatar" data-user="123654383" src="a_data/noavatar92_002.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/gautamsh/" data-action="profile" data-username="gautamsh" data-role="username">Gautam Sharma</a></span>
+
+<span><a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1799319455" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> TechYari</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.techyari.in/2014/10/multi-user-role-based-login-in-php-with-mysql.html#comment-1802710221" data-role="relative-time" class="time-ago" title="Tuesday, January 20, 2015 1:15 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Thank you So much Sir...<br>and keep sharing...</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://disq.us/p/ttac3x">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1802710221">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li></ul>
+
+</li></ul>
+
+<div class="load-more" data-role="more" style="display:none">
+<a href="#" data-action="more-posts" class="btn">Load more comments</a>
+</div>
+</div>
+
+</section>
+
+<div id="placement-bottom" data-tracking-area="discovery-south"><div style="height: auto; visibility: visible;" class="post-list"><div style="display: block; width: 100%;"><div id="discovery-main-c672" class="discovery-main">
+
+<section id="col-organic-c688" class="col-organic">
+<header class="discovery-col-header">
+<h2>Also on <strong>TechYari</strong>
+</h2>
+</header>
+<ul class="discovery-posts" data-role="discovery-posts"><li class="discovery-post post-0" id="discovery-link-organic-3201302143">
+<a href="http://disq.us/url?url=http%3A%2F%2Fwww.techyari.in%2F2014%2F10%2Flive-username-availability-check-in-php-jquery-ajax.html%3AkArBUe5SDlSiT48MTJK6TulC_Tk&amp;imp=62pkvn717ud1fd&amp;prev_imp&amp;forum_id=3300026&amp;forum=techyariadmin&amp;thread_id=3201827463&amp;thread=3201302143&amp;zone=thread&amp;area=bottom&amp;object_type=thread&amp;object_id=3201302143" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="Live username availability check in PHP with jQuery and Ajax">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">
+Live username availability check in PHP with jQuery and Ajax
+</span>
+</h3>
+
+<ul class="meta">
+<li class="comments">
+3 comments
+</li>
+<li class="time">2 years ago</li>
+</ul>
+</header>
+
+</a><a href="http://disq.us/url?url=http%3A%2F%2Fwww.techyari.in%2F2014%2F10%2Flive-username-availability-check-in-php-jquery-ajax.html%3AkArBUe5SDlSiT48MTJK6TulC_Tk&amp;imp=62pkvn717ud1fd&amp;prev_imp&amp;forum_id=3300026&amp;forum=techyariadmin&amp;thread_id=3201827463&amp;thread=3201302143&amp;zone=thread&amp;area=bottom&amp;object_type=thread&amp;object_id=3201302143" class="top-comment" data-role="discovery-top-comment">
+<img alt="Avatar" data-role="discovery-avatar">
+<p><span class="user" data-role="discovery-top-comment-author">ankur</span> — <span data-role="discovery-top-comment-snippet" class="line-truncate" data-line-truncate="3">i need the same effect on click of a button..</span></p>
+</a>
+
+</li>
+<li class="discovery-post post-1" id="discovery-link-organic-3202212740">
+<a href="http://disq.us/url?url=http%3A%2F%2Fwww.techyari.in%2F2014%2F04%2Flive-weather-app-jquery-video-background-open-weather-map-api-bigvideojs-tutorial.html%3Ax7HuKQjldBXoP0IHYCOJ0mXe35E&amp;imp=62pkvn717ud1fd&amp;prev_imp&amp;forum_id=3300026&amp;forum=techyariadmin&amp;thread_id=3201827463&amp;thread=3202212740&amp;zone=thread&amp;area=bottom&amp;object_type=thread&amp;object_id=3202212740" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="Creating An Awesome LiveWeather App Using jQuery, Open Weather MAP API and BigVideo.js">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">  Creating An Awesome LiveWeather App Using jQuery, Open Weather MAP API …</span>
+</h3>
+
+<ul class="meta">
+<li class="comments">
+1 comment
+</li>
+<li class="time">2 years ago</li>
+</ul>
+</header>
+
+</a><a href="http://disq.us/url?url=http%3A%2F%2Fwww.techyari.in%2F2014%2F04%2Flive-weather-app-jquery-video-background-open-weather-map-api-bigvideojs-tutorial.html%3Ax7HuKQjldBXoP0IHYCOJ0mXe35E&amp;imp=62pkvn717ud1fd&amp;prev_imp&amp;forum_id=3300026&amp;forum=techyariadmin&amp;thread_id=3201827463&amp;thread=3202212740&amp;zone=thread&amp;area=bottom&amp;object_type=thread&amp;object_id=3202212740" class="top-comment" data-role="discovery-top-comment">
+<img alt="Avatar" data-role="discovery-avatar">
+<p><span class="user" data-role="discovery-top-comment-author">Said</span> — <span data-role="discovery-top-comment-snippet" class="line-truncate" data-line-truncate="3">Awesome)))</span></p>
+</a>
+
+</li>
+<li class="discovery-post post-2" id="discovery-link-organic-3820167749">
+<a href="http://disq.us/url?url=http%3A%2F%2Fwww.techyari.in%2F2015%2F06%2Fspring-mvc-and-apache-tiles-3-integration-tutorial-with-example.html%3ATTvALtHrzJ93pyf_670qxfTS97M&amp;imp=62pkvn717ud1fd&amp;prev_imp&amp;forum_id=3300026&amp;forum=techyariadmin&amp;thread_id=3201827463&amp;thread=3820167749&amp;zone=thread&amp;area=bottom&amp;object_type=thread&amp;object_id=3820167749" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="Spring MVC and Apache Tiles 3 Integration Tutotial Using Annotation Based Configuration">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">  Spring MVC and Apache Tiles 3 Integration Tutotial Using Annotation Based …</span>
+</h3>
+
+<ul class="meta">
+<li class="comments">
+1 comment
+</li>
+<li class="time">a year ago</li>
+</ul>
+</header>
+
+</a><a href="http://disq.us/url?url=http%3A%2F%2Fwww.techyari.in%2F2015%2F06%2Fspring-mvc-and-apache-tiles-3-integration-tutorial-with-example.html%3ATTvALtHrzJ93pyf_670qxfTS97M&amp;imp=62pkvn717ud1fd&amp;prev_imp&amp;forum_id=3300026&amp;forum=techyariadmin&amp;thread_id=3201827463&amp;thread=3820167749&amp;zone=thread&amp;area=bottom&amp;object_type=thread&amp;object_id=3820167749" class="top-comment" data-role="discovery-top-comment">
+<img alt="Avatar" data-role="discovery-avatar">
+<p><span class="user" data-role="discovery-top-comment-author">Deepu</span> — <span data-role="discovery-top-comment-snippet" class="line-truncate" data-line-truncate="3">Useful !!!</span></p>
+</a>
+
+</li>
+<li class="discovery-post post-3" id="discovery-link-organic-3204054689">
+<a href="http://disq.us/url?url=http%3A%2F%2Fwww.techyari.in%2F2014%2F04%2Flogin-registration-tutorial-in-j2ee-mysql-jquery-tabs.html%3AzkTEaG2sloF_wB5qFlkKdVBKO2U&amp;imp=62pkvn717ud1fd&amp;prev_imp&amp;forum_id=3300026&amp;forum=techyariadmin&amp;thread_id=3201827463&amp;thread=3204054689&amp;zone=thread&amp;area=bottom&amp;object_type=thread&amp;object_id=3204054689" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="Login, Registration In J2EE using jQueryUI tabs and MySql Database">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">
+Login, Registration In J2EE using jQueryUI tabs and MySql Database
+</span>
+</h3>
+
+<ul class="meta">
+<li class="comments">
+3 comments
+</li>
+<li class="time">2 years ago</li>
+</ul>
+</header>
+
+</a><a href="http://disq.us/url?url=http%3A%2F%2Fwww.techyari.in%2F2014%2F04%2Flogin-registration-tutorial-in-j2ee-mysql-jquery-tabs.html%3AzkTEaG2sloF_wB5qFlkKdVBKO2U&amp;imp=62pkvn717ud1fd&amp;prev_imp&amp;forum_id=3300026&amp;forum=techyariadmin&amp;thread_id=3201827463&amp;thread=3204054689&amp;zone=thread&amp;area=bottom&amp;object_type=thread&amp;object_id=3204054689" class="top-comment" data-role="discovery-top-comment">
+<img alt="Avatar" data-role="discovery-avatar">
+<p><span class="user" data-role="discovery-top-comment-author">Mouhend Mouhend</span> — <span data-role="discovery-top-comment-snippet" class="line-truncate" data-line-truncate="3">Download thet war file and check it yourself !</span></p>
+</a>
+
+</li>
+</ul>
+</section>
+
+</div>
+</div></div></div>
+
+<div id="footer" data-tracking-area="footer">
+<ul class="disqus-footer">
+<li class="logo disqus-footer__item"><a href="https://disqus.com/" rel="nofollow" title="Powered by Disqus">Powered by Disqus</a></li>
+<li id="thread-subscribe-button" class="email disqus-footer__item"> 
+<div class="default">
+<a href="#" rel="nofollow" data-action="subscribe" title="Subscribe and get email updates from this discussion"><i aria-hidden="true" class="icon icon-mail"></i><span class="clip">Subscribe</span> <i aria-hidden="true" class="icon icon-checkmark"></i></a>
+</div>
+<div class="form">
+<div class="input-wrapper"><input id="thread-subscribe-email" placeholder="yourname@email.com" type="email"></div>
+</div>
+</li>
+<li class="install disqus-footer__item">
+<a href="https://publishers.disqus.com/engage?utm_source=techyariadmin&amp;utm_medium=Disqus-Footer" rel="nofollow" target="_blank">
+<i aria-hidden="true" class="icon icon-disqus"></i>
+<span class="clip hidden-sm">Add Disqus to your site</span>
+<span class="clip visible-sm hidden-xs">Add Disqus</span>
+<span class="clip visible-xs">Add</span>
+</a>
+</li>
+<li class="privacy disqus-footer__item">
+<a href="https://help.disqus.com/customer/portal/articles/1657951?utm_source=disqus&amp;utm_medium=embed-footer&amp;utm_content=privacy-btn" rel="nofollow" target="_blank">
+<i aria-hidden="true" class="icon icon-lock"></i>
+<span class="clip">Privacy</span>
+</a>
+</li>
+</ul>
+</div>
+</div></body></html>

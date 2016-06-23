@@ -1,0 +1,154 @@
+/*
+   Based on http://cssarrowplease.com/
+   Usage: arrow-top(12px, red, blue, 1px, 100%, 50%);
+   Usage: arrow-bottom(12px, red, blue, 1px, 100%, 50%);
+   Usage: arrow-left(12px, red, blue, 1px, 100%, 50%);
+   Usage: arrow-right(12px, red, blue, 1px, 100%, 50%);
+*/
+.fk-inline-block {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.testMIME {
+  display: none;
+}
+html {
+  height: 100%;
+}
+body {
+  text-align: left;
+  height: 100%;
+}
+#fk-mainhead-id {
+  height: 56px;
+  position: relative;
+}
+.fk-mainhead {
+  height: 56px;
+  background-color: #005387;
+  background-image: none;
+}
+.fk-logo {
+  padding-top: 10px;
+}
+.fk-mainfooter {
+  bottom: 0px;
+  width: 100%;
+  padding: 0;
+}
+.fkart {
+  min-height: 100%;
+  position: relative;
+}
+.fkart .fk-mainhead .fk-hsearch-patch {
+  padding: 0;
+}
+.fkart .fk-mheader-categories {
+  margin-right: 2px;
+}
+.flyout-menu {
+  margin-right: 2px;
+}
+.fkart .fk-mainhead .fk-main-search-sec {
+  width: 580px;
+  _width: 550px;
+}
+.fkart .fk-top-search-boxtd, .fkart .fk-main-search-box {
+  width: 300px;
+}
+.flyout-menu .menu-dd .all-ctg-wrapper .arrow-dd {
+  height: 32px;
+}
+.flyout-menu .menu-dd .nav-content {
+  top: 32px;
+}
+.flyout-menu .menu-dd .all-ctg-wrapper .arrow-dd .arrow-dd-img {
+  top: 7px;
+}
+.header-content {
+  width: 978px;
+  margin: 0 auto;
+  position: relative;
+}
+.content-container {
+  width: 978px;
+  min-height: 450px;
+  margin: 0px auto;
+  background-color: #fff;
+  -webkit-box-shadow : 0 0 2px 0 #d3cbb8;
+  -moz-box-shadow : 0 0 2px 0 #d3cbb8;
+  box-shadow : 0 0 2px 0 #d3cbb8;
+}
+.treeImage {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 500px;
+}
+.errorHeading {
+  display: table-cell;
+  height: 455px;
+  width: inherit;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.errorHeading p {
+  font-size: 17px;
+  padding-bottom: 5px;
+  color: #4b4b4b;
+}
+.errorHeading h1 {
+  font-size: 200%;
+  color: #4b4b4b;
+}
+.errorHeading span {
+  color: #4b4b4b;
+  font-size: 22px;
+}
+.errorImage {
+  display: table-cell;
+  height: 455px;
+  width: 496px;
+  vertical-align: middle;
+}
+.errorImage img {
+  padding: 0 10px;
+  float: right;
+}
+.yellow-button {
+  background-color: #fdd922;
+  border: 1px solid #e0bc27;
+  border-radius: 3px 3px 3px 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #565656;
+  line-height: 17px;
+  height: 34px;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  appearance: button;
+  /* Firefox */
+  -moz-appearance: button;
+  /* Safari and Chrome */
+  -webkit-appearance: button;
+}
+.mainContainer {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin-top: 150px;
+  width: 470px;
+  vertical-align: top;
+}
+.clear {
+  clear: both;
+}
+.heading {
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+.mainContainer p {
+  margin: 10px 20px 0 0;
+}

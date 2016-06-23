@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Lufthansa Master Template</title>
+    <link rel="stylesheet" type="text/css" async="true" href="index_data/main.css">
+    <script type="text/javascript">
+        var clickTag = "http://www.google.com"; 
+    </script>
+</head>
+<body data-lang="de-de">
+<div class="ready" id="banner" style="opacity: 1;">
+    <a href="javascript:window.open(window.clickTag,'_blank');void(0);" id="btn"></a>
+    <div style="transform: matrix3d(1, 0.0000211185, 0, 0, -0.0000211185, 1, 0, 0, 0, 0, 1, 0, -3.63, 0, 0, 1);" id="bg">
+        <img src="index_data/bg.jpg" alt="">
+    </div>
+
+    <div id="lensflare">
+        <div style="left: -30px;" id="lens-s"></div>
+        <div style="left: -60px;" id="lens-m"></div>
+        <div style="left: -90px;" id="lens-l"></div>
+        <div style="left: -120px;" id="lens-hex"></div>
+    </div>
+
+    <div id="content-stage"></div>
+
+    <div style="font-size: 16px; width: 135px;" id="headlines"><h2>Catching the</h2><h2>early bird.</h2></div>
+
+    <div id="footer">
+        <div id="lh-logo">
+            <div class="icon-lh-logo">
+                <div class="icon-lh-logo-nsu"></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="font-size: 120px; width: 120px; height: 120px; visibility: visible; top: 65px; left: 45px; transform-origin: center 50% 0px; transform: matrix3d(0.00002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);" id="nsu">
+        <div class="nsu-bg"></div>
+        <div id="nsu-logo"></div>
+    </div>
+
+    <div style="width: 216px; top: 216px;" id="legal">
+        <span>undefined</span>
+    </div>
+
+    <div style="width: 120px; height: 120px;" id="bubble-mask">
+        <div class="bubble-bg"></div>
+
+    <div style="width: 120px; height: 120px; visibility: visible; top: 65px; left: 45px; transform-origin: center 50% 0px; transform: matrix3d(0.00002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);" class="text-bubble bubble" id="bubble0">
+    <div class="bubble-bg"></div>
+    <div class="bubble-content-wrapper">
+        <div class="cell">
+            <span style="font-size: 11px;">Fly Lufthansa<br>to industry<br>fairs in<br>Europe.</span>
+        </div>
+    </div>
+</div><div style="width: 120px; height: 120px; visibility: visible; top: 65px; left: 45px; transform-origin: center 50% 0px; transform: matrix3d(0.00002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);" class="text-bubble bubble" id="bubble1">
+    <div class="bubble-bg"></div>
+    <div class="bubble-content-wrapper">
+        <div class="cell">
+            <span style="font-size: 13px;">Tailor made<br>offers for<br>corporates<br>of all sizes.</span>
+        </div>
+    </div>
+</div></div>
+
+    <div style="left: 38.5px; top: 168.333px;" id="cta-wrapper">
+        <div style="font-size: 25px;" id="cta">
+            <div class="text-container">Discover more</div>
+        </div>
+    </div>
+
+    <div style="width: 390.512px; height: 390.512px; left: -90px; top: -70px; transform: matrix3d(0, 0, -0.307288, 0, 0, 0.307288, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1); transform-origin: center 50% 0px;" id="end-screen">
+        <div id="end-lh-logo">
+            <div class="icon-lh-logo">
+                <div class="icon-lh-logo-com"></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="left: 172.85px;" id="star-alliance" dir="ltr">
+        <span class="icon-sa-text"></span>
+        <span class="icon-sa-star-grey"></span>
+        <span class="icon-sa-star-white"></span>
+        <span class="icon-sa-star-black"></span>
+    </div>
+
+    <div style="width: 390.512px; height: 390.512px; left: -45.2562px; top: -70.2562px;" id="bubble-cover"></div>
+    <div id="clickarea"></div>
+</div>
+
+<div id="price-bubble-sample">
+    <div class="bubble-bg"></div>
+    <div class="bubble-content-wrapper">
+        <div class="destination">
+            <span></span>
+        </div>
+        <table>
+            <tbody><tr>
+                <td class="price-front">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </td>
+                <td class="price"></td>
+                <td class="price-end">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </td>
+                <td class="legal-star">
+                    <div></div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+</div>
+
+<div id="text-bubble-sample">
+    <div class="bubble-bg"></div>
+    <div class="bubble-content-wrapper">
+        <div class="cell">
+            <span></span>
+        </div>
+    </div>
+</div>
+
+<script src="index_data/Enabler.js"></script>
+<script src="index_data/easepack_1.js" type="text/javascript"></script>
+<script src="index_data/timelinemax_1.js" type="text/javascript"></script>
+<script src="index_data/tweenmax_1.js" type="text/javascript"></script>
+<script src="index_data/main.js" type="text/javascript"></script>
+<script src="index_data/Clicktag.js" type="text/javascript"></script>
+
+<script>
+
+    // If true, start function. If false, listen for INIT.
+    window.onload = function() {
+        if (Enabler.isInitialized()) {
+            enablerInitHandler();
+        } else {
+            Enabler.addEventListener(studio.events.StudioEvent.INIT,
+                    enablerInitHandler);
+        }
+    };
+
+    function enablerInitHandler() {
+        // Start ad, initialize animation,
+        // load in your image assets, call Enabler methods,
+        // and/or include other Studio modules.
+        // Also, you can start polite loading.
+        document.getElementById("banner").classList.add('ready');
+        new BannerBrand();
+        new Clicktag();
+    }
+
+</script>
+
+
+</body></html>
