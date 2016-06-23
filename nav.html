@@ -1,4 +1,5 @@
-<section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--sticky mbr-navbar--auto-collapse" id="ext_menu-2">
+    <script src="login.js"></script>
+   <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--sticky mbr-navbar--auto-collapse" id="ext_menu-2">
     <div class="mbr-navbar__section mbr-section">
         <div class="mbr-section__container container">
             <div class="mbr-navbar__container">
@@ -16,7 +17,7 @@
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="donasi.html">DONASI</a></li>
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="about.html">TENTANG KAMI</a></li>
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="bantu.html">BANTU SEKARANG</a></li>
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#">FAQ</a></li>
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="faq.html">FAQ</a></li>
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#" data-toggle="modal" data-target=".masukmodal">MASUK</a></li>
                             </ul>
                             <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
@@ -43,16 +44,17 @@
                         <div class="row">
                             <div class="" data-form-type="formoid">
 
-                                <form action="cekLogin.php" method="post" data-form-title="LOGIN FORM">
-                                    <input type="hidden" value="STrTvz785TVzWma28Xw5DtzTMSK1WtrGDpLA9aGQAqB1F044+qaqScFuzf5p0I2QcRU0xSWI2vIzNitR5HdN/1N26EEcMqyyCE1a2wvBBVIYUAxiSlQK9ivGMCX7kehO" data-form-email="true">
+                                <form action="#" method="post" data-form-title="LOGIN FORM">
+                                    
                                     <div class="form-group">
-                                        <input type="email" class="form-control" name="name" required="" placeholder="Email*" data-form-field="Email">
+                                        <input type="email" class="form-control" name="emailLogin" id="emailLogin" required="" placeholder="Email*" data-form-field="Email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" name="email" required="" placeholder="Password*" data-form-field="Password">
+                                        <input type="password" class="form-control" id="passLogin" name="passLogin" required="" placeholder="Password*" data-form-field="Password">
                                     </div>
                                     <div class="mbr-buttons mbr-buttons--center">
-                                        <button type="submit" class="mbr-buttons__btn btn btn-lg btn-success form-control">LOGIN</button>
+                                      
+                                        <input type="button" class="mbr-buttons__btn btn btn-lg btn-success form-control" name="login" id="loginModal" value="Login">
                                     </div>
                                 </form>
                             </div>
@@ -83,7 +85,7 @@
                             <div data-form-alert="true">
                                 <div class="hide" data-form-alert-success="true">Thanks for filling out form!</div>
                             </div>
-                            <form action="https://mobirise.com/" method="post" data-form-title="FORM PENDAFTARAAN">
+                            <form action="#" method="post" data-form-title="FORM PENDAFTARAAN">
                                 <input type="hidden" value="SveuHO5Qqf7TIoXzfN+8vvys86jiGArhJWmX7NiL7WuqAjcKsvBPViwFxcZhj/2qQJGOvEheFB8QyH5+bal6E1MsIv6N6BHvpXPS49hNFtRhwATpGKd/bK8UORGbSlDd" data-form-email="true">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="name" required="" placeholder="Name Lengkap" data-form-field="Name">
@@ -111,7 +113,7 @@
                                         <input name="agreement" required="" type="checkbox"> Saya setuju dengan <a href="terms.html">ketentuan dan kesepakatan bersama ApesBener.id</a></label>
                                 </div>
                                 <div class="mbr-buttons mbr-buttons--center">
-                                    <button type="submit" class="mbr-buttons__btn btn btn-lg btn-success form-control">DAFTAR</button>
+                                    <button type="submit" class="mbr-buttons__btn btn btn-lg btn-success form-control" id="kirimDaftar">DAFTAR</button>
                                 </div>
                             </form>
                         </div>
