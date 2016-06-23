@@ -1,12 +1,14 @@
-    <script src="login.js"></script>
-   <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--sticky mbr-navbar--auto-collapse" id="ext_menu-2">
+<script src="login.js"></script>
+<link rel="stylesheet" href="assets/kostum.css">
+
+<section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--sticky mbr-navbar--auto-collapse" id="ext_menu-2">
     <div class="mbr-navbar__section mbr-section">
         <div class="mbr-section__container container">
             <div class="mbr-navbar__container">
                 <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
                     <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
                         <span class="mbr-brand__logo"><img src="assets/images/logo-50x42-73.png" class="mbr-navbar__brand-img mbr-brand__img" alt="ApesBener"></span>
-                    <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.html">ApesBener.id</a></span>
+                    <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.php">ApesBener.id</a></span>
                     </span>
                 </div>
                 <div class="mbr-navbar__hamburger mbr-hamburger"><span class="mbr-hamburger__line"></span></div>
@@ -14,11 +16,12 @@
                     <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
                         <div class="mbr-navbar__column">
                             <ul class="mbr-navbar__items mbr-navbar__items--right float-left mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="donasi.html">DONASI</a></li>
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="donasi.php">DONASI</a></li>
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="about.html">TENTANG KAMI</a></li>
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="bantu.html">BANTU SEKARANG</a></li>
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="faq.html">FAQ</a></li>
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#" data-toggle="modal" data-target=".masukmodal">MASUK</a></li>
+                                
                             </ul>
                             <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-success" href="#" data-toggle="modal" data-target=".daftarmodal">DAFTAR</a></li>
@@ -45,7 +48,7 @@
                             <div class="" data-form-type="formoid">
 
                                 <form action="#" method="post" data-form-title="LOGIN FORM">
-                                    
+
                                     <div class="form-group">
                                         <input type="email" class="form-control" name="emailLogin" id="emailLogin" required="" placeholder="Email*" data-form-field="Email">
                                     </div>
@@ -53,7 +56,7 @@
                                         <input type="password" class="form-control" id="passLogin" name="passLogin" required="" placeholder="Password*" data-form-field="Password">
                                     </div>
                                     <div class="mbr-buttons mbr-buttons--center">
-                                      
+
                                         <input type="button" class="mbr-buttons__btn btn btn-lg btn-success form-control" name="login" id="loginModal" value="Login">
                                     </div>
                                 </form>
@@ -85,35 +88,36 @@
                             <div data-form-alert="true">
                                 <div class="hide" data-form-alert-success="true">Thanks for filling out form!</div>
                             </div>
-                            <form action="#" method="post" data-form-title="FORM PENDAFTARAAN">
-                                <input type="hidden" value="SveuHO5Qqf7TIoXzfN+8vvys86jiGArhJWmX7NiL7WuqAjcKsvBPViwFxcZhj/2qQJGOvEheFB8QyH5+bal6E1MsIv6N6BHvpXPS49hNFtRhwATpGKd/bK8UORGbSlDd" data-form-email="true">
+                            <form action="prosesDaftar.php" method="post" data-form-title="FORM PENDAFTARAAN">
+                            
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="name" required="" placeholder="Name Lengkap" data-form-field="Name">
+                                    <input type="text" class="form-control" name="name1" id="name1" required="" placeholder="Name Lengkap" data-form-field="Name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="email" required="" placeholder="Email" data-form-field="Email">
+                                    <input type="email" class="form-control" name="email1" id="email1" required="" placeholder="Email" data-form-field="Email">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" name="password" placeholder="Password" data-form-field="password">
+                                    <input type="password" class="form-control" name="passwordDaftar"  id="passwordDaftar" placeholder="Password" data-form-field="password">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" name="confirm-password" placeholder="Confirm Password" data-form-field="confirm-password">
+                                    <div id="divCheckPasswordMatch"></div>
+                                    <input type="password" class="form-control" name="confirm-password" id="confirm-password" placeholder="Confirm Password" data-form-field="confirm-password" onChange="checkPasswordMatch();">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="alamat" placeholder="Alamat" data-form-field="alamat">
+                                    <input type="text" class="form-control" name="alamat1" id="alamat1" placeholder="Alamat" data-form-field="alamat">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="kota" placeholder="kota" data-form-field="kota">
+                                    <input type="text" class="form-control" name="kota1" id="kota1" placeholder="kota" data-form-field="kota">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="provinsi" placeholder="provinsi" data-form-field="provinsi">
+                                    <input type="text" class="form-control" name="provinsi1" id="provinsi1" placeholder="provinsi" data-form-field="provinsi">
                                 </div>
                                 <div class="form-group">
                                     <label class="text-center">
                                         <input name="agreement" required="" type="checkbox"> Saya setuju dengan <a href="terms.html">ketentuan dan kesepakatan bersama ApesBener.id</a></label>
                                 </div>
                                 <div class="mbr-buttons mbr-buttons--center">
-                                    <button type="submit" class="mbr-buttons__btn btn btn-lg btn-success form-control" id="kirimDaftar">DAFTAR</button>
+                                    <button type="submit" id="kirimDaftar" class="mbr-buttons__btn btn btn-lg btn-success form-control" id="kirimDaftar">DAFTAR</button>
                                 </div>
                             </form>
                         </div>
@@ -124,4 +128,43 @@
         </div>
     </div>
 </div>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+//        $("#kirimDaftar").click(function () {
+//            var art = {};
+//            art.nama = $("#name1").val();
+////            art.email = $("#email1").val();
+////            art.pass= $("#passwordDaftar").val();
+////            art.alamat= $("#email1").val();
+////            art.kota=$("#kota1").val();
+////            art.provinsi=$("#provinsi1").val();
+//            $.ajax({
+//                type: "POST"
+//                , url: "prosesDaftar.php"
+//                , data: {
+//                    "points": JSON.stringify(art)
+//                }
+//                , cache: true
+//                , success: function (html) {
+//                    $("#show").after(html);
+//                }
+//            });
+//
+//        });
+    });
+
+    function checkPasswordMatch() {
+        var password = $("#passwordDaftar").val();
+        var confirmPassword = $("#confirm-password").val();
+
+        if (password != confirmPassword) {
+            $("#divCheckPasswordMatch").html("Passwords do not match!");
+            $("#kirimDaftar").attr("disabled", "");
+        } else {
+            $("#divCheckPasswordMatch").html("Passwords match.");
+            $("#kirimDaftar").removeAttr("disabled");
+        }
+    }
+</script>
 <!--End Daftar Modal-->

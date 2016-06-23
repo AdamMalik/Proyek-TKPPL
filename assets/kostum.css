@@ -1,0 +1,88 @@
+.patient-img {
+    background-color: #57e291;
+    background-image: url("../img/Kids%205.jpg");
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    padding-bottom: 56%;
+    border-radius: 2px 2px 0 0;
+}
+.patient-summary {
+    position: relative;
+}
+.donation-summary {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.pasien-img {
+     background-color: #414958;
+     background-size: cover;
+     background-position: center;
+     min-width: 100%;
+     padding-bottom: 100%;
+     border-radius: 2px;
+ }
+ 
+ .panel-pasien {
+     background: white;
+     margin-bottom: 2em;
+ }
+ 
+ .header-pasien {
+     background: url(images/back.jpg);
+     position: absolute;
+     width: 110%;
+     height: 110%;
+     margin: -2em -2.1em;
+     z-index: -1;
+     background-size: cover;
+     background-position: center;
+     filter: blur(10px);
+     -webkit-filter: blur(10px);
+ }
+ 
+ .pasien {
+     padding-top: 80px;
+ }
+.patient-summary .patient-loc::before {
+    background-image: url("ic_loc.png");
+    background-size: 100%;
+    width: 15px;
+    height: 18px;
+    background-repeat: no-repeat;
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 0.2em;
+    margin-left: -0.2em;
+}
+ .patient-summary .patient-loc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ .progress {
+     height: 8px;
+     margin-bottom: 20px;
+     margin-top: 32px;
+     overflow: hidden;
+     background-color: #E5E5E5;
+     border-radius: 0px;
+ }
+ 
+ .panel1 {
+     background: white;
+     padding: 15px;
+ }
+ 
+ .pasien-body {
+     background: #eee;
+ }
+ 
+ .pasien-isi {
+     margin-top: 20px;
+ }
+ 
+ .row-pasien {
+     margin-bottom: 15px;
+ }

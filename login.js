@@ -35,12 +35,28 @@ $(document).ready(function () {
                             "border": "2px solid #00F5FF"
                             , "box-shadow": "0 0 5px #00F5FF"
                         });
-                        window.location="about.html";
-//                        alert(data);
+                        window.location = "home.php";
+                        //                        alert(data);
                     } else {
                         alert(data);
                     }
                 });
         }
     });
+
+    function detailPasien(id) {
+        
+        var dataString = 'id=' + id;
+        $.ajax({
+            type: "POST"
+            , url: "php/action.php"
+            , data: dataString
+            , cache: true
+            , success: function (html) {
+                $(".patient-name").after(html);
+            }
+        });
+    }
+ 
+   
 });
